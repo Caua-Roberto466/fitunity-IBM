@@ -1,0 +1,168 @@
+/*#0181DB, primeira cor. #00DBC1, Segunda cor. #2E5C56 , terceira 37597b 5f6870 cor.*/
+/*Dar Alt+z para facilitar a navegação do VSCode*/
+
+:root { /*Cria um padrão de cores pro site, depois na hora de escolher a cor é só chamar com var(nome da cor)*/
+    /*Padrão de cores*/
+    --branco: #fff;
+    --header: #0181db;
+    --cor_texto: #707070;
+    --cor_nav: #34abff;
+    /*Padrão darkmode*/
+    --darkmode: #1a1a1a;
+    --nav_dk: #1e1e1e;
+    --texto_dk: #fff;
+    --header_dk: #000;
+    --botao: #0b456e;
+
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /*Cria um sobreamento em volta do item selecionado*/
+    --border-radius: 15px;
+
+}
+*{
+    box-sizing: border-box;
+}
+body{ /*Edita as propriedades do corpo do site*/
+    margin: 0; /*Deixa sem margem*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',  sans-serif; /*Muda o estilo de fonte para todo site*/
+    background-color: var(--branco);
+}
+
+
+nav{
+    background-color: var(--cor_nav);
+    overflow: hidden;
+    padding: 20px;
+    margin: 0
+}
+
+h1{ /*Muda as propriedades visuais da tag h1*/
+    background-color: var(--header); /*Muda a cor de fundo da tag*/
+    color: var(--branco); /*Muda a cor da tag, no caso a cor da letra*/
+    padding: 20px; /*Deixa um espaçamente, útil para deixar visualmente mais agradável*/
+    margin: 0;
+    text-align: center; /*Deixa o texto centralizado*/
+}
+
+p{
+    color: var(--cor_texto);
+    font-size: 18px; /*Muda o tamnho da fonte em pixel*/
+    text-align: justify; /*Deixa o testo justificado*/
+    padding: 10px;
+}
+
+
+
+.topo-container {
+    display: flex;                /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens entre as extremidades */
+    align-items: center;          /* Alinha verticalmente no centro */
+    padding: 0 20px;              /* Adiciona espaçamento lateral */
+    background-color: var(--header); /* Cor de fundo consistente */
+}
+
+.topo h1 {
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: transparent; /* Removido para evitar conflito com a div pai */
+    color: var(--branco);
+    flex: 1;
+    text-align: center;
+}
+
+.botaodk {
+    background-color: var(--header); /* Mesma cor do cabeçalho */
+    color: var(--branco);           /* Texto branco */
+    border: 2px solid var(--botao); /* Borda com a cor do botão */
+    border-radius: 10px;            /* Cantos arredondados */
+    padding: 10px 15px;             /* Espaçamento interno */
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botaodk:hover {
+    background-color: var(--botao); /* Fundo muda na interação */
+    color: white;                   /* Texto permanece branco */
+}
+
+
+a{
+    background-color: #0181db;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 11px;
+    overflow: hidden;
+    text-decoration: none; /*Remove a linha embaixo dos links, deixa mais agradavél*/
+}
+
+h1 {
+    margin: 0 auto;
+    color: var(--branco);
+    font-size: 2.5em;
+}
+
+
+h2{
+    background-color: #0181db; 
+    color: white; 
+    padding: 20px; 
+    margin: 0;
+    text-align: center;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+h3{
+    background: var(--header);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+}
+
+/*
+#4b4b4b
+*/
+
+/*Cores do modo escuro*/
+
+body.darkmode{
+    background-color: var(--darkmode);
+}
+
+body.darkmode nav{
+    background-color: var(--nav_dk);
+}
+
+body.darkmode h1{
+    background-color: #000;
+}
+
+body.darkmode a{
+    background-color: #353535;
+}
+body.darkmode p{
+    color: #fff;
+}
+body.darkmode h3{
+    background-color: var(--header_dk);
+}
+body.darkmode .topo-container{
+    background-color: #000;
+}
+body.darkmode .botaodk{
+    background-color: #353535;
+    color: #fff;
+    border: none;
+}
+body.darkmode h2{
+    background-color: var(--header_dk);
+}

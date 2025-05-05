@@ -1,0 +1,73 @@
+:root{
+    --branco: #fff;
+    --header: #0181db;
+    --cor_texto: #707070;
+    --cor_nav: #34abff;
+
+    --darkmode: #1a1a1a;
+    --nav_dk: #1e1e1e;
+    --texto_dk: #fff;
+    --header_dk: #000;
+    --botao: #0b456e;
+
+
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /*Cria um sobreamento em volta do item selecionado*/
+    --border-radius: 15px;
+}
+
+.somos{
+    background-color: var(--branco);
+    color: var(--cor_texto);
+    font-size: 23px;
+    width: 700px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.corpo{
+    background-color: var(--branco);
+    color: var(--cor_texto);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    margin: 0 auto; /*Deixa o conteúdo da div centralizado automáticamente*/
+    width: 700px; /*Define horizontalmente o tamanho do conteúdo da div*/
+    align-items: center; /*Específico para centralizar itens horizontalmente*/
+    justify-content: center; /*Específico para centralizar verticalmente*/
+    border-radius: 15px; /*Diminui as pontas deixando arredondado*/
+    flex-direction: column; /*Manda a direção do flex para coluna*/
+    font-size: 23px;
+}
+
+.explicar{
+    background-color: var(--branco);
+    color: var(--cor_texto);
+    text-align: center;
+    width: 700px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    margin: 0 auto;
+    flex-direction: column;
+    font-size: 23px;
+    box-shadow: var(--box-shadow);
+}
+
+body.darkmode{
+    background-color: var(--darkmode);
+}
+
+body.darkmode .somos{
+    background-color: var(--darkmode);
+}
+
+body.darkmode .explicar{
+    background-color: var(--darkmode);
+}
+
+body.darkmode .corpo{
+    background-color: var(--darkmode);
+}
