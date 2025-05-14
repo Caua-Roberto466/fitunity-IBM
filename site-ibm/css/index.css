@@ -1,35 +1,4 @@
-:root{
-    --branco: #fff;
-    --header: #0181db;
-    --cor_texto: #707070;
-    --cor_nav: #34abff;
-    --fundo_bloco: #fff;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    --border-radius: 15px;
-    --cor_texto2: #7e7d7d;
+.logo-index{
+    width: 300px;
+    height: 300px;
 }
-
-
-
-.corpo{
-    background-color: var(--background);
-    color: var(--cor_texto2);
-    text-align: center;
-    margin: 0 auto; /*Deixa o conteúdo da div centralizado automáticamente*/
-    width: 650px; /*Define horizontalmente o tamanho do conteúdo da div*/
-    align-items: center; /*Específico para centralizar itens horizontalmente*/
-    justify-content: center; /*Específico para centralizar verticalmente*/
-    border-radius: var(--border-radius); /*Diminui o as pontas deixando arredondado*/
-    flex-direction: column; /*Manda a direção do flex para coluna*/
-    box-shadow: var(--box-shadow);
-}
-
-.slogan{
-    background: var(--header);
-    color: white;
-    padding: 5px;
-    text-align: center;
-    font-size: 22px;
-    margin: 0;
-}
-
