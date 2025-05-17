@@ -1,0 +1,44 @@
+:root { /*Cria um padrão de cores pro site, depois na hora de escolher a cor é só chamar com var(nome da cor)*/
+    /*Padrão de cores*/
+    --branco: #fff;
+    --header: #0181db;
+    --cor_texto: #707070;
+    --cor_nav: #34abff;
+    /*Padrão darkmode*/
+    --darkmode: #1a1a1a;
+    --nav_dk: #1e1e1e;
+    --texto_dk: #fff;
+    --header_dk: #000;
+    --botao: #0b456e;
+
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /*Cria um sobreamento em volta do item selecionado*/
+    --border-radius: 15px;
+    --largura-div-secoes: 650px;
+    /*Cores próprias da página*/
+    --titulo-treino: #407ba5;
+
+}
+
+.pagina-home-treino h2.treino-titulo1{
+    font-size: 25px;
+    border-radius: 0%;
+    padding: 0%;
+    padding-bottom: 8px;
+}
+
+.intro-treino{
+    width: var(--largura-div-secoes);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*
+.pagina-home-treino h2.treino-titulo {
+    font-size: 40px;
+    background-color: transparent;
+    margin-top: 20px;
+    color: black;
+    border-radius: 0%;
+    /* Estilos exclusivos dessa página */
+/*}
+*/

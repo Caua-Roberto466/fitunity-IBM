@@ -7,6 +7,7 @@
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     --border-radius: 15px;
     --cor_texto2: #7e7d7d;
+    --largura-div-secoes: 650px;
 }
 
 
@@ -16,7 +17,7 @@
     color: var(--cor_texto2);
     text-align: center;
     margin: 0 auto; /*Deixa o conteúdo da div centralizado automáticamente*/
-    width: 650px; /*Define horizontalmente o tamanho do conteúdo da div*/
+    width: var(--largura-div-secoes); /*Define horizontalmente o tamanho do conteúdo da div*/
     align-items: center; /*Específico para centralizar itens horizontalmente*/
     justify-content: center; /*Específico para centralizar verticalmente*/
     border-radius: var(--border-radius); /*Diminui o as pontas deixando arredondado*/

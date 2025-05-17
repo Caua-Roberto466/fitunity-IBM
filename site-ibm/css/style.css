@@ -16,6 +16,7 @@
 
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /*Cria um sobreamento em volta do item selecionado*/
     --border-radius: 15px;
+    --largura-div-secoes: 650px;
 
 }
 *{
@@ -38,7 +39,7 @@ nav{
 h1{ /*Muda as propriedades visuais da tag h1*/
     background-color: var(--header); /*Muda a cor de fundo da tag*/
     color: var(--branco); /*Muda a cor da tag, no caso a cor da letra*/
-    padding: 20px; /*Deixa um espaçamente, útil para deixar visualmente mais agradável*/
+    padding: 20px; /*Deixa um espaçamento interno, útil para deixar visualmente mais agradável*/
     margin: 0;
     text-align: left; /*Deixa o texto centralizado*/
 }
@@ -46,7 +47,7 @@ h1{ /*Muda as propriedades visuais da tag h1*/
 p{
     color: var(--cor_texto);
     font-size: 18px; /*Muda o tamnho da fonte em pixel*/
-    text-align: left; /*Deixa o testo justificado*/
+    text-align: left; /*Deixa o testo alinhado a esquerda*/
     padding: 10px;
 }
 
@@ -61,7 +62,7 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center; /* CORRIGIDO: era left */
-    padding: 0 20px;
+    
     background-color: var(--header);
 }
 
@@ -92,6 +93,7 @@ p{
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    margin-right: 2px;
 }
 
 .botaodk:hover {
@@ -101,8 +103,8 @@ p{
 
 
 a{
-    background-color: #0181db;
-    color: white;
+    background-color: var(--header);
+    color: var(--branco);
     border-radius: 10px;
     width: 100px;
     align-items: center;
