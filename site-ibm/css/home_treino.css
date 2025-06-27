@@ -1,7 +1,7 @@
 :root { /*Cria um padrão de cores pro site, depois na hora de escolher a cor é só chamar com var(nome da cor)*/
     /*Padrão de cores*/
     --branco: #fff;
-    --header: #0181db;
+    --header: #009df8;
     --cor_texto: #707070;
     --cor_nav: #34abff;
     /*Padrão darkmode*/
@@ -9,7 +9,7 @@
     --nav_dk: #1e1e1e;
     --texto_dk: #fff;
     --header_dk: #000;
-    --botao: #0b456e;
+    --botao: #13557C;
 
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /*Cria um sobreamento em volta do item selecionado*/
     --border-radius: 15px;
