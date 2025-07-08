@@ -11,7 +11,7 @@
     --darkmode: #1a1a1a;
     --nav_dk: #1e1e1e;
     --texto_dk: #fff;
-    --header_dk: #000;
+    --header_dk: #13557c;
     --botao: #13557C;
 
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /*Cria um sobreamento em volta do item selecionado*/
@@ -30,7 +30,7 @@ body{ /*Edita as propriedades do corpo do site*/
 
 
 nav{
-    background-color: var(--cor_nav);
+    
     overflow: hidden;
     padding: 20px;
     margin: 0
@@ -159,7 +159,7 @@ body.darkmode nav{
 }
 
 body.darkmode h1{
-    background-color: #000;
+    background-color: var(--header_dk);
 }
 
 body.darkmode a{
