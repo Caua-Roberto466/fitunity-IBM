@@ -1,0 +1,85 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Personalização do header*/
+.fitunity {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.logo{
+    width: 80px;
+    border-radius: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.Empresa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botaodk{
+    background-color: transparent;
+    font-size: 22px;
+    padding: 7px;
+    border-radius: 45px;
+    border: var(--CS_darkmode) solid;
+    outline: none; /*remove o contorno extra ao focar*/
+    box-shadow: none; /*Remove as sombras*/
+    border-color: var(--CS_darkmode);
+    color: white;
+}
+
+.botaodk:hover{
+    transition: 0.4s;
+    background-color: var(--CS_darkmode);
+}
+
+header{
+    background-color: var(--cor_primaria);
+}
+
+/*Cores do modo escuro*/
+
+body.darkmode {
+    background-color: var(--BKG_darkmode);
+}
+
+body.darkmode header{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .botaodk{
+    border: var(--cor_secundaria) solid;
+}
+
+body.darkmode .botaodk:hover{
+    background-color: var(--cor_secundaria);
+}
