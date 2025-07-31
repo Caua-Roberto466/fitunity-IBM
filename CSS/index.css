@@ -1,6 +1,157 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: rgba(0, 0, 0, 0.514);
+    --tamanho_fonte: 22px;
+}
+
 .entrar-link{
     display: block;
-    width: 800px;
+    width: 780px;
     margin: 0 auto;
     padding-top: 100px;
+    margin-bottom: 80px;
 }
+
+.SN_home{
+    font-size: 3rem;
+    width: 780px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+h3{
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.NS_texto{
+    width: 660px;
+    border: 0.8px var(--cor_secundaria) solid;
+    border-radius: 30px;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 60px;
+    font-size: 21px;
+    box-shadow: 9px 9px 10px 0px rgba(0, 0, 0, 0.514);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+section img{
+    width: 180px;
+}
+
+.Beneficio_site{
+    margin-bottom: 100px;
+}
+
+.Casa{
+    width: 198px;
+    border: 0.8px var(--cor_secundaria) solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 60px;
+}
+
+.Casa p{
+    font-size: 20px;
+    display: block;
+    margin: auto;
+}
+
+.T_online{
+   width: 198px;
+   border: 0.8px var(--cor_primaria) solid;
+   padding-left: 10px; 
+   margin-right: 60px;
+}
+
+.T_online p{
+    font-size: 20px;
+}
+
+.Dieta{
+   width: 198px;
+   border: 0.8px var(--cor_primaria) solid;
+   padding-left: 10px; 
+}
+
+.Dieta p{
+    font-size: 20px;
+}
+
+.ops{
+    border: 0.8px var(--cor_secundaria) solid;
+    width: 650px;
+    display: block;
+    margin: auto;
+}
+
+.Elena p{
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.Perfil_elena{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Perfil_elena img{
+    width: 80px;
+    margin-right: 5px;
+}
+.Perfil_elena p{
+    font-size: 17px;
+}
+
+.Carlos p{
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.Perfil_carlos{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Perfil_carlos img{
+    width: 80px;
+    margin-right: 5px;
+}
+.Perfil_carlos p{
+    font-size: 17px;
+}
+
+.Lucas p{
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.Perfil_lucas{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Perfil_lucas img{
+    width: 80px;
+    margin-right: 5px;
+}
+.Perfil_lucas p{
+    font-size: 17px;
+}
+

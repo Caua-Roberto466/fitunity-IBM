@@ -5,6 +5,10 @@
     --CP_darkmode: #213872;
     --CS_darkmode: #0e2555;
     --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 22px;
 }
 
 *{
@@ -17,6 +21,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 /*Personalização do header*/
@@ -47,23 +52,116 @@ h1, h2, h3, h4 {
 
 .botaodk{
     background-color: transparent;
-    font-size: 22px;
+    font-size: var(--tamanho_fonte);
     padding: 7px;
-    border-radius: 45px;
-    border: var(--CS_darkmode) solid;
+    border-radius: var(--Border_radius);
+    border: var(--CP_darkmode) solid;
     outline: none; /*remove o contorno extra ao focar*/
     box-shadow: none; /*Remove as sombras*/
-    border-color: var(--CS_darkmode);
+    border-color: var(--CP_darkmode);
     color: white;
 }
 
 .botaodk:hover{
     transition: 0.4s;
-    background-color: var(--CS_darkmode);
+    background-color: var(--CP_darkmode);
+}
+
+header a{
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: var(--tamanho_fonte);
+}
+
+.Hlinks{
+    margin-left: 9px;
+}
+
+.cadastroH{
+    color: white;
+    padding: 9px;
+    background-color: var(--CP_darkmode);
+    border: var(--CP_darkmode) solid;
+    border-radius: var(--Border_radius);
+    font-size: var(--tamanho_fonte);
+}
+
+.entrarH{
+    color: white;
+    padding: 9px;
+    border: var(--CP_darkmode) solid;
+    background-color: transparent;
+    border-radius: var(--Border_radius);
+    font-size: var(--tamanho_fonte); 
+}
+
+.entrarH:hover{
+    background-color: var(--CP_darkmode);
+    transition: 0.4s;
 }
 
 header{
     background-color: var(--cor_primaria);
+}
+
+/*Personalisação do footer*/
+footer{
+    background-color: var(--CP_darkmode);
+    display: flex;
+    margin-top: 100px;
+}
+
+footer img{
+    width: 60px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+footer a{
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
+
+.Coluna1{
+    margin-left: 20px;
+}
+
+.Coluna2{
+    margin-left: 40px;
+    margin-top: 96px;
+    display: block;
+    text-align: center;
+}
+
+.Coluna3{
+    margin-left: 43px;
+    margin-top: 96px;
+}
+
+.Coluna4{
+    margin-left: 43px;
+    margin-top: 96px;
+}
+
+.fitunity_footer{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Poppins' , sans-serif;
+    margin-top: 25px;
+}
+
+footer h4{
+    color: #fff;
 }
 
 /*Cores do modo escuro*/
@@ -82,4 +180,17 @@ body.darkmode .botaodk{
 
 body.darkmode .botaodk:hover{
     background-color: var(--cor_secundaria);
+}
+
+body.darkmode .cadastroH{
+    background-color: var(--cor_secundaria);
+    border-color: var(--cor_secundaria);
+}
+
+body.darkmode .entrarH{
+    border-color: var(--cor_secundaria);
+}
+
+body.darkmode .entrarH:hover{
+    background-color: var(--cor_secundaria)
 }
