@@ -30,11 +30,11 @@ h1, h2, h3, h4 {
 .fitunity {
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 .logo{
-    width: 80px;
+    width: 70px;
     border-radius: 100%;
 }
 
@@ -107,11 +107,13 @@ header{
     background-color: var(--cor_primaria);
 }
 
+
+
 /*Personalisação do footer*/
 footer{
     background-color: var(--CP_darkmode);
     display: flex;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 footer img{

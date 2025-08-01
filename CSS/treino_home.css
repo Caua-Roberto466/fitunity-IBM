@@ -1,0 +1,61 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
+}
+
+#treinolink{
+    color: var(--CS_darkmode);
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.intro{
+    width: 500px;
+    border: var(--borda);
+    font-size: 22px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    padding-left: 9px;
+    margin-bottom: 80px;
+}
+
+.tcasa{
+    margin-top: 100px;
+    width: 600px;
+    border: var(--borda);
+    display: block;
+    margin: auto;
+}
+
+.tcasa img{
+    width: 100px;
+}
+
+.containerTCasa{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Modo noturno*/
+body.darkmode .intro{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .tcasa{
+    border-color: var(--CP_darkmode);
+}
