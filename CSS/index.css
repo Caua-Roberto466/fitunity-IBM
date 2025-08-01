@@ -7,13 +7,15 @@
     --BKG_darkmode: #303030;
 
     --Border_radius: 45px;
-    --box-shadow: rgba(0, 0, 0, 0.514);
-    --tamanho_fonte: 22px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
 }
 
 .entrar-link{
     display: block;
-    width: 780px;
+    width: 7500px;
     margin: 0 auto;
     padding-top: 100px;
     margin-bottom: 80px;
@@ -21,7 +23,7 @@
 
 .SN_home{
     font-size: 3rem;
-    width: 780px;
+    width: 750px;
     display: block;
     margin: 0 auto;
 
@@ -33,7 +35,7 @@ h3{
 }
 
 .NS_texto{
-    width: 660px;
+    width: 610px;
     border: 0.8px var(--cor_secundaria) solid;
     border-radius: 30px;
     margin: auto;
@@ -49,7 +51,7 @@ section{
 }
 
 section img{
-    width: 180px;
+    width: 170px;
 }
 
 .Beneficio_site{
@@ -57,7 +59,7 @@ section img{
 }
 
 .Casa{
-    width: 198px;
+    width: 178px;
     border: 0.8px var(--cor_secundaria) solid;
     padding-left: 10px;
     padding-right: 10px;
@@ -71,7 +73,7 @@ section img{
 }
 
 .T_online{
-   width: 198px;
+   width: 178px;
    border: 0.8px var(--cor_primaria) solid;
    padding-left: 10px; 
    margin-right: 60px;
@@ -82,7 +84,7 @@ section img{
 }
 
 .Dieta{
-   width: 198px;
+   width: 178px;
    border: 0.8px var(--cor_primaria) solid;
    padding-left: 10px; 
 }
@@ -155,3 +157,22 @@ section img{
     font-size: 17px;
 }
 
+body.darkmode .NS_texto{
+    border: 0.8px var(--CP_darkmode) solid;
+}
+
+body.darkmode .Casa{
+    border: 0.8px var(--CP_darkmode) solid;
+}
+
+body.darkmode .T_online{
+    border: 0.8px var(--CP_darkmode) solid;
+}
+
+body.darkmode .Dieta{
+    border: 0.8px var(--CP_darkmode) solid;
+}
+
+body.darkmode .ops{
+    border: 0.8px var(--CP_darkmode) solid;
+}

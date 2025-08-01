@@ -7,8 +7,10 @@
     --BKG_darkmode: #303030;
 
     --Border_radius: 45px;
-    --box-shadow: rgba(0, 0, 0, 0.3);
-    --tamanho_fonte: 22px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
 }
 
 *{
@@ -109,7 +111,7 @@ header{
 footer{
     background-color: var(--CP_darkmode);
     display: flex;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 footer img{
@@ -193,4 +195,15 @@ body.darkmode .entrarH{
 
 body.darkmode .entrarH:hover{
     background-color: var(--cor_secundaria)
+}
+
+body.darkmode p{
+    color: #fff;
+}
+
+body.darkmode h1,
+body.darkmode h2,
+body.darkmode h3,
+body.darkmode h4 {
+    color: #fff;
 }

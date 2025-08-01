@@ -1,0 +1,330 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
+}
+
+.historia-box{
+    width: 600px;
+    border: var(--borda);
+    box-shadow: var(--box-shadow);
+    display: block;
+    margin: auto;
+    padding: 7px;
+    margin-bottom: 25px;
+}
+
+.MVV{
+    width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/*Personalização do card de missão*/
+.ContainerMissao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgMVV{
+    width: 250px;
+    margin-left: 20px;
+}
+
+.Missao-card{
+    width: 200px;
+    border: var(--borda);
+    margin-right: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.Missao-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.Missao-card p{
+    padding: 8px;
+}
+
+/*Personalização do card de valores*/
+.ContainerValores{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.Valores-card{
+    width: 200px;
+    border: var(--borda);
+    margin-right: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.Valores-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.Valores-card p{
+    padding: 8px;
+}
+
+/*Personalização do car de visão*/
+.ContainerVisao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.Visao-card{
+    width: 200px;
+    border: var(--borda);
+    margin-right: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.Visao-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.Visao-card p{
+    padding: 8px;
+}
+
+.Objetivo-box{
+    width: 570px;
+    border: var(--borda);
+    display: block;
+    margin: auto;
+    padding-left: 7px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 70px;
+}
+
+.nossa-equipe{
+    display: block;
+    margin: auto;
+    width: 550px;
+}
+
+.Equipe1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Caio-card{
+    width: 220px;
+    border: var(--borda);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.Caio-card p{
+    padding: 7px;
+}
+
+.Caio-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 17px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 27px;
+}
+
+.Caua-card{
+    width: 220px;
+    border: var(--borda);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.Caua-card p{
+    padding: 7px;
+}
+
+.Caua-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 17px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 27px;
+}
+
+.Equipe2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Claudia-card{
+    width: 220px;
+    border: var(--borda);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    margin-top: 40px;
+}
+
+.Claudia-card p{
+    padding: 7px;
+}
+
+.Claudia-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 17px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 27px;
+}
+
+.Guilherme-card{
+    width: 220px;
+    margin-top: 40px;
+    border: var(--borda);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.Guilherme-card p{
+    padding: 7px;
+}
+
+.Guilherme-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 17px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 27px;
+}
+
+.Equipe3{
+    display: block;
+    width: 220px;
+    margin: auto;
+}
+
+.Heloisa-card{
+    margin-top: 40px;
+    width: 220px;
+    border: var(--borda);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.Heloisa-card p{
+    padding: 7px;
+}
+
+.Heloisa-card h4{
+    background-color: var(--cor_secundaria);
+    color: #fff;
+    margin: 0;
+    padding: 17px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 27px;
+}
+
+#SNlink{
+    color: var(--CS_darkmode);
+}
+
+/*Modo noturno*/
+body.darkmode .historia-box{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Missao-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Missao-card h4{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .Visao-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Visao-card h4{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .Valores-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Valores-card h4{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .Objetivo-box{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Caio-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Caio-card h4{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .Caua-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Caua-card h4{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .Claudia-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Claudia-card h4{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .Guilherme-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Guilherme-card h4{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .Heloisa-card{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .Heloisa-card h4{
+    background-color: var(--CP_darkmode);
+}
