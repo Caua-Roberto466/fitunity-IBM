@@ -30,11 +30,11 @@ h1, h2, h3, h4 {
 .fitunity {
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .logo{
-    width: 70px;
+    width: 60px;
     border-radius: 100%;
 }
 
@@ -42,8 +42,8 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    flex-wrap: wrap;
+    padding: 5px 10px; /* menor altura */
+    flex-wrap: nowrap; /* evita quebra */
 }
 
 .Empresa {
@@ -54,7 +54,7 @@ h1, h2, h3, h4 {
 
 .botaodk{
     background-color: transparent;
-    font-size: var(--tamanho_fonte);
+    font-size: 16px;
     padding: 7px;
     border-radius: var(--Border_radius);
     border: var(--CP_darkmode) solid;
@@ -73,7 +73,7 @@ header a{
     color: white;
     overflow: hidden;
     text-decoration: none;
-    font-size: var(--tamanho_fonte);
+    font-size: 16px;
 }
 
 .Hlinks{
@@ -82,11 +82,11 @@ header a{
 
 .cadastroH{
     color: white;
-    padding: 9px;
+    padding: 7px;
     background-color: var(--CP_darkmode);
     border: var(--CP_darkmode) solid;
     border-radius: var(--Border_radius);
-    font-size: var(--tamanho_fonte);
+    font-size: 16px;
 }
 
 .entrarH{
@@ -95,12 +95,17 @@ header a{
     border: var(--CP_darkmode) solid;
     background-color: transparent;
     border-radius: var(--Border_radius);
-    font-size: var(--tamanho_fonte); 
+    font-size: 16px; 
 }
 
 .entrarH:hover{
     background-color: var(--CP_darkmode);
     transition: 0.4s;
+}
+
+.botaodk, .cadastroH, .entrarH {
+    padding: 4px 8px;
+    font-size: 14px;
 }
 
 header{

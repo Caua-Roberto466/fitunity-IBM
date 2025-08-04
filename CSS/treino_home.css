@@ -40,15 +40,45 @@ h1{
     border: var(--borda);
     display: block;
     margin: auto;
+    box-shadow: var(--box-shadow);
 }
 
-.tcasa img{
+.containerTCasa img{
     width: 100px;
 }
 
 .containerTCasa{
     display: flex;
     justify-content: space-between;
+}
+
+.botaoT {
+    background-color: var(--cor_secundaria);
+    border: 1px var(--cor_secundaria) solid;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+
+    /* Centraliza o botão dentro da div */
+    margin: 20px auto 0 auto;
+}
+
+
+.botaoT a{
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.botaoT a:hover{
+    color: var(--CS_darkmode);
+    transition: 0.3s;
+}
+
+.tcasat p{
+    margin: 8px;
 }
 
 /*Modo noturno*/
@@ -58,4 +88,14 @@ body.darkmode .intro{
 
 body.darkmode .tcasa{
     border-color: var(--CP_darkmode);
+}
+
+body.darkmode .botaoT{
+    background-color: var(--CP_darkmode);
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .botaoT a:hover{
+    color: var(--cor_primaria);
+    transition: 0.3s;
 }
