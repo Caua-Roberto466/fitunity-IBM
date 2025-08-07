@@ -96,13 +96,18 @@ section img{
 .ops{
     border: 0.8px var(--cor_secundaria) solid;
     width: 650px;
-    display: block;
-    margin: auto;
+    display: flex;
+}
+
+.Elena {
+    margin-left: 11px;
+    margin-top: 11px;
+    width: 220px;
+    border: 2px var(--cor_secundaria) solid;
 }
 
 .Elena p{
-    margin-left: 11px;
-    margin-top: 11px;
+    margin: 7px;
 }
 
 .Perfil_elena{
@@ -112,7 +117,8 @@ section img{
 }
 
 .Perfil_elena img{
-    width: 80px;
+    width: 50px;
+    height: 50px;
     margin-right: 5px;
 }
 .Perfil_elena p{
