@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Arthur Ozório, Caio Novaes, Cauã Roberto, Claudia Vieira, Guilherme Araujo, Heloisa Silva">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/treino_home.css">
+    <link rel="stylesheet" href="../CSS/entrar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap" rel="stylesheet">
 
-    <title>Treinos</title>
+    <title>Entrar</title>
 </head>
 <body>
     <header>
@@ -22,35 +22,36 @@
             </div>
             <nav class="links-header">
 
-                <a href="perfil" class="Hlinks"><b>Perfil</b></a>
+                <a href="perfil.html" class="Hlinks"><b>Perfil</b></a>
                 <a href="sobre-nos.html" class="Hlinks"><b>Sobre nós</b></a>
                 <a href="#" class="Hlinks"><b>Dieta</b></a>
                 <a href="#" class="Hlinks" id="treinolink"><b>Treino</b></a>
                 <button id="toggle-dark" class="botaodk"><b>Modo noturno</b></button>
-                <button class="entrarH"><a href="entrar.html" class="Elink"><b>Entrar</b></a></button>
+                <button class="entrarH"><a href="#" class="Elink"><b>Entrar</b></a></button>
                 <button class="cadastroH"><a href="cadastro.html" class="Clink"><b>Cadastre-se</b></a></button>
             </nav>
         </div>
     </header>
 
-    <h1>Vamos começar!</h1>
-
-    <section class="intro">
-        <p>Escolha um tipo de treino e acompanhamento ideal para você</p>
-    </section>
-
-    <section class="tcasa">
-        <h3>Treinos para fazer em casa</h3>
-        <div class="containerTCasa">
-            <img src="../Imagens/Imagens_treino_home/T_casa.png" alt="">
-            <div class="tcasat">
-                <p>
-                    Sem academia, sem desculpas! Tenha acesso a treinos rápidos, eficazes e personalizados para fazer onde e quando quiser. Use o peso do próprio corpo, siga vídeos guiados e mantenha a rotina ativa sem sair de casa!
-                </p>
-                <button class="botaoT"><a href="#"><b>Veja algumas ideias</b></a></button>
-            </div>
+    <form id="formLogin">
+        <h3>Entrar</h3>
+        <div class="email">
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            <div id="erro-email" style="color: red; font-size: 14px; display: none; margin-top: 4px;"></div>
         </div>
-    </section>
+
+        <div class="senha">
+            <label for="senha">Senha</label><br>
+            <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+            <div id="erro-senha" style="color: red; font-size: 14px; display: none; margin-top: 4px;"></div>
+        </div>
+
+        <div class="envi">
+            <input type="submit" value="Entrar" id="enviar">
+        </div>
+        <p>Ainda não tem um conta? <a href="cadastro.html" class="cadastre">Cadastre-se</a></p>
+    </form>
 
     <footer>
         <div class="Coluna1">
@@ -100,6 +101,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../JavaScript/login.js"></script>
     <script src="../JavaScript/script.js"></script>
 </body>
 </html>

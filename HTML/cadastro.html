@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Ozório, Caio Novaes, Cauã Roberto, Claudia Vieira, Guilherme Araujo, Heloisa Silva">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Empresa">
+                <img src="../Imagens/Logo@.png" alt="Coração simulando batimentos cardiácos com halteres na ponta" class="logo">
+                <h2 class="fitunity">FitUnity</h2>
+            </div>
+            <nav class="links-header">
+
+                <a href="perfil.html" class="Hlinks"><b>Perfil</b></a>
+                <a href="sobre-nos.html" class="Hlinks"><b>Sobre nós</b></a>
+                <a href="#" class="Hlinks"><b>Dieta</b></a>
+                <a href="#" class="Hlinks" id="treinolink"><b>Treino</b></a>
+                <button id="toggle-dark" class="botaodk"><b>Modo noturno</b></button>
+                <button class="entrarH"><a href="entrar.html" class="Elink"><b>Entrar</b></a></button>
+                <button class="cadastroH"><a href="#" class="Clink"><b>Cadastre-se</b></a></button>
+            </nav>
+        </div>
+    </header>
+
+    <form action="#">
+        <h3>Cadastro</h3>
+        <div class="nome">
+            <label for="nome" class="nomeC">Nome completo</label> <br>
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+        </div>
+        <div class="email">
+            <label for="email" class="Email">Email</label> <br>
+            <input type="email" id="email" name="email" required placeholder="Email">
+            <div id="erro-email" style="color: red; font-size: 14px; display: none; margin-top: 4px;"></div> <!-- Mensagem de erro -->
+
+        </div>
+        <div class="senha">
+            <label for="senha" class="Senha">Senha</label> <br>
+            <input type="password" name="senha" id="senha" required placeholder="Senha">
+        </div>
+        <div class="pesoC">
+            <label for="peso-cad">Peso</label><br>
+            <input type="number" name="peso-cad" id="peso-cad" required placeholder="Coloque seu peso" step="any">
+        </div>
+        <div class="alturac">
+            <label for="altura">Altura</label><br>
+            <input type="number" name="alturac" id="alturac" placeholder="Coloque sua altura" step="any">
+        </div>
+        <div class="nascimento">
+            <label for="nasci">Data de nascimento</label><br>
+            <input type="date" name="nasci" id="nasci">
+        </div>
+        <div class="genero">
+            <label for="genero" class="Genero">Genêro (opicional)</label> <br>
+            <div class="radio">
+                <input type="radio" name="genero" id="masc" value="masculino">
+                <label for="genero" class="gen">Masculino</label>
+                <input type="radio" name="genero" id="femi" value="feminino">
+                <label for="genero" class="gen">Feminino</label>
+                <input type="radio" name="genero" id="outro" value="outro">
+                <label for="genero" class="gen">Outro</label>
+            </div>
+        </div>
+        <div class="estado">
+            <label for="estado">Estado</label> <br>
+            <select name="estado" id="estado" required>
+                <option value="selecione" selected>Selecione um estado</option>
+                <!--Norte-->
+                <option value="amazonas">Amazonas</option>
+                <option value="acre">Acre</option>
+                <option value="roraima">Roraima</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="amapa">Amapá</option>
+                <option value="para">Pará</option>
+                <option value="tocantins">Tocantins</option>
+                <!--Nordeste-->
+                <option value="alagoas">Alagoas</option>
+                <option value="piaui">Piauí</option>
+                <option value="bahia">Bahia</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="ceara">Ceará</option>
+                <option value="rio_grande_norte">Rio Grande do Norte</option>
+                <option value="paraiba">Paraíba</option>
+                <!--sul-->
+                <option value="parana">Paraná</option>
+                <option value="santa_catarina">Santa Catarina</option>
+                <option value="rio_grande_sul">Rio Grande do Sul</option>
+                <!--Sudeste-->
+                <option value="sao_paulo">São Paulo</option>
+                <option value="rio-janeiro">Rio de Janeiro</option>
+                <option value="minas_gerais">Minas Gerais</option>
+                <option value="espirito_santo">Espirito Santo</option>
+                <!--Centro-Oeste-->
+                <option value="mato_grosso">Mato Grosso</option>
+                <option value="mato_grosso_sul">Mato Grosso do Sul</option>
+                <option value="goias">Goiás</option>
+                <option value="destritio_federal">Destrito Federal</option>
+            </select>
+        </div>
+        
+        <div class="envi">
+            <input type="submit" value="Enviar" id="enviar">
+        </div>
+
+        <p>Já tem uma conta? <a href="entrar.html" class="entre">Entrar</a></p>
+        <p>Já atua na área? <a href="cadastro-profissional.html" class="entre">Cadastre-se como profissional</a></p>
+    </form>
+
+
+    <footer>
+        <div class="Coluna1">
+            <div class="Empresa">
+                <img src="../Imagens/Logo@.png" alt="">
+                <h2 class="fitunity_footer">FitUnity</h2>
+            </div>
+            <div class="Redes_sociais">
+                <h4>Redes Sociais</h4>
+                <p>@fitunityoficial</p>
+                <p>@fitunity_oficial</p>
+                <p>@fitunity_saude</p>
+            </div>
+            
+        </div>
+        <div class="Coluna2">
+            <div class="Navegação">
+                <h4>Navegação</h4>
+                <a href="#">Cadastre-se</a>
+                <br>
+                <a href="#">Entrar</a>
+                <br>
+                <a href="#">Treino</a>
+                <br>
+                <a href="#">Dieta</a>
+                <br>
+                <a href="#">Perfil</a>
+                <br>
+                <a href="sobre-nos.html">Sobre Nós</a>
+            </div>
+        </div>
+        <div class="Coluna3">
+            <div class="Termos">
+                <h4>Termos de uso</h4>
+                <p>Direitos e Obrigações</p>
+                <p>Uso permitido e proibido</p>
+                <p>Privacidade e proteção de dados</p>
+                <p>Responsabilidades e limitações</p>
+            </div>
+        </div>
+        <div class="Coluna4">
+            <div class="Contatos">
+                <h4>Contatos</h4>
+                <p>fitunity@gmail.com</p>
+                <p>+55 (11) 99125-7278</p>
+                <p>5005-8989</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/cadastro.js"></script>
+</body>
+</html>

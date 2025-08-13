@@ -1,0 +1,203 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
+}
+
+form{
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px var(--cor_primaria) solid;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+form h3{
+    margin: 0;
+    background-color: var(--cor_primaria);
+    color: white;
+    padding: 14px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    font-size: 37px;
+}
+
+.nome{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#nome{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.email{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#email{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.senha{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#senha{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.peso{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#peso-cad{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.alturac{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#alturac{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.nascimento{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#nasci{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+
+label{
+    font-size: 22px;
+    color: #3f3f3f;
+}
+
+.genero{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gen{
+    font-size: 18px;
+}
+
+.radio {
+  border: 2px var(--cor_secundaria) solid;
+  border-radius: 9px;
+  width: 300px;
+  margin: 8px auto; /* centraliza horizontalmente */
+  padding: 3px;
+  display: flex;
+  justify-content: space-around; /* espaça os radios igualmente */
+  align-items: center;
+  flex-wrap: wrap; /* caso fique apertado em telas pequenas */
+}
+
+.estado{
+    margin-bottom: 20px;
+}
+
+#estado{
+    width: 250px;
+    background-color: transparent;
+    border: 2px var(--cor_secundaria) solid;
+    height: 30px;
+    border-radius: 9px;
+}
+
+.menssagem{
+    margin-bottom: 20px;
+}
+
+#menssagem{
+    width: 300px;
+    height: 200px;
+    resize: none;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.envi{
+    margin-bottom: 10px;
+}
+
+#enviar{
+    color: #3f3f3f;
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    border: 2px var(--CP_darkmode) solid;
+    border-radius: 9px;
+    font-size: 20px;
+}
+
+#enviar:hover{
+    background-color: var(--CP_darkmode);
+    color: white;
+    transition: 0.3s;
+}
+
+option{
+    font-size: 18px;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+select{
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+.entre{
+    color: var(--cor_primaria);
+    text-decoration: none;
+    overflow: hidden;
+}

@@ -1,0 +1,127 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+    --cor_texto: rgba(0, 0, 0, 0.2)
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
+}
+
+main{
+    width: 620px;
+    margin: auto;
+    border: 2px var(--cor_primaria) solid;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+h2{
+    margin: 0%;
+    color: white;
+    background-color: var(--cor_primaria);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Perfil do usuário a esquerda*/
+.info-user img{
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+#nome-user{
+    color: var(--cor_texto);
+    font-size: 25px;
+    margin-left: 5px;
+    display: flex;
+    align-self: center;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+#id-user{
+   color: var(--cor_texto);
+    font-size: 20px;
+    margin-left: 40px;
+    display: flex;
+    align-self: center; 
+}
+
+/*dados do usuário a direita*/
+.dados-user{
+    margin-right: 22px;
+}
+
+.dados-user h3{
+    color: var(--cor_texto);
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+/*Estilização da parte do peso*/
+.peso{
+    border-radius: 9px;
+    border: 2px var(--cor_secundaria) solid;
+    width: 300px;
+}
+
+#peso-user{
+    font-size: 16px;
+    color: rgba(0,0,0,0.3);
+    margin: 5px;
+}
+
+/*Estilização da parte da altura*/
+.altura{
+    border-radius: 9px;
+    border: 2px var(--cor_secundaria) solid;
+    width: 300px;
+}
+
+#altura-user{
+    font-size: 16px;
+    color: rgba(0,0,0,0.3);
+    margin: 5px;
+}
+
+/*Estilização da parte da idade*/
+.idade{
+    border-radius: 9px;
+    border: 2px var(--cor_secundaria) solid;
+    width: 300px;
+}
+
+#idade-user{
+    font-size: 16px;
+    color: rgba(0,0,0,0.3);
+    margin: 5px;
+}
+
+/*Estilização da parte do IMC*/
+.imc{
+    border-radius: 9px;
+    border: 2px var(--cor_secundaria) solid;
+    width: 300px;
+    margin-bottom: 11px;
+}
+
+#imc-user{
+    font-size: 15px;
+    color: rgba(0,0,0,0.3);
+    margin: 5.5px;
+}

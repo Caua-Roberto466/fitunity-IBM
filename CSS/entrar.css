@@ -1,0 +1,106 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
+}
+
+form{
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px var(--cor_primaria) solid;
+    border-radius: 20px;
+    text-align: center;
+}
+
+form h3{
+    margin: 0;
+    background-color: var(--cor_primaria);
+    color: white;
+    padding: 14px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    font-size: 37px;
+}
+
+.nome{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#nome{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.email{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#email{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+.senha{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#senha{
+    width: 250px;
+    height: 30px;
+    border: 2px var(--cor_secundaria) solid;
+    border-radius: 9px;
+}
+
+label{
+    font-size: 22px;
+    color: #3f3f3f;
+}
+
+.envi{
+    margin-bottom: 10px;
+}
+
+#enviar{
+    color: #3f3f3f;
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    border: 2px var(--cor_primaria) solid;
+    border-radius: 9px;
+    font-size: 20px;
+}
+
+#enviar:hover{
+    background-color: var(--cor_primaria);
+    color: white;
+    transition: 0.3s;
+}
+
+.cadastre{
+    color: var(--cor_primaria);
+    text-decoration: none;
+    overflow: hidden;
+}
