@@ -56,12 +56,14 @@ h1, h2, h3, h4 {
     background-color: transparent;
     font-size: 16px;
     padding: 7px;
-    border-radius: var(--Border_radius);
+    border-radius: 12px;
     border: var(--CP_darkmode) solid;
     outline: none; /*remove o contorno extra ao focar*/
     box-shadow: none; /*Remove as sombras*/
     border-color: var(--CP_darkmode);
     color: white;
+    margin-right: 8px;
+    margin-left: 10px;
 }
 
 .botaodk:hover{
@@ -77,7 +79,7 @@ header a{
 }
 
 .Hlinks{
-    margin-left: 9px;
+    margin-left: 10px;
 }
 
 .cadastroH{
@@ -85,7 +87,7 @@ header a{
     padding: 7px;
     background-color: var(--CP_darkmode);
     border: var(--CP_darkmode) solid;
-    border-radius: var(--Border_radius);
+    border-radius: 12px;
     font-size: 16px;
 }
 
@@ -94,8 +96,9 @@ header a{
     padding: 9px;
     border: var(--CP_darkmode) solid;
     background-color: transparent;
-    border-radius: var(--Border_radius);
+    border-radius: 12px;
     font-size: 16px; 
+    margin-right: 8px;
 }
 
 .entrarH:hover{

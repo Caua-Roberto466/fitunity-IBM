@@ -112,8 +112,8 @@ section img{
 
 
 .Pessoa {
-    margin-left: 11px;
-    margin-top: 11px;
+    margin-left: 19px;
+    margin-top: 20px;
     width: 250px;
     border: 2px var(--cor_secundaria) solid;
     border-radius: 20px;
@@ -123,6 +123,22 @@ section img{
     margin: 7px;
     font-size: 15px;
 }
+
+
+.Pessoa:hover{
+    width: 280px;
+    margin-left: 22px;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s;
+}
+
+
+/* e coloca isso */
+.Pessoa:hover p {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
 
 .Perfil_pessoa{
     display: flex;
