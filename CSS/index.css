@@ -93,75 +93,58 @@ section img{
     font-size: 20px;
 }
 
-.ops{
-    border: 0.8px var(--cor_secundaria) solid;
-    width: 650px;
+.outras-op {
+    width: 100%;
+    margin: auto;
     display: flex;
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
+    margin-bottom: 50px;
 }
 
-.Elena {
+.ops {
+    display: flex;
+    justify-content: center; /* centraliza os itens dentro */
+    flex-wrap: wrap; /* para quebrar linha caso tenha mais opiniões */
+    gap: 20px; /* espaçamento entre opiniões */
+    width: 100%; /* ocupa toda a largura disponível */
+    max-width: 900px; /* limite máximo para não ficar esticado demais */
+}
+
+
+.Pessoa {
     margin-left: 11px;
     margin-top: 11px;
-    width: 220px;
+    width: 250px;
     border: 2px var(--cor_secundaria) solid;
+    border-radius: 20px;
 }
 
-.Elena p{
+.Pessoa p{
     margin: 7px;
+    font-size: 15px;
 }
 
-.Perfil_elena{
+.Perfil_pessoa{
     display: flex;
     margin-left: 10px;
     margin-top: 10px;
 }
 
-.Perfil_elena img{
+.Perfil_pessoa img{
     width: 50px;
     height: 50px;
     margin-right: 5px;
 }
-.Perfil_elena p{
-    font-size: 17px;
+.Perfil_pessoa p{
+    font-size: 14px;
 }
 
-.Carlos p{
-    margin-left: 11px;
-    margin-top: 11px;
+.estrela-critica {
+    width: 25px !important;
+    height: auto !important;
+    margin: 0px;
 }
 
-.Perfil_carlos{
-    display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.Perfil_carlos img{
-    width: 80px;
-    margin-right: 5px;
-}
-.Perfil_carlos p{
-    font-size: 17px;
-}
-
-.Lucas p{
-    margin-left: 11px;
-    margin-top: 11px;
-}
-
-.Perfil_lucas{
-    display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.Perfil_lucas img{
-    width: 80px;
-    margin-right: 5px;
-}
-.Perfil_lucas p{
-    font-size: 17px;
-}
 
 body.darkmode .NS_texto{
     border: 0.8px var(--CP_darkmode) solid;
@@ -179,6 +162,6 @@ body.darkmode .Dieta{
     border: 0.8px var(--CP_darkmode) solid;
 }
 
-body.darkmode .ops{
+body.darkmode .Pessoa{
     border: 0.8px var(--CP_darkmode) solid;
 }
