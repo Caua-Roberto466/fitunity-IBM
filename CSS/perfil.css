@@ -42,10 +42,11 @@ h2{
 }
 
 /*Perfil do usuário a esquerda*/
-.info-user img{
+.foto-user{
     border: 1px var(--cor_secundaria) solid;
     border-radius: 100%;
     margin: 8px;
+    margin-bottom: 2px;
 }
 
 #nome-user{
@@ -63,6 +64,18 @@ h2{
     margin-left: 40px;
     display: flex;
     align-self: center; 
+}
+
+#editar{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#editar img{
+    width: 20px;
+    height: 20px;
 }
 
 /*dados do usuário a direita*/
@@ -140,6 +153,9 @@ body.darkmode .info-user-text {
     color: white !important;
 }
 
+.xpHud{
+    margin: 10px;
+}
 
 .meta {
     background: transparent;
