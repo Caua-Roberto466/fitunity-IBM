@@ -5,7 +5,6 @@
     --CP_darkmode: #213872;
     --CS_darkmode: #0e2555;
     --BKG_darkmode: #303030;
-    --cor_texto: rgba(0, 0, 0, 0.2)
 
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
@@ -50,7 +49,7 @@ h2{
 }
 
 #nome-user{
-    color: var(--cor_texto);
+    color: black;
     font-size: 25px;
     margin-left: 5px;
     margin-bottom: 10px;
@@ -59,7 +58,7 @@ h2{
 }
 
 #id-user{
-   color: var(--cor_texto);
+   color: black;
     font-size: 20px;
     margin-left: 40px;
     display: flex;
@@ -72,7 +71,7 @@ h2{
 }
 
 .dados-user h3{
-    color: var(--cor_texto);
+    color: #303030;
     font-size: 26px;
     margin-bottom: 0px;
 }
@@ -130,8 +129,20 @@ h2{
     margin: 5.5px;
 }
 
+.info-user-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black !important;
+}
+
+body.darkmode .info-user-text {
+    color: white !important;
+}
+
+
 .meta {
-    background: white;
+    background: transparent;
     padding: 10px;
     margin: 10px 0;
     border-radius: 20px;
@@ -139,7 +150,7 @@ h2{
     width: 600px;
     border: 2px var(--cor_primaria) solid;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .metas-usuario{
@@ -161,7 +172,7 @@ h2{
 .progress-bar {
     height: 100%;
     width: 0%;
-    background: linear-gradient(to right, #00c3ff, #1da3b8);
+    background: linear-gradient(to right, var(--cor_primaria), var(--cor_secundaria));
     text-align: center;
     color: white;
     line-height: 25px;
@@ -169,7 +180,7 @@ h2{
     transition: width 0.3s ease;
 }
 
-button {
+.button {
     padding: 5px 10px;
     cursor: pointer;
     margin-top: 5px;
@@ -179,7 +190,7 @@ button {
     margin-left: 10px;
 }
 
-button:hover{
+.button:hover{
     background-color: var(--CP_darkmode);
     color: white;
     transition: 0.3s;
@@ -191,4 +202,69 @@ input {
     border: 2px var(--cor_primaria) solid;
     margin-left: 10px;
     border-radius: 8px;
+    background-color: transparent;
+}
+
+/*Modo noturno*/
+
+body.darkmode #nome-user{
+    color: white;
+}
+
+body.darkmode main{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .h2{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode #id-user{
+    color: white;
+}
+
+body.darkmode .peso{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .altura{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .idade{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .imc{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode input{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .info-user-text{
+    color: white;
+}
+
+body.darkmode button{
+    border-color: var(--cor_primaria);
+    color: white;
+}
+
+body.darkmode button:hover{
+    background-color: var(--cor_primaria);
+    transition: 0.3s;
+}
+
+body.darkmode .meta{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .progress-bar{
+    background: linear-gradient(to right, var(--CP_darkmode), var(--CS_darkmode));
+}
+
+body.darkmode strong{
+    color: white;
 }

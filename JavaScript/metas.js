@@ -1,6 +1,14 @@
-let metas = JSON.parse(localStorage.getItem("metas")) || [
-    { nome: "Entrar 15 dias seguidos", atual: 0, total: 15 }
-];
+let metasSalvas = JSON.parse(localStorage.getItem("metas"));
+
+if (!metasSalvas || metasSalvas.length === 0) {
+    metasSalvas = [
+        { nome: "Entrar 30 dias seguidos", atual: 0, total: 30 },
+        { nome: "Realizar 15 treinos", atual: 0, total: 15}
+    ];
+}
+
+let metas = metasSalvas;
+
 
 function salvarMetas() {
     localStorage.setItem("metas", JSON.stringify(metas));
@@ -22,8 +30,8 @@ function renderMetas() {
             </div>
             <p>${meta.atual} / ${meta.total}</p>
             <input type="number" id="incremento-${index}" placeholder="Adicionar valor" min="1">
-            <button onclick="incrementarMeta(${index})">Atualizar</button>
-            <button onclick="removerMeta(${index})" style="background:red;color:white;">Remover</button>
+            <button onclick="incrementarMeta(${index})" class="button">Atualizar</button>
+            <button onclick="removerMeta(${index})" class="button" style="background:red;color:white;">Remover</button>
         `;
 
         lista.appendChild(div);
