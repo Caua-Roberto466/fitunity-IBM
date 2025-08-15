@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas de Progresso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .meta {
+            background: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .progress-container {
+            width: 100%;
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 25px;
+            margin: 5px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(to right, #00c3ff, #1da3b8);
+            text-align: center;
+            color: white;
+            line-height: 25px;
+            font-weight: bold;
+            transition: width 0.3s ease;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        input {
+            padding: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Minhas Metas</h2>
+
+    <div id="listaMetas"></div>
+
+    <hr>
+    <h3>Adicionar nova meta personalizada</h3>
+    <input type="text" id="nomeMeta" placeholder="Ex: Perder 10 kg">
+    <input type="number" id="valorMeta" placeholder="Valor total">
+    <button onclick="adicionarMeta()">Adicionar Meta</button>
+
+    <script>
+        let metas = JSON.parse(localStorage.getItem("metas")) || [
+            { nome: "Entrar 15 dias seguidos", atual: 0, total: 15 }
+        ];
+
+        function salvarMetas() {
+            localStorage.setItem("metas", JSON.stringify(metas));
+        }
+
+        function renderMetas() {
+            const lista = document.getElementById("listaMetas");
+            lista.innerHTML = "";
+
+            metas.forEach((meta, index) => {
+                const porcentagem = Math.min((meta.atual / meta.total) * 100, 100).toFixed(1);
+
+                const div = document.createElement("div");
+                div.className = "meta";
+                div.innerHTML = `
+                    <strong>${meta.nome}</strong>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width:${porcentagem}%">${porcentagem}%</div>
+                    </div>
+                    <p>${meta.atual} / ${meta.total}</p>
+                    <input type="number" id="incremento-${index}" placeholder="Adicionar valor" min="1">
+                    <button onclick="incrementarMeta(${index})">Atualizar</button>
+                    <button onclick="removerMeta(${index})" style="background:red;color:white;">Remover</button>
+                `;
+
+                lista.appendChild(div);
+            });
+        }
+
+        function incrementarMeta(index) {
+            const input = document.getElementById(`incremento-${index}`);
+            let valor = parseFloat(input.value);
+            if (!isNaN(valor) && valor > 0) {
+                metas[index].atual += valor;
+                if (metas[index].atual > metas[index].total) {
+                    metas[index].atual = metas[index].total;
+                }
+                input.value = "";
+                salvarMetas();
+                renderMetas();
+            }
+        }
+
+        function adicionarMeta() {
+            const nome = document.getElementById("nomeMeta").value;
+            const valor = parseFloat(document.getElementById("valorMeta").value);
+
+            if (nome.trim() && !isNaN(valor) && valor > 0) {
+                metas.push({ nome: nome.trim(), atual: 0, total: valor });
+                document.getElementById("nomeMeta").value = "";
+                document.getElementById("valorMeta").value = "";
+                salvarMetas();
+                renderMetas();
+            }
+        }
+
+        function removerMeta(index) {
+            metas.splice(index, 1);
+            salvarMetas();
+            renderMetas();
+        }
+
+        renderMetas();
+    </script>
+
+</body>
+</html>

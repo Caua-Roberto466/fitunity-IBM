@@ -34,7 +34,7 @@
     </header>
 
     <main>
-        <h2>Seu perfil</h2>
+        <h2 class="h2">Seu perfil</h2>
         <section class="conteudo">
             <div class="info-user">
                 <img src="../Imagens/foto de usuario 1.png" alt="coloque sua foto de usuário aqui" width="200px">
@@ -69,8 +69,22 @@
             </div>
         </section>
     </main>
+
+    <h2>Minhas Metas</h2>
+
+    <div id="listaMetas"></div>
+
+    
+    <h3>Adicionar nova meta personalizada</h3>
+    <div class="metas-usuario">
+        <input type="text" id="nomeMeta" placeholder="Ex: Perder 10 kg">
+        <input type="number" id="valorMeta" placeholder="Valor total">
+        <button onclick="adicionarMeta()">Adicionar Meta</button>
+    </div>
+
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/cadastro.js"></script>
     <script src="../JavaScript/perfil.js"></script>
+    <script src="../JavaScript/metas.js"></script>
 </body>
 </html>

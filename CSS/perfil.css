@@ -20,9 +20,14 @@ main{
     border: 2px var(--cor_primaria) solid;
     border-radius: 20px;
     margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 h2{
+    margin-bottom: 30px;
+}
+
+.h2{
     margin: 0%;
     color: white;
     background-color: var(--cor_primaria);
@@ -123,4 +128,67 @@ h2{
     font-size: 15px;
     color: rgba(0,0,0,0.3);
     margin: 5.5px;
+}
+
+.meta {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    width: 600px;
+    border: 2px var(--cor_primaria) solid;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.metas-usuario{
+    width: 600px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25px;
+    margin: 5px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #00c3ff, #1da3b8);
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    font-weight: bold;
+    transition: width 0.3s ease;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    border: 2px var(--CP_darkmode) solid;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: var(--CP_darkmode);
+    color: white;
+    transition: 0.3s;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+    border: 2px var(--cor_primaria) solid;
+    margin-left: 10px;
+    border-radius: 8px;
 }
