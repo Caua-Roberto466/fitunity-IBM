@@ -1,0 +1,116 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
+}
+
+h1{
+    margin-top: 4rem;
+}
+
+main{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+section{
+    width: 35%;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 30px;
+    margin: 2%;
+    height: 894px;
+}
+
+section h2{
+    font-size: 25px;
+}
+
+section .publico{
+    margin-left: 11px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+section p{
+    margin: 7px;
+    margin-left: 11px;
+    font-size: 13px;
+    margin-bottom: 1.4rem;
+    margin-top: 1.4rem;
+}
+
+section h3{
+    text-align: left;
+    margin-left: 11px;
+    margin-bottom: 10px;
+}
+
+del{
+    margin-left: 11px;
+    font-size: 18px;
+}
+
+span{
+    color: #00ff10;
+    font-size: 13px;
+    margin: 0;
+}
+
+.preco{
+    margin: 15px;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 4rem;
+}
+
+.Contratar{
+    width: 59%;
+    background-color: var(--cor_primaria);
+    border: none;
+    border-radius: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 18px;
+    height: 40px;
+    margin-bottom: 3rem;
+}
+
+ul {
+  list-style: none;       /* remove as bolinhas padrão */
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.2em;    /* espaço pro ícone */
+  margin-right: 0;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  font-family: 'Open Sans';
+}
+
+ul li::before {
+  content: "";   /* obrigatório */
+  position: absolute;
+  left: 0;
+  top: 0.2em;                        /* joga pro meio vertical */
+  transform: none;     /* centraliza certinho */
+  width: 20px;                     /* tamanho fixo */
+  height: 20px;
+  background: url("../Imagens/Check-Mark.png") no-repeat center / contain;
+}
+
