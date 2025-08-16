@@ -9,7 +9,7 @@
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
     --tamanho_fonte: 19px;
-    --borda: 0.9px #1da3b8 solid;
+    --borda: 0.9px #00d9f8 solid;
     --borda-dk: 0.9px #213872 solid;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .Missao-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 15px;
@@ -75,7 +75,7 @@
 }
 
 .Valores-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 15px;
@@ -101,7 +101,7 @@
 }
 
 .Visao-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 15px;
@@ -149,7 +149,7 @@
 }
 
 .Caio-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 17px;
@@ -170,7 +170,7 @@
 }
 
 .Caua-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 17px;
@@ -197,7 +197,7 @@
 }
 
 .Claudia-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 17px;
@@ -219,7 +219,7 @@
 }
 
 .Guilherme-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 17px;
@@ -237,7 +237,7 @@
 .Heloisa-card{
     margin-top: 40px;
     width: 220px;
-    border: var(--borda);
+    border: var(--cor_primaria);
     border-radius: 20px;
     box-shadow: var(--box-shadow);
 }
@@ -247,7 +247,7 @@
 }
 
 .Heloisa-card h4{
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     color: #fff;
     margin: 0;
     padding: 17px;

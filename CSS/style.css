@@ -56,8 +56,8 @@ h1, h2, h3, h4 {
     background-color: transparent;
     font-size: 16px;
     padding: 7px;
-    border-radius: 12px;
-    border: var(--CP_darkmode) solid;
+    border-radius: 10px;
+    border: 2px var(--CP_darkmode) solid;
     outline: none; /*remove o contorno extra ao focar*/
     box-shadow: none; /*Remove as sombras*/
     border-color: var(--CP_darkmode);
@@ -94,9 +94,9 @@ header a{
 .entrarH{
     color: white;
     padding: 9px;
-    border: var(--CP_darkmode) solid;
+    border: 2px var(--CP_darkmode) solid;
     background-color: transparent;
-    border-radius: 12px;
+    border-radius: 10px;
     font-size: 16px; 
     margin-right: 8px;
 }
@@ -121,7 +121,7 @@ header{
 footer{
     background-color: var(--CP_darkmode);
     display: flex;
-    margin-top: 200px;
+    margin-top: 130px;
 }
 
 footer img{

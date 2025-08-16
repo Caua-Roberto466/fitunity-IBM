@@ -14,23 +14,23 @@
 }
 
 form{
-    width: 500px;
+    width: 30%;
     display: block;
     margin: auto;
     margin-top: 30px;
-    border: 2px var(--cor_primaria) solid;
-    border-radius: 20px;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 12px;
     text-align: center;
     margin-bottom: 70px;
 }
 
 form h3{
     margin: 0;
-    background-color: var(--cor_primaria);
-    color: white;
+    /*background-color: var(--cor_primaria);*/
+    color: #202020;
     padding: 14px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     text-align: center;
     font-size: 37px;
 }
@@ -42,10 +42,10 @@ form h3{
 }
 
 #nome{
-    width: 250px;
+    width: 55%;
     height: 30px;
-    border: 2px var(--cor_secundaria) solid;
-    border-radius: 9px;
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 5px;
 }
 
 .email{
@@ -55,10 +55,10 @@ form h3{
 }
 
 #email{
-    width: 250px;
+    width: 55%;
     height: 30px;
-    border: 2px var(--cor_secundaria) solid;
-    border-radius: 9px;
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 5px;
 }
 
 .senha{
@@ -69,10 +69,10 @@ form h3{
 
 
 #senha{
-    width: 250px;
+    width: 55%;
     height: 30px;
-    border: 2px var(--cor_secundaria) solid;
-    border-radius: 9px;
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 5px;
 }
 
 .peso{
@@ -82,10 +82,10 @@ form h3{
 }
 
 #peso-cad{
-    width: 250px;
+    width: 55%;
     height: 30px;
-    border: 2px var(--cor_secundaria) solid;
-    border-radius: 9px;
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 5px;
 }
 
 .alturac{
@@ -95,10 +95,10 @@ form h3{
 }
 
 #alturac{
-    width: 250px;
+    width: 55%;
     height: 30px;
-    border: 2px var(--cor_secundaria) solid;
-    border-radius: 9px;
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 5px;
 }
 
 .nascimento{
@@ -108,15 +108,15 @@ form h3{
 }
 
 #nasci{
-    width: 250px;
+    width: 55%;
     height: 30px;
-    border: 2px var(--cor_secundaria) solid;
-    border-radius: 9px;
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 5px;
 }
 
 
 label{
-    font-size: 22px;
+    font-size: 20px;
     color: #3f3f3f;
 }
 
@@ -126,12 +126,12 @@ label{
 }
 
 .gen{
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .radio {
-  border: 2px var(--cor_secundaria) solid;
-  border-radius: 9px;
+  border: 1px var(--cor_secundaria) solid;
+  border-radius: 5px;
   width: 300px;
   margin: 8px auto; /* centraliza horizontalmente */
   padding: 3px;
@@ -141,6 +141,7 @@ label{
   flex-wrap: wrap; /* caso fique apertado em telas pequenas */
 }
 
+/*
 .estado{
     margin-bottom: 20px;
 }
@@ -148,9 +149,9 @@ label{
 #estado{
     width: 250px;
     background-color: transparent;
-    border: 2px var(--cor_secundaria) solid;
+    border: 1px var(--cor_secundaria) solid;
     height: 30px;
-    border-radius: 9px;
+    border-radius: 5px;
 }
 
 .menssagem{
@@ -161,9 +162,10 @@ label{
     width: 300px;
     height: 200px;
     resize: none;
-    border: 2px var(--cor_secundaria) solid;
-    border-radius: 9px;
+    border: 1px var(--cor_secundaria) solid;
+    border-radius: 5px;
 }
+*/
 
 .envi{
     margin-bottom: 10px;
@@ -172,11 +174,11 @@ label{
 #enviar{
     color: #3f3f3f;
     background-color: transparent;
-    width: 100px;
+    width: 22%;
     height: 40px;
-    border: 2px var(--CP_darkmode) solid;
-    border-radius: 9px;
-    font-size: 20px;
+    border: 1px var(--CP_darkmode) solid;
+    border-radius: 7px;
+    font-size: 18px;
 }
 
 #enviar:hover{
