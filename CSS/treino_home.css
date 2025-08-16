@@ -22,80 +22,56 @@ h1{
     margin-bottom: 60px;
 }
 
-.intro{
-    width: 500px;
-    border: var(--borda);
-    font-size: 22px;
+main{
+    width: 65%;
     display: block;
     margin: auto;
-    border-radius: 25px;
-    box-shadow: var(--box-shadow);
-    padding-left: 9px;
-    margin-bottom: 80px;
 }
 
-.tcasa{
-    margin-top: 100px;
-    width: 600px;
-    border: var(--borda);
-    display: block;
-    margin: auto;
-    box-shadow: var(--box-shadow);
-}
-
-.containerTCasa img{
-    width: 100px;
-}
-
-.containerTCasa{
+.cards-treino{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
-.botaoT {
-    background-color: var(--cor_secundaria);
-    border: 1px var(--cor_secundaria) solid;
+.card-treino{
+    width: 32%;
+    height: 427px;
+    border: 1px var(--cor_primaria) solid;
+    margin: 3%;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.card-treino li{
+    font-size: 15px;
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+.card-treino p{
     font-size: 16px;
-    padding: 6px;
-    border-radius: 9px;
+    text-align: center;
+}
+
+.card-titulo {
     display: flex;
-    justify-content: center;
-
-    /* Centraliza o botão dentro da div */
-    margin: 20px auto 0 auto;
+    align-items: flex-start; /* mantém alinhado pelo topo (ou center se preferir) */
+    gap: 1px; /* espaço entre a imagem e o texto */
 }
 
-
-.botaoT a{
-    color: white;
-    overflow: hidden;
-    text-decoration: none;
+.card-titulo img {
+    width: 40px;      /* largura fixa */
+    height: 40px;     /* altura fixa */
+    flex-shrink: 0;   /* não deixa a imagem diminuir */
+    flex-grow: 0;     /* não deixa a imagem aumentar */
+    object-fit: contain; /* garante que não deforma */
+    margin-top: 12px;
+    margin-left: 5px;
 }
 
-.botaoT a:hover{
-    color: var(--CS_darkmode);
-    transition: 0.3s;
-}
-
-.tcasat p{
-    margin: 8px;
+.card-titulo h3{
+    font-size: 15px;
+    margin-right: 3px;
 }
 
 /*Modo noturno*/
-body.darkmode .intro{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .tcasa{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .botaoT{
-    background-color: var(--CP_darkmode);
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .botaoT a:hover{
-    color: var(--cor_primaria);
-    transition: 0.3s;
-}
