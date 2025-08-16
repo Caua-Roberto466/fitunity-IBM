@@ -29,7 +29,7 @@ section{
     border: 1px var(--cor_primaria) solid;
     border-radius: 30px;
     margin: 2%;
-    height: 894px;
+    height: 824px;
 }
 
 section h2{
@@ -77,6 +77,32 @@ span{
 
 .Contratar{
     width: 59%;
+    background-color: var(--CP_darkmode);
+    border: none;
+    border-radius: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 18px;
+    height: 40px;
+    margin-bottom: 3rem;
+}
+
+.Contratar2{
+    width: 59%;
+    background-color: var(--CP_darkmode);
+    border: none;
+    border-radius: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 18px;
+    height: 40px;
+    margin-bottom: 3rem;
+}
+
+.Contratar3{
+    width: 59%;
     background-color: var(--cor_primaria);
     border: none;
     border-radius: 45px;
@@ -87,6 +113,8 @@ span{
     height: 40px;
     margin-bottom: 3rem;
 }
+
+.bb{color: white;}
 
 ul {
   list-style: none;       /* remove as bolinhas padrão */
@@ -99,7 +127,7 @@ ul li {
   padding-left: 1.2em;    /* espaço pro ícone */
   margin-right: 0;
   margin-left: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-family: 'Open Sans';
 }
 
@@ -114,3 +142,59 @@ ul li::before {
   background: url("../Imagens/Check-Mark.png") no-repeat center / contain;
 }
 
+.plano-adaptado{
+    background-color: var(--cor_primaria);
+}
+
+.plano-avancado{
+    background-color: var(--CP_darkmode);
+}
+
+.plano-avancado h2{
+    color: white;
+}
+
+.plano-avancado p{
+    color: white;
+}
+
+.plano-avancado h3{
+    color: white;
+}
+
+.plano-avancado b{
+    color: white;
+}
+
+.plano-avancado ul li{
+    color: white;
+}
+
+/*modo noturno*/
+body.darkmode section{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode li{
+    color: white;
+}
+
+body.darkmode  del{
+    color: white;
+}
+
+body.darkmode b{
+    color: white;
+}
+
+body.darkmode .Contratar{
+    background-color: var(--CP_darkmode);
+}
+
+body.darkmode .plano-adaptado{
+    background-color: var(--cor_secundaria);
+}
+
+body.darkmode .plano-avancado{
+    background-color: var(--CS_darkmode);
+}
