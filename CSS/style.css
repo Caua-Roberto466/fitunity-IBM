@@ -187,7 +187,7 @@ body.darkmode header{
 }
 
 body.darkmode .botaodk{
-    border: var(--cor_secundaria) solid;
+    border: 2px var(--cor_secundaria) solid;
 }
 
 body.darkmode .botaodk:hover{
