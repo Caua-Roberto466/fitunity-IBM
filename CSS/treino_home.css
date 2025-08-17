@@ -74,6 +74,55 @@ main{
     margin-right: 3px;
 }
 
+.h2{
+    font-size: 40px;
+    margin-top: 3em;
+    margin-bottom: 2.4rem;
+}
+
+article{
+    width: 57%;
+    margin: auto;
+}
+
+.cards-dietas{
+    display: flex;
+}
+
+.card-dieta {
+    display: flex;
+    flex-direction: column; /* mantém título e texto embaixo */
+    align-items: center;   /* centraliza horizontalmente */
+    justify-content: flex-start; /* mantém tudo no topo */
+    width: 32%;
+    margin: 2%;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+}
+
+.card-dieta img {
+    width: 60px;
+    margin-top: 10px; /* opcional: espaço da borda */
+}
+
+.card-dieta p{
+    margin: 15px;
+    margin-bottom: 12px;
+}
+
+.p-plano{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 2.7em;
+}
+
+.a-plano{
+    color: var(--cor_primaria);
+    text-decoration: none;
+    overflow: hidden;
+}
+
 /*Modo noturno*/
 body.darkmode .card-treino{
     border-color: var(--CP_darkmode);
@@ -81,4 +130,12 @@ body.darkmode .card-treino{
 
 body.darkmode .card-treino li{
     color: white;
+}
+
+body.darkmode .card-dieta{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .a-plano{
+    color: var(--CP_darkmode);
 }
