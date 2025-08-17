@@ -1,142 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metas de Progresso</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: auto;
-            background: #f4f4f4;
-            padding: 20px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        .meta {
-            background: white;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 8px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .progress-container {
-            width: 100%;
-            background: #ddd;
-            border-radius: 20px;
-            overflow: hidden;
-            height: 25px;
-            margin: 5px 0;
-        }
-
-        .progress-bar {
-            height: 100%;
-            width: 0%;
-            background: linear-gradient(to right, #00c3ff, #1da3b8);
-            text-align: center;
-            color: white;
-            line-height: 25px;
-            font-weight: bold;
-            transition: width 0.3s ease;
-        }
-
-        button {
-            padding: 5px 10px;
-            cursor: pointer;
-            margin-top: 5px;
-        }
-
-        input {
-            padding: 5px;
-            margin-top: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Pagamento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .payment-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .success {
+      color: green;
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
+  <div class="payment-container">
+    <h2>Pagamento</h2>
+    <form id="payment-form">
+      <label for="cardNumber">Número do Cartão</label>
+      <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required>
 
-    <h2>Minhas Metas</h2>
+      <label for="expiry">Validade (MM/AA)</label>
+      <input type="text" id="expiry" placeholder="MM/AA" maxlength="5" required>
 
-    <div id="listaMetas"></div>
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" placeholder="123" maxlength="3" required>
 
-    <hr>
-    <h3>Adicionar nova meta personalizada</h3>
-    <input type="text" id="nomeMeta" placeholder="Ex: Perder 10 kg">
-    <input type="number" id="valorMeta" placeholder="Valor total">
-    <button onclick="adicionarMeta()">Adicionar Meta</button>
+      <label for="name">Nome no Cartão</label>
+      <input type="text" id="name" placeholder="Nome completo" required>
 
-    <script>
-        let metas = JSON.parse(localStorage.getItem("metas")) || [
-            { nome: "Entrar 15 dias seguidos", atual: 0, total: 15 }
-        ];
+      <button type="submit">Pagar R$ 49,90</button>
+    </form>
+    <p id="message" class="success"></p>
+  </div>
 
-        function salvarMetas() {
-            localStorage.setItem("metas", JSON.stringify(metas));
-        }
+  <script>
+    const form = document.getElementById('payment-form');
+    const message = document.getElementById('message');
 
-        function renderMetas() {
-            const lista = document.getElementById("listaMetas");
-            lista.innerHTML = "";
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
 
-            metas.forEach((meta, index) => {
-                const porcentagem = Math.min((meta.atual / meta.total) * 100, 100).toFixed(1);
+      // Simulação de validação simples
+      let cardNumber = document.getElementById('cardNumber').value;
+      let expiry = document.getElementById('expiry').value;
+      let cvv = document.getElementById('cvv').value;
+      let name = document.getElementById('name').value;
 
-                const div = document.createElement("div");
-                div.className = "meta";
-                div.innerHTML = `
-                    <strong>${meta.nome}</strong>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width:${porcentagem}%">${porcentagem}%</div>
-                    </div>
-                    <p>${meta.atual} / ${meta.total}</p>
-                    <input type="number" id="incremento-${index}" placeholder="Adicionar valor" min="1">
-                    <button onclick="incrementarMeta(${index})">Atualizar</button>
-                    <button onclick="removerMeta(${index})" style="background:red;color:white;">Remover</button>
-                `;
-
-                lista.appendChild(div);
-            });
-        }
-
-        function incrementarMeta(index) {
-            const input = document.getElementById(`incremento-${index}`);
-            let valor = parseFloat(input.value);
-            if (!isNaN(valor) && valor > 0) {
-                metas[index].atual += valor;
-                if (metas[index].atual > metas[index].total) {
-                    metas[index].atual = metas[index].total;
-                }
-                input.value = "";
-                salvarMetas();
-                renderMetas();
-            }
-        }
-
-        function adicionarMeta() {
-            const nome = document.getElementById("nomeMeta").value;
-            const valor = parseFloat(document.getElementById("valorMeta").value);
-
-            if (nome.trim() && !isNaN(valor) && valor > 0) {
-                metas.push({ nome: nome.trim(), atual: 0, total: valor });
-                document.getElementById("nomeMeta").value = "";
-                document.getElementById("valorMeta").value = "";
-                salvarMetas();
-                renderMetas();
-            }
-        }
-
-        function removerMeta(index) {
-            metas.splice(index, 1);
-            salvarMetas();
-            renderMetas();
-        }
-
-        renderMetas();
-    </script>
-
+      if(cardNumber.length === 19 && expiry.length === 5 && cvv.length === 3 && name.length > 3) {
+        message.textContent = "✅ Pagamento realizado com sucesso!";
+      } else {
+        message.textContent = "❌ Dados inválidos. Verifique e tente novamente.";
+        message.style.color = "red";
+      }
+    });
+  </script>
 </body>
 </html>
