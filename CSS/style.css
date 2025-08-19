@@ -116,7 +116,6 @@ header{
 }
 
 
-
 /*Personalisação do footer*/
 footer{
     background-color: var(--CP_darkmode);
@@ -217,3 +216,4 @@ body.darkmode h3,
 body.darkmode h4 {
     color: #fff;
 }
+

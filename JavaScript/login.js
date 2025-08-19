@@ -37,5 +37,10 @@ document.getElementById('formLogin').addEventListener('submit', function(event) 
     // Se passou em todas as verificações
     alert("Login realizado com sucesso!");
     // Redirecionar para a página principal
+    // Salva no localStorage quem está logado
+    localStorage.setItem("usuario_logado", usuario.email);
+
+    // Redireciona
     window.location.href = "perfil.html";
+
 });
