@@ -25,6 +25,6 @@ function pagar() {
 
     localStorage.setItem('cartao', nomeP);
 
-    alert("👍 Compra realizada com sucesso");
+    alert("Compra realizada com sucesso");
     window.location.href = "perfil.html";
 }

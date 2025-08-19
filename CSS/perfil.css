@@ -47,10 +47,14 @@ main{
 
 /*Perfil do usuário a esquerda*/
 .foto-user{
-    border: 1px var(--cor_secundaria) solid;
-    border-radius: 100%;
+    width: 200px;   /* largura fixa */
+    height: 200px;  /* altura fixa */
+    object-fit: cover; /* cobre todo o espaço cortando excesso */
+    object-position: center; /* centraliza o recorte */
+    border-radius: 100%; /* opcional: cantos arredondados */
+    border: 1px var(--cor_primaria) solid;
     margin: 8px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 #nome-user{
