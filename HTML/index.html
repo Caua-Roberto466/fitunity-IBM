@@ -13,27 +13,37 @@
 
     <title>FitUnity</title>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="Empresa">
-                <img src="../Imagens/Logo@.png" alt="Coração simulando batimentos cardiácos com halteres na ponta" class="logo">
-                <h1 class="fitunity">FitUnity</h1>
+<body>  
+    <article class="banner-home">
+      <section class="header-home">
+        <div class="conteiner-header-home">
+            <div class="empresa">
+                <img src="../Imagens/Logo@.png" class="logo-home" alt="">
+                <h2 class="fitunity">FitUnity</h2>
             </div>
-            <nav class="links-header">
-
-                <a href="perfil.html" class="Hlinks"><b>Perfil</b></a>
-                <a href="sobre-nos.html" class="Hlinks"><b>Sobre nós</b></a>
-                <a href="#" class="Hlinks"><b>Dieta</b></a>
-                <a href="treino_home.html" class="Hlinks"><b>Treino</b></a>
-                <button id="toggle-dark" class="botaodk"><b>Modo noturno</b></button>
-                <button class="entrarH"><a href="entrar.html" class="Elink"><b>Entrar</b></a></button>
-                <button class="cadastroH"><a href="cadastro.html" class="Clink"><b>Cadastre-se</b></a></button>
-            </nav>
+            <div class="links">
+                <ul>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="treino_home.html">Treinos</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
-
-    <img src="../Imagens/Entrar foto.png" alt="" class="entrar-link">
+      </section>
+      <section class="texto-banner">
+        <h3 class="titulo-banner-home">Não perca seu tempo!</h3>
+        <p class="texto-banner-home">
+            Crie sua conta e começe os planos para mudar sua vida!
+            <br>
+            Caso já tenha uma conta, entre nela, e continue de onde parou!
+        </p>
+      </section>
+      <section class="botoes-banner">
+        <button class="entrar-banner"><a href="entrar.html">Entrar</a></button>
+        <button class="cadastro-banner"><a href="cadastro.html">Cadastre-se</a></button>
+      </section>
+    </article>
 
     <h2 class="SN_home">Tudo o que você precisa saber sobre nós</h2>
 
@@ -50,26 +60,29 @@
         <h3>Benefícios do Site</h3>
         <section>
             <div class="Casa">
-                <img src="../Imagens/Imagens_home/image_3-removebg-preview.png" alt="">
+                <img src="../Imagens/Imagens_home/Casa.png" alt="">
                 <p><b>Treinos feitos para fazer em casa</b></p>
             </div>
             <div class="T_online">
-                <img src="../Imagens/Imagens_home/Treino_home.png" alt="">
+                <img src="../Imagens/Imagens_home/Online.png" alt="">
                 <p><b>Personal trainer 100% online</b></p>
             </div>
             <div class="Dieta">
-                <img src="../Imagens/Imagens_home/Dieta_home.png" alt="">
+                <img src="../Imagens/Imagens_home/Dieta.png" alt="">
                 <p><b>Dietas pensadas para você</b></p>
             </div>
         </section>
     </div>
 
 
-    <h3>Outras opiniões</h3>
-    <!--Opiniões em cima-->
-    <div class="outras-op">
-        <!--Amanda opinião-->
-        <div class="ops">
+    
+<h3>Outras opiniões</h3>
+
+<!-- Container do carrossel -->
+<div class="carrossel-container">
+    <div class="carrossel-opinioes">
+        <!-- Amanda opinião -->
+        <div class="carrossel-item active">
             <div class="Pessoa">
                 <div class="Perfil_pessoa">
                     <img src="../Imagens/Imagens_home/amanda.png" alt="">
@@ -82,11 +95,12 @@
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                     </div>
                 </div>
-                <p>
-                    Nunca pensei que conseguiria manter uma rotina de treinos em casa, mas com o acompanhamento online ficou super fácil e motivador!
-                </p>
+                <p>Nunca pensei que conseguiria manter uma rotina de treinos em casa, mas com o acompanhamento online ficou super fácil e motivador!</p>
             </div>
-            <!--Diego opinião-->
+        </div>
+
+        <!-- Diego opinião -->
+        <div class="carrossel-item">
             <div class="Pessoa">
                 <div class="Perfil_pessoa">
                     <img src="../Imagens/Imagens_home/diego.png" alt="">
@@ -99,14 +113,15 @@
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                     </div>
                 </div>
-                <p>
-                    O plano foi 100% adaptado às minhas necessidades. Em 2 meses já vi diferença no meu corpo e disposição!                
-                </p>
+                <p>O plano foi 100% adaptado às minhas necessidades. Em 2 meses já vi diferença no meu corpo e disposição!</p>
             </div>
-            <!--Lucas opinião-->
+        </div>
+
+        <!-- Lucas opinião -->
+        <div class="carrossel-item">
             <div class="Pessoa">
                 <div class="Perfil_pessoa">
-                    <img src="../Imagens/Imagens_home/Elena.png" alt="">
+                    <img src="../Imagens/Imagens_home/Jainsol.png" class="jainsol" alt="">
                     <div class="avaliacao">
                         <p>Lucas 19 anos</p>
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
@@ -116,20 +131,15 @@
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                     </div>
                 </div>
-                <p>
-                    Além dos treinos bem explicados, o suporte é incrível. Sempre tiram minhas dúvidas rapidinho!                
-                </p>
+                <p>Além dos treinos bem explicados, o suporte é incrível. Sempre tiram minhas dúvidas rapidinho!</p>
             </div>
         </div>
-    </div>
 
-    <!--Opiniões embaixo-->
-    <div class="outras-op">
-        <!--Elena opinião-->
-        <div class="ops">
+        <!-- Joana opinião -->
+        <div class="carrossel-item">
             <div class="Pessoa">
                 <div class="Perfil_pessoa">
-                    <img src="../Imagens/Imagens_home/joana.png" alt="">
+                    <img src="../../Imagens/Imagens_home/joana.png" alt="">
                     <div class="avaliacao">
                         <p>Joana O. 25 anos</p>
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
@@ -139,14 +149,15 @@
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                     </div>
                 </div>
-                <p>
-                    Sou cadeirante e encontrei aqui um treino adaptado, respeitoso e eficiente. Recomendo muito!
-                </p>
+                <p>Sou cadeirante e encontrei aqui um treino adaptado, respeitoso e eficiente. Recomendo muito!</p>
             </div>
-            <!--Carlos opinião-->
+        </div>
+
+        <!-- Carlos opinião -->
+        <div class="carrossel-item">
             <div class="Pessoa">
                 <div class="Perfil_pessoa">
-                    <img src="../Imagens/Imagens_home/carlos.png" alt="">
+                    <img src="../../Imagens/Imagens_home/carlos.png" alt="">
                     <div class="avaliacao">
                         <p>Carlos A. 35 anos</p>
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
@@ -156,16 +167,17 @@
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                     </div>
                 </div>
-                <p>
-                    Gostei bastante dos treinos e da flexibilidade de horários. Só acho que poderia ter mais vídeos demonstrativos.              
-                </p>
+                <p>Gostei bastante dos treinos e da flexibilidade de horários. Só acho que poderia ter mais vídeos demonstrativos.</p>
             </div>
-            <!--Renato opinião-->
+        </div>
+
+        <!-- Renato opinião -->
+        <div class="carrossel-item">
             <div class="Pessoa">
                 <div class="Perfil_pessoa">
                     <img src="../Imagens/Imagens_home/renato.png" alt="">
                     <div class="avaliacao">
-                        <p>Lucas 19 anos</p>
+                        <p>Renato 19 anos</p>
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
@@ -173,12 +185,27 @@
                         <img src="../Imagens/Imagens_home/estrela critica.png" alt="" class="estrela-critica">
                     </div>
                 </div>
-                <p>
-                    Excelente opção para quem quer treinar com qualidade sem precisar ir pra academia!               
-                </p>
+                <p>Excelente opção para quem quer treinar com qualidade sem precisar ir pra academia!</p>
             </div>
         </div>
     </div>
+
+    <!-- Botões de navegação -->
+    <button class="carrossel-btn carrossel-prev">‹</button>
+    <button class="carrossel-btn carrossel-next">›</button>
+
+    <!-- Indicadores do carrossel -->
+    <div class="carrossel-indicadores">
+        <span class="indicador active" data-index="0"></span>
+        <span class="indicador" data-index="1"></span>
+        <span class="indicador" data-index="2"></span>
+        <span class="indicador" data-index="3"></span>
+        <span class="indicador" data-index="4"></span>
+        <span class="indicador" data-index="5"></span>
+    </div>
+</div>
+
+   
 
     <footer>
         <div class="Coluna1">
@@ -229,5 +256,6 @@
         </div>
     </footer>
     <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/carrossel.js"></script>
 </body>
 </html>
