@@ -13,6 +13,11 @@
     --borda-dk: 0.9px #213872 solid;
 }
 
+h2{
+    margin-top: 10%;
+    font-size: 250%;
+}
+
 .banner-home{
     background-image: url('../Imagens/Imagens_home/TreinodeForçanoGinásio.png');
     object-fit: cover;
@@ -180,6 +185,7 @@ h3{
 section{
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 section img{
@@ -191,23 +197,36 @@ section img{
 }
 
 
-.Casa{
+.beneficios-card{
     width: 178px;
-    border: 0.8px var(--cor_primaria) solid;
+    background-color: var(--cor_primaria);
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 60px;
+    border-radius: 10px;
+    margin-bottom: 3%;
 }
 
-.Casa img{
-    margin-right: 2%;
-    width: 95%;
+.beneficios-card:hover{
+    width: 192px;
+    box-shadow: var(--box-shadow);
+    font-size: 23px;
+    transition: 0.3s;
 }
 
-.Casa p{
+.beneficios-card img{
+    margin-top: 3%;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.beneficios-card p{
     font-size: 20px;
     display: block;
     margin: auto;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 .T_online{
@@ -399,6 +418,107 @@ section img{
 
 .indicador:hover {
     background-color: var(--cor_secundaria);
+}
+
+.planos-home{
+    width: 80%;
+
+}
+
+/*Plano básico*/
+.plano-basico{
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 11px;
+    width: 25%;
+    margin-right: 5%;
+}
+
+.plano-basico h3{
+    font-size: 150%;
+    margin-top: 2%;
+}
+
+.plano-basico p{
+    font-size: 120%;
+    margin: 6%;
+}
+
+.plano-basico a{
+    text-decoration: none;
+    color: var(--CS_darkmode);
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+/*Plano adaptado*/
+.plano-adaptado{
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 11px;
+    background-color: var(--cor_secundaria);
+    width: 25%;
+    margin-right: 5%;
+}
+
+.plano-adaptado h3{
+    font-size: 150%;
+    margin-top: 2%;
+}
+
+.plano-adaptado p{
+    font-size: 120%;
+    margin: 6%;
+}
+
+.plano-adaptado a{
+    text-decoration: none;
+    color: var(--CS_darkmode);
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+/*Plano avançado*/
+.plano-avancado{
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 11px;
+    background-color: var(--CS_darkmode);
+    width: 25%;
+}
+
+.plano-avancado h3{
+    font-size: 150%;
+    margin-top: 2%;
+    color: white;
+}
+
+.plano-avancado p{
+    font-size: 120%;
+    margin: 6%;
+    color: white;
+}
+
+.plano-avancado a{
+    text-decoration: none;
+    color: var(--cor_primaria);
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.plano-basico:hover{
+    width: 28%;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s;
+}
+
+.plano-adaptado:hover{
+    width: 28%;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s;
+}
+
+.plano-avancado:hover{
+    width: 28%;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s;
 }
 
 /* Ajuste para a pessoa no carrossel */
