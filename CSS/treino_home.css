@@ -42,6 +42,10 @@ main{
     border: var(--borda);
     width: 30%;
     border-radius: 13px;
+    margin-bottom: 5%;
+}
+
+#treino-card{
     margin-right: 7%;
 }
 
@@ -104,7 +108,7 @@ ul li::before {
 }
 
 /*Modo noturno*/
-body.darkmode .treino-free{
+body.darkmode .treino-card{
     border: var(--borda-dk);
 }
 
