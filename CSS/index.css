@@ -172,14 +172,28 @@ h3{
 }
 
 .nossos-servicos{
+    width: 100%;
+    background-color: rgba(0, 217, 248, 0.2);
+}
+
+.nossos-servicos-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .ns-texto{
     max-width: 610px;
-    margin: auto;
     font-size: 21px;
+    margin-left: 30px;
+}
+
+.ns-img{
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 section{
