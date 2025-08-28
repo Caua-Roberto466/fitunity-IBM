@@ -8,9 +8,8 @@
 
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
-    --tamanho_fonte: 19px;
-    --borda: 0.9px #1da3b8 solid;
-    --borda-dk: 0.9px #213872 solid;
+    --borda: 1px #00d9f8 solid;
+    --borda-dk: 1px #213872 solid;
 }
 
 #treinolink{
@@ -18,124 +17,102 @@
 }
 
 h1{
-    margin-top: 40px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+#tth{
     margin-bottom: 60px;
+    text-align: center;
+    font-size: 120%;
 }
 
 main{
-    width: 65%;
+    width: 80%;
     display: block;
     margin: auto;
 }
 
-.cards-treino{
-    width: 100%;
+.container-th{
     display: flex;
+    justify-content: center;
 }
 
-.card-treino{
-    width: 32%;
-    height: 427px;
-    border: 1px var(--cor_primaria) solid;
+.treino-card{
+    border: var(--borda);
+    width: 30%;
+    border-radius: 13px;
+    margin-right: 7%;
+}
+
+.treino-card h3{
+    font-size: 150%;
+    margin-top: -2px;
+}
+
+.treino-card p{
     margin: 3%;
-    border-radius: 20px;
-    box-shadow: var(--box-shadow);
 }
 
-.card-treino li{
-    font-size: 15px;
-    max-width: 90%;
-    margin-top: 10px;
+#treino-img{
+    width: 20%;
+    margin-left: 6%;
 }
 
-.card-treino p{
-    font-size: 16px;
-    text-align: center;
+ul {
+  list-style: none;       /* remove as bolinhas padrão */
+  padding-left: 0;
+  margin-top: 25px;
 }
 
-.card-titulo {
-    display: flex;
-    align-items: flex-start; /* mantém alinhado pelo topo (ou center se preferir) */
-    gap: 1px; /* espaço entre a imagem e o texto */
+ul li {
+  position: relative;
+  padding-left: 1.2em;    /* espaço pro ícone */
+  margin-right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  
+  font-family: 'Open Sans';
 }
 
-.card-titulo img {
-    width: 40px;      /* largura fixa */
-    height: 40px;     /* altura fixa */
-    flex-shrink: 0;   /* não deixa a imagem diminuir */
-    flex-grow: 0;     /* não deixa a imagem aumentar */
-    object-fit: contain; /* garante que não deforma */
-    margin-top: 12px;
-    margin-left: 5px;
+ul li::before {
+  content: "";   /* obrigatório */
+  position: absolute;
+  left: 0;
+  top: 0.2em;                        /* joga pro meio vertical */
+  transform: none;     /* centraliza certinho */
+  width: 20px;                     /* tamanho fixo */
+  height: 20px;
+  background: url("../Imagens/Check-Mark.png") no-repeat center / contain;
 }
 
-.card-titulo h3{
-    font-size: 15px;
-    margin-right: 3px;
-}
+#ath{text-decoration: none;}
 
-.h2{
-    font-size: 40px;
-    margin-top: 3em;
-    margin-bottom: 2.4rem;
-}
-
-article{
-    width: 57%;
+#ir-plano{
+    border: var(--borda);
+    border-radius: 8px;
+    background-color: var(--cor_primaria);
+    font-size: 110%;
+    width: 50%;
+    height: 38px;
+    display: block;
     margin: auto;
-}
-
-.cards-dietas{
-    display: flex;
-}
-
-.card-dieta {
-    display: flex;
-    flex-direction: column; /* mantém título e texto embaixo */
-    align-items: center;   /* centraliza horizontalmente */
-    justify-content: flex-start; /* mantém tudo no topo */
-    width: 32%;
-    margin: 2%;
-    border: 1px var(--cor_primaria) solid;
-    border-radius: 12px;
-    box-shadow: var(--box-shadow);
-}
-
-.card-dieta img {
-    width: 60px;
-    margin-top: 10px; /* opcional: espaço da borda */
-}
-
-.card-dieta p{
-    margin: 15px;
-    margin-bottom: 12px;
-}
-
-.p-plano{
-    font-size: 22px;
-    text-align: center;
-    margin-top: 2.7em;
-}
-
-.a-plano{
-    color: var(--cor_primaria);
-    text-decoration: none;
-    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8%;
 }
 
 /*Modo noturno*/
-body.darkmode .card-treino{
-    border-color: var(--CP_darkmode);
+body.darkmode .treino-free{
+    border: var(--borda-dk);
 }
 
-body.darkmode .card-treino li{
+body.darkmode ul li{
     color: white;
 }
 
-body.darkmode .card-dieta{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .a-plano{
-    color: var(--CP_darkmode);
+body.darkmode #ir-plano{
+    border: var(--borda-dk);
+    background-color: var(--CP_darkmode);
 }
