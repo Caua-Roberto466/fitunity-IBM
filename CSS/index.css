@@ -171,15 +171,15 @@ h3{
     font-size: 40px;
 }
 
-.NS_texto{
-    width: 610px;
-    border: 0.8px var(--cor_secundaria) solid;
-    border-radius: 30px;
+.nossos-servicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ns-texto{
+    max-width: 610px;
     margin: auto;
-    padding: 15px;
-    margin-bottom: 60px;
     font-size: 21px;
-    box-shadow: 9px 9px 10px 0px rgba(0, 0, 0, 0.514);
 }
 
 section{
