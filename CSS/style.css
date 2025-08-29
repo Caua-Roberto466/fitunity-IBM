@@ -8,9 +8,8 @@
 
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
-    --tamanho_fonte: 19px;
-    --borda: 0.9px #1da3b8 solid;
-    --borda-dk: 0.9px #213872 solid;
+    --borda: 1px #00d9f8 solid;
+    --borda-dk: 1px #213872 solid;
 }
 
 *{
