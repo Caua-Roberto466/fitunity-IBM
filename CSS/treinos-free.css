@@ -137,7 +137,19 @@ iframe {
 .fullbody-casa p{
     max-width: 92%;
     margin-left: 4%;
-    margin-top: 1%;
+    margin-top: 5%;
+}
+
+.fullbody-academia{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.fullbody-academia p{
+   max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%; 
 }
 
 li{
@@ -169,4 +181,16 @@ body.darkmode .container-video{
 
 body.darkmode iframe{
     border-color: var(--CP_darkmode);
+}
+
+body.darkmode .fullbody-casa{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .fullbody-academia{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode li{
+    color: var(--cor_primaria);
 }
