@@ -108,7 +108,7 @@ h1{
     background-color: var(--transparente);
 }
 
-iframe {
+.iframe {
   border-radius: 20px;
   width: 38%; /* ocupa o container */
   max-width: 600px; /* limite opcional */
@@ -260,6 +260,33 @@ li{
     font-size: 115%;
 }
 
+.container-video-peito{
+    display: flex;
+}
+
+.iframe-peito{
+    border-radius: 20px;
+    width: 27%; /* ocupa o container */
+    max-width: 600px; /* limite opcional */
+    aspect-ratio: 16/9; /* mantém proporção 16:9 */
+    height: auto;
+    margin-left: 5%;
+    border: 4px var(--cor_primaria) solid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#card-treino-peito{
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    border: 2px var(--cor_primaria) solid;
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 120%;
+}
+
 /*Modo noturno*/
 body.darkmode .intro-treino-free{
     background-color: var(--transparent_dk);
@@ -295,4 +322,8 @@ body.darkmode .fullbody-academia{
 
 body.darkmode li{
     color: var(--cor_primaria);
+}
+
+body.darkmode .intro-peito {
+    background-color: var(--transparent_dk);
 }
