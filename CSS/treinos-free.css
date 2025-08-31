@@ -127,6 +127,7 @@ iframe {
 .container-treinos{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .fullbody-casa{
@@ -166,6 +167,50 @@ li{
     display: flex;
     justify-content: center;
     font-size: 130%;
+    cursor: pointer;
+}
+
+.topo:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais2{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos2 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
 }
 
 /*Modo noturno*/
@@ -203,4 +248,8 @@ body.darkmode .fullbody-academia{
 
 body.darkmode li{
     color: var(--cor_primaria);
+}
+
+body.darkmode .topo{
+    color: var(--CP_darkmode);
 }
