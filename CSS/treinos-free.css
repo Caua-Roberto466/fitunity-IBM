@@ -40,6 +40,7 @@ h1{
     width: 20%;
     height: 20%;
     margin: 1%;
+    border-radius: 2%;
     margin-right: 2%;
 }
 
@@ -72,6 +73,15 @@ h1{
 .fullbody-cards{
     display: flex;
     justify-content: center;
+}
+
+.mini-titulo{
+    font-weight: bold;
+    font-family: 'Montserrat' , sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    margin-bottom: 0;
 }
 
 #fullbody-card{
@@ -168,6 +178,7 @@ li{
     justify-content: center;
     font-size: 130%;
     cursor: pointer;
+    margin-top: 4%;
 }
 
 .topo:hover{
@@ -206,11 +217,47 @@ li{
     cursor: pointer;
 }
 
+#ler-mais2:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
 #ler-menos2 {
     color: var(--cor_primaria);
     font-weight: bold;
     font-size: 120%;
     cursor: pointer;
+}
+
+#ler-menos2:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+.intro-peito{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--transparente);
+}
+
+.intro-peito img{
+    width: 20%;
+    margin: 2%;
+    margin-left: 4%;
+    border-radius: 2%;
+}
+
+.intro-peito-texto{
+    max-width: 76%;
+    margin-right: 5%;
+}
+
+.intro-peito-texto h3{
+    font-size: 150%;
+}
+
+.intro-peito-texto p{
+    font-size: 115%;
 }
 
 /*Modo noturno*/
@@ -248,8 +295,4 @@ body.darkmode .fullbody-academia{
 
 body.darkmode li{
     color: var(--cor_primaria);
-}
-
-body.darkmode .topo{
-    color: var(--CP_darkmode);
 }
