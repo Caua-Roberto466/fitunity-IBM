@@ -31,3 +31,19 @@ function esconder2(){
     div_escondida2.style.display = "none"
     lerMais2.style.display = "block"
 }
+
+var div_escondida3 = document.getElementById("div-escondida3")
+var lerMais3 = document.getElementById("ler-mais3")
+var lerMenos3 = document.getElementById("ler-menos3")
+
+div_escondida3.style.display = "none"
+
+function ler3(){
+    div_escondida3.style.display = "block"
+    lerMais3.style.display = "none"
+}
+
+function esconder3(){
+    div_escondida3.style.display = "none"
+    lerMais3.style.display = "block"
+}

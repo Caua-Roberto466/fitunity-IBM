@@ -186,54 +186,6 @@ li{
     transition: 0.3s;
 }
 
-#ler-mais{
-    color: var(--cor_primaria);
-    font-weight: bold;
-    font-size: 120%;
-    cursor: pointer;
-}
-
-#ler-mais:hover{
-    color: var(--CP_darkmode);
-    transition: 0.3s;
-}
-
-#ler-menos {
-    color: var(--cor_primaria);
-    font-weight: bold;
-    font-size: 120%;
-    cursor: pointer;
-}
-
-#ler-menos:hover{
-    color: var(--CP_darkmode);
-    transition: 0.3s;
-}
-
-#ler-mais2{
-    color: var(--cor_primaria);
-    font-weight: bold;
-    font-size: 120%;
-    cursor: pointer;
-}
-
-#ler-mais2:hover{
-    color: var(--CP_darkmode);
-    transition: 0.3s;
-}
-
-#ler-menos2 {
-    color: var(--cor_primaria);
-    font-weight: bold;
-    font-size: 120%;
-    cursor: pointer;
-}
-
-#ler-menos2:hover{
-    color: var(--CP_darkmode);
-    transition: 0.3s;
-}
-
 .intro-peito{
     display: flex;
     justify-content: space-between;
@@ -285,6 +237,92 @@ li{
     border-radius: 15px;
     padding: 1%;
     font-size: 120%;
+    margin-bottom: 4%;
+}
+
+.peito-casa{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.peito-casa p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+/*Botões de Ler mais e Ler menos*/
+#ler-mais{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais2{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais2:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos2 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos2:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais3{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais3:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos3 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos3:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
 }
 
 /*Modo noturno*/
