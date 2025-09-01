@@ -327,3 +327,7 @@ body.darkmode li{
 body.darkmode .intro-peito {
     background-color: var(--transparent_dk);
 }
+
+body.darkmode #card-treino-peito{
+    border-color: var(--CP_darkmode);
+}
