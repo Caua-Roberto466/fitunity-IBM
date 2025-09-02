@@ -252,6 +252,19 @@ li{
     margin-top: 5%;
 }
 
+.peito-academia{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.peito-academia p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+
 /*Botões de Ler mais e Ler menos*/
 #ler-mais{
     color: var(--cor_primaria);
@@ -321,6 +334,30 @@ li{
 }
 
 #ler-menos3:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais4{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais4:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos4 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos4:hover{
     color: var(--CP_darkmode);
     transition: 0.3s;
 }
