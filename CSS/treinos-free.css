@@ -1,3 +1,4 @@
+/*Váriaveis gerais da página*/
 :root{
     --cor_primaria: #00d9f8;
     --cor_secundaria: #1da3b8;
@@ -14,6 +15,7 @@
     --borda-dk: 1px #213872 solid;
 }
 
+/*Estilização geral da página*/
 h1{
     font-size: 200%;
     margin-top: 5%;
@@ -62,6 +64,35 @@ h1{
     transition: 0.3s;
 }
 
+.mini-titulo{
+    font-weight: bold;
+    font-family: 'Montserrat' , sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    margin-bottom: 0;
+}
+
+.container-video{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--transparente);
+}
+
+.treinos{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.container-treinos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*Estilização do treino fullbody*/
 #fullbody{
     margin-top: 5%;
 }
@@ -73,15 +104,6 @@ h1{
 .fullbody-cards{
     display: flex;
     justify-content: center;
-}
-
-.mini-titulo{
-    font-weight: bold;
-    font-family: 'Montserrat' , sans-serif;
-    display: flex;
-    justify-content: center;
-    font-size: 120%;
-    margin-bottom: 0;
 }
 
 #fullbody-card{
@@ -102,30 +124,11 @@ h1{
     margin-top: 6%;
 }
 
-.container-video{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--transparente);
-}
-
 .explicacao-fullbody{
     margin-right: 5%;
     margin-top: 1%;
     margin-left: 2%;
     max-width: 58%;
-}
-
-.treinos{
-    width: 80%;
-    display: block;
-    margin: auto;
-    margin-bottom: 3%;
-}
-
-.container-treinos{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 .fullbody-casa{
@@ -174,6 +177,7 @@ li{
     transition: 0.3s;
 }
 
+/*Estilização do treino de peito*/
 .intro-peito{
     display: flex;
     justify-content: space-between;
@@ -200,40 +204,8 @@ li{
     font-size: 115%;
 }
 
-#costa{
-    margin-top: 6%;
-}
-#costa h2{
-    font-size: 200%;
-}
-.intro-costa{
-    width: 60%;
-    border: 2px var(--cor_primaria) solid;
-    display: block;
-    margin: auto;
-    border-radius: 15px;
-    padding: 12px;
-}
-
-.intro-costa p{
-    font-size: 120%;
-    margin: 0;
-}
-
 .container-video-peito{
     display: flex;
-}
-
-.iframe-peito{
-    border-radius: 20px;
-    width: 27%; /* ocupa o container */
-    max-width: 600px; /* limite opcional */
-    aspect-ratio: 16/9; /* mantém proporção 16:9 */
-    height: auto;
-    margin-left: 5%;
-    border: 4px var(--cor_primaria) solid;
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 
 #card-treino-peito{
@@ -272,6 +244,27 @@ li{
     margin-top: 5%;
 }
 
+/*Estilização do treino de costas*/
+#costa{
+    margin-top: 6%;
+}
+#costa h2{
+    font-size: 200%;
+}
+.intro-costa{
+    width: 60%;
+    border: 2px var(--cor_primaria) solid;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.intro-costa p{
+    font-size: 120%;
+    margin: 0;
+}
+
 .video-costas{
     display: flex;
     background-color: var(--transparente);
@@ -303,6 +296,18 @@ li{
   border: 4px var(--cor_primaria) solid;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.iframe-peito{
+    border-radius: 20px;
+    width: 27%; /* ocupa o container */
+    max-width: 600px; /* limite opcional */
+    aspect-ratio: 16/9; /* mantém proporção 16:9 */
+    height: auto;
+    margin-left: 5%;
+    border: 4px var(--cor_primaria) solid;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 #iframe-costas{
