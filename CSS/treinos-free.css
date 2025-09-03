@@ -298,6 +298,18 @@ li{
     margin-top: 5%;
 }
 
+.costa-academia{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.costa-academia p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
 /*Personalização dos iframes*/
 .iframe {
   border-radius: 20px;
@@ -444,6 +456,30 @@ li{
 }
 
 #ler-menos5:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais6{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais6:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos6 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos6:hover{
     color: var(--CP_darkmode);
     transition: 0.3s;
 }

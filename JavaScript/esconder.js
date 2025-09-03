@@ -79,3 +79,19 @@ function esconder5(){
     div_escondida5.style.display = "none"
     lerMais5.style.display = "block"
 }
+
+var div_escondida6 = document.getElementById("div-escondida6")
+var lerMais6 = document.getElementById("ler-mais6")
+var lerMenos6 = document.getElementById("ler-menos6")
+
+div_escondida6.style.display = "none"
+
+function ler6(){
+    div_escondida6.style.display = "block"
+    lerMais6.style.display = "none"
+}
+
+function esconder6(){
+    div_escondida6.style.display = "none"
+    lerMais6.style.display = "block"
+}
