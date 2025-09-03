@@ -212,6 +212,26 @@ li{
     font-size: 115%;
 }
 
+#costa{
+    margin-top: 6%;
+}
+#costa h2{
+    font-size: 200%;
+}
+.intro-costa{
+    width: 60%;
+    border: 2px var(--cor_primaria) solid;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.intro-costa p{
+    font-size: 120%;
+    margin: 0;
+}
+
 .container-video-peito{
     display: flex;
 }
