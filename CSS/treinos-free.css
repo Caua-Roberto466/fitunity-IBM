@@ -84,6 +84,7 @@ h1{
     display: block;
     margin: auto;
     margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .container-treinos{
@@ -285,6 +286,18 @@ li{
     font-size: 195%;
 }
 
+.costa-casa{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.costa-casa p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
 /*Personalização dos iframes*/
 .iframe {
   border-radius: 20px;
@@ -407,6 +420,30 @@ li{
 }
 
 #ler-menos4:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais5{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais5:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos5 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos5:hover{
     color: var(--CP_darkmode);
     transition: 0.3s;
 }

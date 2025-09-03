@@ -63,3 +63,19 @@ function esconder4(){
     div_escondida4.style.display = "none"
     lerMais4.style.display = "block"
 }
+
+var div_escondida5 = document.getElementById("div-escondida5")
+var lerMais5 = document.getElementById("ler-mais5")
+var lerMenos5 = document.getElementById("ler-menos5")
+
+div_escondida5.style.display = "none"
+
+function ler5(){
+    div_escondida5.style.display = "block"
+    lerMais5.style.display = "none"
+}
+
+function esconder5(){
+    div_escondida5.style.display = "none"
+    lerMais5.style.display = "block"
+}
