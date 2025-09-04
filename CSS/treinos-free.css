@@ -528,3 +528,27 @@ body.darkmode .intro-peito {
 body.darkmode #card-treino-peito{
     border-color: var(--CP_darkmode);
 }
+
+body.darkmode .peito-casa{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .peito-academia{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .intro-costa{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .video-costas{
+    background-color: var(--transparent_dk);
+}
+
+body.darkmode .costa-casa{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .costa-academia{
+    border-color: var(--CP_darkmode);
+}
