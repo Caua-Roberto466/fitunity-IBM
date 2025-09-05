@@ -552,3 +552,32 @@ body.darkmode .costa-casa{
 body.darkmode .costa-academia{
     border-color: var(--CP_darkmode);
 }
+
+/*
+=====================================
+    Responsividade
+=====================================
+*/
+
+@media (max-width: 900px){
+   .intro-peito img{
+    display: none;
+   }
+   .intro-peito{
+    justify-content: center;
+   }
+   .video-costas{
+    display: block;
+    padding-bottom: 10px;
+   }
+   .video-costa-texto{
+    display: block;
+    max-width: 700px;
+    margin: auto;
+   }
+   #iframe-costas{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+   }
+}
