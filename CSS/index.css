@@ -570,3 +570,156 @@ body.darkmode .Dieta{
 body.darkmode .Pessoa{
     border: 0.8px var(--CP_darkmode) solid;
 }
+
+/* ===========================
+   RESPONSIVIDADE DO SITE
+   =========================== */
+
+/* Tablets e telas médias (até 900px) */
+@media (max-width: 900px) {
+  /* HEADER */
+  .conteiner-header-home {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .empresa h2 {
+    font-size: 150%;
+    margin: 0;
+  }
+
+  /* BANNER */
+  .texto-banner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo-banner-home {
+    font-size: 2rem;
+  }
+
+  .texto-banner-home {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .botoes-banner {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  /* NOSSOS SERVIÇOS */
+  .nossos-servicos-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ns-img {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  /* BENEFÍCIOS */
+  section {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .beneficios-card {
+    width: 45%;
+    margin: 10px 0;
+  }
+
+  /* PLANOS */
+  .planos-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .planos-home > div {
+    width: 90%;
+  }
+
+  .plano-basico:hover{
+    width: 95%;
+  }
+
+  .plano-adaptado:hover{
+    width: 95%;
+  }
+
+  .plano-avancado:hover{
+    width: 95%;
+  }
+
+  /* CARROSSEL */
+  .carrossel-container {
+    max-width: 90%;
+  }
+
+  .carrossel-item .Pessoa {
+    width: 90%;
+  }
+}
+
+/* Celulares e telas pequenas (até 480px) */
+@media (max-width: 480px) {
+  /* HEADER */
+  .links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .links a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* BANNER */
+  .titulo-banner-home {
+    font-size: 1.6rem;
+  }
+
+  .texto-banner-home {
+    font-size: 0.9rem;
+  }
+
+  .entrar-banner,
+  .cadastro-banner {
+    font-size: 120%;
+    width: auto;
+    padding: 6px 12px;
+  }
+
+  /* BENEFÍCIOS */
+  .beneficios-card {
+    width: 90%;
+  }
+
+  /* PLANOS */
+  .planos-home > div {
+    width: 100%;
+  }
+
+  /* PESSOAS DO CARROSSEL */
+  .Pessoa {
+    width: 95%;
+    font-size: 90%;
+  }
+
+  .Pessoa p {
+    font-size: 18px;
+  }
+}

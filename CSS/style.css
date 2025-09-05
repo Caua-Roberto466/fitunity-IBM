@@ -256,7 +256,7 @@ body.darkmode h4 {
     .botaodk, .cadastroH, .entrarH {
         font-size: 14px;
         padding: 8px;
-        width: 100%; /* Torna os botões mais largos em dispositivos móveis */
+        width: 50%; /* Torna os botões mais largos em dispositivos móveis */
         text-align: center;
         margin: 5px 0;
     }
@@ -277,7 +277,7 @@ body.darkmode h4 {
 /* Responsividade do footer */
 @media (max-width: 768px) {
     footer {
-        flex-direction: column;
+        
         gap: 30px;
         padding: 20px;
         text-align: center;
@@ -306,6 +306,10 @@ body.darkmode h4 {
         font-size: 24px; /* Ajusta o tamanho da logo no rodapé */
         margin-top: 10px;
     }
+    
+    footer p{
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -315,6 +319,7 @@ body.darkmode h4 {
     
     footer p {
         font-size: 14px; /* Reduz o tamanho da fonte dos contatos */
+        text-align: center;
     }
 
     footer a {
@@ -350,6 +355,10 @@ body.darkmode h4 {
     .botaodk, .cadastroH, .entrarH {
         font-size: 14px;
         width: 90%;
+        text-align: center;
+    }
+
+    footer p{
         text-align: center;
     }
 
