@@ -363,7 +363,7 @@ Treino de perna
 }
 
 .video-perna{
-    margin-top: 4%;
+    margin-top: 9%;
     display: block;
     width: 90%;
     margin: auto;
@@ -377,6 +377,21 @@ Treino de perna
     display: flex;
     justify-content: center;
     gap: 5%;
+}
+
+.video-perna-texto{
+    width: 80%;
+    border: 2px var(--cor_primaria) solid;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 4%;
+    padding: 1%;
+    padding-bottom: 0.4%;
+    padding-top: 0.4%;
+}
+
+.video-perna-texto p{
+    font-size: 120%;
 }
 
 /*
@@ -631,6 +646,14 @@ body.darkmode .costa-casa{
 }
 
 body.darkmode .costa-academia{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .intro-perna{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .video-perna-texto{
     border-color: var(--CP_darkmode);
 }
 
