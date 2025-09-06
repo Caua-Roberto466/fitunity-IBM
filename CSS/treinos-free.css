@@ -354,12 +354,29 @@ Treino de perna
 }
 
 .intro-perna h3{
-    font-size: 200%;
-    margin-top: -1%;
+    font-size: 180%;
+    margin-top: 1%;
 }
 
 .intro-perna p{
     font-size: 130%;
+}
+
+.video-perna{
+    margin-top: 4%;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.video-perna h3{
+    font-size: 190%;
+}
+
+.container-video-perna{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
 }
 
 /*
