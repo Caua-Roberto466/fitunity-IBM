@@ -394,6 +394,30 @@ Treino de perna
     font-size: 120%;
 }
 
+.perna-casa{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.perna-casa p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+.perna-academia{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.perna-academia p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
 /*
 ===============================================================================================================
 Iframes
@@ -572,6 +596,54 @@ Ler mais Ler menos
 }
 
 #ler-menos6:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais7{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais7:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos7 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos7:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais8{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais8:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos8 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos8:hover{
     color: var(--CP_darkmode);
     transition: 0.3s;
 }

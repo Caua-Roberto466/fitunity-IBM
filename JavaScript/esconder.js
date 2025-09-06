@@ -95,3 +95,35 @@ function esconder6(){
     div_escondida6.style.display = "none"
     lerMais6.style.display = "block"
 }
+
+var div_escondida7 = document.getElementById("div-escondida7")
+var lerMais7 = document.getElementById("ler-mais7")
+var lerMenos7 = document.getElementById("ler-menos7")
+
+div_escondida7.style.display = "none"
+
+function ler7(){
+    div_escondida7.style.display = "block"
+    lerMais7.style.display = "none"
+}
+
+function esconder7(){
+    div_escondida7.style.display = "none"
+    lerMais7.style.display = "block"
+}
+
+var div_escondida8 = document.getElementById("div-escondida8")
+var lerMais8  = document.getElementById("ler-mais8")
+var lerMenos8 = document.getElementById("ler-menos8")
+
+div_escondida8.style.display = "none"
+
+function ler8(){
+    div_escondida8.style.display = "block"
+    lerMais8.style.display = "none"
+}
+
+function esconder8(){
+    div_escondida8.style.display = "none"
+    lerMais8.style.display = "block"
+}
