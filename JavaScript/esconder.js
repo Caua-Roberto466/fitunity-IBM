@@ -127,3 +127,37 @@ function esconder8(){
     div_escondida8.style.display = "none"
     lerMais8.style.display = "block"
 }
+
+/*
+var div_escondida9 = document.getElementById("div-escondida9")
+var lerMais9 = document.getElementById("ler-mais9")
+var lerMenos9 = document.getElementById("ler-menos9")
+
+div_escondida9.style.display = "none"
+
+function ler9(){
+    div_escondida9.style.display = "block"
+    lerMais9.style.display = "none"
+}
+
+function esconder9(){
+    div_escondida9.style.display = "none"
+    lerMais9.style.display = "block"
+}
+
+var div_escondida10 = document.getElementById("div-escondida10")
+var lerMais10  = document.getElementById("ler-mais10")
+var lerMenos10 = document.getElementById("ler-menos10")
+
+div_escondida10.style.display = "none"
+
+function ler10(){
+    div_escondida10.style.display = "block"
+    lerMais10.style.display = "none"
+}
+
+function esconder10(){
+    div_escondida10.style.display = "none"
+    lerMais10.style.display = "block"
+}
+*/
