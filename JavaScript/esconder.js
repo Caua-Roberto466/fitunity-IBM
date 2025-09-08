@@ -128,7 +128,7 @@ function esconder8(){
     lerMais8.style.display = "block"
 }
 
-/*
+
 var div_escondida9 = document.getElementById("div-escondida9")
 var lerMais9 = document.getElementById("ler-mais9")
 var lerMenos9 = document.getElementById("ler-menos9")
@@ -160,4 +160,3 @@ function esconder10(){
     div_escondida10.style.display = "none"
     lerMais10.style.display = "block"
 }
-*/

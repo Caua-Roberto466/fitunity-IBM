@@ -471,6 +471,30 @@ treino de braço
     margin-top: 1.8%;
 }
 
+.braco-casa{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.braco-casa p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+.braco-academia{
+    width: 44%;
+    border: var(--borda);
+    border-radius: 16px;
+}
+
+.braco-academia p{
+    max-width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
 /*
 ===============================================================================================================
 Iframes
@@ -701,6 +725,54 @@ Ler mais Ler menos
     transition: 0.3s;
 }
 
+#ler-mais9{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais9:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos9 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos9:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-mais10{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-mais10:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
+#ler-menos10 {
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#ler-menos10:hover{
+    color: var(--CP_darkmode);
+    transition: 0.3s;
+}
+
 /*
 ===============================================================================================================
 Modo Noturno
@@ -782,7 +854,11 @@ body.darkmode .video-perna-texto{
     border-color: var(--CP_darkmode);
 }
 
-body.darkmode .perna-casa, .perna-academia{
+body.darkmode .perna-casa{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .perna-academia{
     border-color: var(--CP_darkmode);
 }
 
@@ -790,6 +866,17 @@ body.darkmode .intro-braco{
     background-color: var(--transparent_dk);
 }
 
+body.darkmode .texto-video-braco{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .braco-academia{
+    border-color: var(--CP_darkmode);
+}
+
+body.darkmode .braco-casa{
+    border-color: var(--CP_darkmode);
+}
 /*
 ===============================================================================================================
 Responsividade
