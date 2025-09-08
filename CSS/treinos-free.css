@@ -1118,7 +1118,7 @@ Responsividade
         margin: auto;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 322px){
     #fullbody-card{
         width: 296px;
         margin-left: -3px;
@@ -1140,5 +1140,81 @@ Responsividade
     .fullbody-academia{
         width: 289px;
         margin-left: -7px;
+    }
+    #peito h2{
+        font-size: 30px;
+    }
+    .iframe-peito{
+        width: 260px;
+    }
+    #card-treino-peito{
+        width: 296px;
+        margin-left: 4px;
+        margin-top: 10px;
+    }
+    .peito-casa{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .peito-academia{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .intro-costa{
+        width: 296px;
+        margin: 3px;
+    }
+    .video-costa-texto{
+        max-width: 294px;
+        display: block;
+        margin: auto;
+    }
+    .costa-casa{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .costa-academia{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .intro-perna{
+        width: 294px;
+    }
+    .intro-perna h3{
+        font-size: 28px;
+    }
+    #iframe-perna{
+        width: 290px;
+        margin-left: -8px;
+    }
+    .video-perna-texto{
+        width: 296px;
+        margin-left: -11px;
+    }
+    .perna-casa{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .perna-academia{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .iframe-braco{
+        width: 295px;
+        margin-left: -11px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .braco-casa{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .braco-academia{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .texto-video-braco{
+        width: 296px;
+        margin-left: -11px;
     }
 }
