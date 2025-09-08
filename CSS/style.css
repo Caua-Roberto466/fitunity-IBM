@@ -364,6 +364,13 @@ body.darkmode h4 {
 
     footer p{
         text-align: center;
+        font-size: 20px;
+    }
+    footer a{
+        font-size: 20px;
+    }
+    footer h4{
+        font-size: 23px;
     }
 
     footer {

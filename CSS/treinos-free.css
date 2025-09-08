@@ -1029,15 +1029,92 @@ Responsividade
         flex-direction: column;
     }
     .fullbody-casa{
-        width: 350px;
+        width: 370px;
         display: block;
         margin: auto;
         margin-bottom: 10px;
     }
     .fullbody-academia{
-        width: 350px;
+        width: 370px;
         display: block;
         margin: auto;
         margin-bottom: 10px;
+    }
+    .iframe-peito{
+        width: 320px;
+    }
+    #card-treino-peito{
+        width: 400px;
+    }
+    .peito-casa{
+        width: 370px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .peito-academia{
+        width: 370px;
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .intro-costa{
+        width: 400px;
+    }
+    .video-costa-texto{
+        max-width: 410px;
+    }
+    .costa-casa{
+        width: 370px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .costa-academia{
+        width: 370px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .intro-perna{
+        width: 400px;
+    }
+    .intro-perna h3{
+        font-size: 25px;
+    }
+    .container-video-perna{
+        flex-direction: column;
+    }
+    #iframe-perna{
+        margin-bottom: 8px;
+        width: 350px;
+    }
+    .video-perna-texto{
+        width: 400px;
+    }
+    .perna-academia{
+        width: 370px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .perna-casa{
+        width: 370px;
+        display: block;
+        margin: auto;
+    }
+    .iframe-braco{
+        width: 370px;
+    }
+    .braco-academia{
+        width: 370px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .braco-casa{
+        width: 370px;
+        display: block;
+        margin: auto;
     }
 }
