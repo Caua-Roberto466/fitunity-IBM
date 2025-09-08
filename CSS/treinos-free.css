@@ -992,3 +992,52 @@ Responsividade
         margin: auto;
     }
 }
+
+@media (max-width: 480px){
+    .fullbody-cards{
+        display: block;
+    }
+    #fullbody-card{
+        width: 440px;
+    }
+    #fullbody-card p{
+        font-size: 20px;
+    }
+    #fullbody-card:hover{
+        width: 450px;
+        transition: 0.3s;
+    }
+    .container-video{
+        display: block;
+    }
+    .iframe{
+        margin-top: 10px;
+        width: 300px;
+        display: block;
+        margin: auto;
+        
+    }
+    .explicacao-fullbody{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .explicacao-fullbody p{
+        margin-bottom: 10px;
+    }
+    .container-treinos{
+        flex-direction: column;
+    }
+    .fullbody-casa{
+        width: 350px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .fullbody-academia{
+        width: 350px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
