@@ -1118,3 +1118,27 @@ Responsividade
         margin: auto;
     }
 }
+@media (max-width: 320px){
+    #fullbody-card{
+        width: 296px;
+        margin-left: -3px;
+    }
+    #fullbody-card:hover{
+        width: 300px;
+        margin-left: -5px;
+    }
+    .explicacao-fullbody{
+        max-width: 290px;
+    }
+    .treinos{
+        margin-top: 12px;
+    }
+    .fullbody-casa{
+        width: 289px;
+        margin-left: -7px;
+    }
+    .fullbody-academia{
+        width: 289px;
+        margin-left: -7px;
+    }
+}
