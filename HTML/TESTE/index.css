@@ -147,18 +147,21 @@ ul{
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 0.6rem;
+        padding-bottom: 1rem;
     }
     .mobile-menu .nav-item{
         display: block;
-        padding-top: 1rem;
+        padding-top: 1.2rem;
     }
     .mobile-menu .botoes-navbar-mobile{
         display: block;
-        padding: 0.8rem 1rem;
+        padding: 1rem 2rem;
     }
     .mobile-menu .botoes-navbar-mobile button{
-        width: 50%
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 13px;
     }
     .open{
         display: block;
