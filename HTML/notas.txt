@@ -1,38 +1,147 @@
-<div class="estado">
-            <label for="estado">Estado</label> <br>
-            <select name="estado" id="estado" required>
-                <option value="selecione" selected>Selecione um estado</option>
-                <!--Norte-->
-                <option value="amazonas">Amazonas</option>
-                <option value="acre">Acre</option>
-                <option value="roraima">Roraima</option>
-                <option value="rondonia">Rondônia</option>
-                <option value="amapa">Amapá</option>
-                <option value="para">Pará</option>
-                <option value="tocantins">Tocantins</option>
-                <!--Nordeste-->
-                <option value="alagoas">Alagoas</option>
-                <option value="piaui">Piauí</option>
-                <option value="bahia">Bahia</option>
-                <option value="sergipe">Sergipe</option>
-                <option value="pernambuco">Pernambuco</option>
-                <option value="maranhao">Maranhão</option>
-                <option value="ceara">Ceará</option>
-                <option value="rio_grande_norte">Rio Grande do Norte</option>
-                <option value="paraiba">Paraíba</option>
-                <!--sul-->
-                <option value="parana">Paraná</option>
-                <option value="santa_catarina">Santa Catarina</option>
-                <option value="rio_grande_sul">Rio Grande do Sul</option>
-                <!--Sudeste-->
-                <option value="sao_paulo">São Paulo</option>
-                <option value="rio-janeiro">Rio de Janeiro</option>
-                <option value="minas_gerais">Minas Gerais</option>
-                <option value="espirito_santo">Espirito Santo</option>
-                <!--Centro-Oeste-->
-                <option value="mato_grosso">Mato Grosso</option>
-                <option value="mato_grosso_sul">Mato Grosso do Sul</option>
-                <option value="goias">Goiás</option>
-                <option value="destritio_federal">Destrito Federal</option>
-            </select>
-        </div>
+    <menu>
+        <nav>
+            <a href="/" class="logo">Logo</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">Planos</a></li>
+                <li><a href="/">Perfil</a></li>
+                <li><a href="/">Sobre nós</a></li>
+                <li><a href="/">Dieta</a></li>
+                <li><a href="/">Treino</a></li>
+            </ul>
+        </nav>
+    </menu>
+
+class MobileNaveBar{
+    constructor(mobileMenu, navList, navLinks){
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+        
+        this.handleclick = this.handleclick.bind(this)
+    }
+    animateLinks(){
+        this.navLinks.forEach((link, index) => {
+            link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`) 
+        })
+    }
+    handleclick(){
+        this.navList.classList.toggle(this.activeClass)
+        this.mobileMenu.classList.toggle(this.activeClass)
+        this.animateLinks()
+    }
+    addClickEvent(){
+        this.mobileMenu.addEventListener("click", this.handleclick);
+    }
+    Init(){
+        if (this.mobileMenu){
+            this.addClickEvent();
+        }
+        return this
+    }
+}
+
+const mobileNaveBar = new MobileNaveBar(".mobile-menu", ".nav-list", ".nav-list li");
+mobileNaveBar.Init()
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    color: var(--CP_darkmode);
+}
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cor_primaria);
+    height: 8vh;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 2px;
+    margin-left: 12px;
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: var(--cor_primaria);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
+    @keyframes navLinkFade{
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+.mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }

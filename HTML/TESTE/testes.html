@@ -3,30 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Teste</title>
 </head>
 <body>
-    
-    <h1>teste</h1>
-    <div id="div-principal">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quia architecto dolore? Amet beatae itaque nesciunt similique temporibus error, ullam ea provident laboriosam, soluta est repellendus dolor sed optio sint.
-            Voluptate perspiciatis numquam expedita iusto impedit ipsum animi pariatur. Debitis pariatur eum totam, doloribus optio quasi necessitatibus illum suscipit error impedit odio voluptas dolorum officiis autem nesciunt soluta, praesentium enim.
-            Quo, accusamus ab? Porro culpa, dolorum eligendi, commodi vel amet, ipsa aut quod nisi ad quaerat voluptate necessitatibus ipsam! Totam quos quaerat excepturi quam aliquid neque ipsum delectus doloribus vero.
-        </p>
-        <div id="div-escondida">
+    <header>
+        <nav class="nav-bar">
+            <div class="empresa">
+                <img src="../../Imagens/Logo@.png" width="70px" alt="">
+                <h2 class="fitunity">FitUnity</h2>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Treino</a></li>
+                </ul>
+                <div class="botoes-navbar">
+                    <button id="toggle-dark">Modo Noturno</button>
+                    <button><a href="#">Entrar</a></button>
+                    <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
+                </div>
+            </div>
+            <div class="menu-mobile-icone">
+                <button onclick="mostrar()"><img src="menu_white_36dp.svg" class="icone" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
             <ul>
-                <li>oio</li>
-                <li>safdf</li>
-                <li>agffg</li>
-                <li>adfgg</li>
-                <li>fgtryth</li>
+                <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Treino</a></li>
             </ul>
-            <p id="ler-menos" onclick="esconder()">Ler menos</p>
+            <div class="botoes-navbar-mobile">
+                <button id="toggle-dark">Modo Noturno</button>
+                <button><a href="#">Entrar</a></button>
+                <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
+            </div>
         </div>
-        <p id="ler-mais" onclick="ler()">Ler mais</p>
-    </div>
-
+    </header>
+    <script src="../../JavaScript/script.js"></script>
     <script src="teste.js"></script>
 </body>
 </html>
