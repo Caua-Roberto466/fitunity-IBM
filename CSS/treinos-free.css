@@ -1133,9 +1133,10 @@ Responsividade
     }
 }
 @media (max-width: 322px){
+    /*-------Fullbody-------*/
     #fullbody-card{
         width: 296px;
-        margin-left: -3px;
+        margin-left: 3px;
     }
     #fullbody-card:hover{
         width: 300px;
@@ -1149,12 +1150,13 @@ Responsividade
     }
     .fullbody-casa{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
     .fullbody-academia{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
+    /*-------Peito-------*/
     #peito h2{
         font-size: 30px;
     }
@@ -1163,20 +1165,22 @@ Responsividade
     }
     #card-treino-peito{
         width: 296px;
-        margin-left: 4px;
+        margin-left: 12px;
         margin-top: 10px;
     }
     .peito-casa{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
     .peito-academia{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
+    /*-------Costas-------*/
     .intro-costa{
         width: 296px;
         margin: 3px;
+        margin-left: 11px;
     }
     .video-costa-texto{
         max-width: 294px;
@@ -1185,12 +1189,13 @@ Responsividade
     }
     .costa-casa{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
     .costa-academia{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
+    /*-------Perna-------*/
     .intro-perna{
         width: 294px;
     }
@@ -1199,36 +1204,37 @@ Responsividade
     }
     #iframe-perna{
         width: 290px;
-        margin-left: -8px;
+        margin-left: -1px;
     }
     .video-perna-texto{
         width: 296px;
-        margin-left: -11px;
+        margin-left: -5px;
     }
     .perna-casa{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
     .perna-academia{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
+    /*------Braço-------*/
     .iframe-braco{
         width: 295px;
-        margin-left: -11px;
+        margin-left: -4px;
         margin-top: 16px;
         margin-bottom: 16px;
     }
     .braco-casa{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
     .braco-academia{
         width: 289px;
-        margin-left: -7px;
+        margin-left: -1px;
     }
     .texto-video-braco{
         width: 296px;
-        margin-left: -11px;
+        margin-left: -4px;
     }
 }
