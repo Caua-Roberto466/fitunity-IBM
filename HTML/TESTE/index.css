@@ -125,7 +125,22 @@ ul{
     display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 770px){
+    .nav-link{
+        font-size: 14px;
+    }
+    .empresa img{
+        width: 50px;
+    }
+    .fitunity{
+        font-size: 20px;
+    }
+    .botoes-navbar button{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 484px){
     .nav-bar{
         padding: 1.5rem 4rem;
     }
@@ -135,6 +150,9 @@ ul{
     .botoes-navbar{
         display: none;
     }
+    .empresa{
+        margin-left: -40px;
+    }
     .menu-mobile-icone{
         display: block;
     }
@@ -142,6 +160,8 @@ ul{
         background: transparent;
         border: none;
         cursor: pointer;
+        align-items: center;
+        margin-top: 27%;
     }
     .mobile-menu ul{
         display: flex;
@@ -158,12 +178,37 @@ ul{
         padding: 1rem 2rem;
     }
     .mobile-menu .botoes-navbar-mobile button{
-        width: 50%;
+        width: 200px;
         display: block;
         margin: auto;
         margin-bottom: 13px;
     }
     .open{
         display: block;
+    }
+}
+
+@media (max-width: 323px){
+    .menu-mobile-icone{
+        margin-right: -45px;
+    }
+    .empresa{
+        margin-left: -60px;
+    }
+    .empresa img{
+        width: 50px;
+    }
+    .fitunity{
+        font-size: 22px;
+    }
+    .mobile-menu .botoes-navbar-mobile button{
+        width: 190px;
+        display: block;
+        margin: auto;
+        margin-bottom: 13px;
+        font-size: 16px;
+    }
+    .nav-link{
+        font-size: 16px;
     }
 }

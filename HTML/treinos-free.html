@@ -16,21 +16,42 @@
 <body>
     <!--Cabeçário do nosso site-->
     <header>
-        <div class="container">
-            <div class="Empresa">
-                <img src="../Imagens/Logo@.png" alt="Coração simulando batimentos cardiácos com halteres na ponta" class="logo">
+        <nav class="nav-bar">
+            <div class="empresa">
+                <img src="../Imagens/Logo@.png" width="70px" alt="">
                 <h2 class="fitunity">FitUnity</h2>
             </div>
-            <nav class="links-header">
-
-                <a href="perfil.html" class="Hlinks"><b>Perfil</b></a>
-                <a href="sobre-nos.html" class="Hlinks"><b>Sobre nós</b></a>
-                <a href="#" class="Hlinks"><b>Dieta</b></a>
-                <a href="#" class="Hlinks" id="treinolink"><b>Treino</b></a>
-                <button id="toggle-dark" class="botaodk"><b>Modo noturno</b></button>
-                <button class="entrarH"><a href="entrar.html" class="Elink"><b>Entrar</b></a></button>
-                <button class="cadastroH"><a href="cadastro.html" class="Clink"><b>Cadastre-se</b></a></button>
-            </nav>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                    <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+                </ul>
+                <div class="botoes-navbar">
+                    <button id="toggle-dark">Modo Noturno</button>
+                    <button><a href="#">Entrar</a></button>
+                    <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
+                </div>
+            </div>
+            <div class="menu-mobile-icone">
+                <button onclick="mostrar()"><img src="../Imagens/menu_white_36dp.svg" class="icone" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+            </ul>
+            <div class="botoes-navbar-mobile">
+                <button id="toggle-dark-mobile">Modo Noturno</button>
+                <button><a href="#">Entrar</a></button>
+                <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
+            </div>
         </div>
     </header>
 
@@ -725,6 +746,7 @@
     </footer>
 
     <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/menu.js" defer></script>
     <script src="../JavaScript/esconder.js"></script>
 </body>
 </html>

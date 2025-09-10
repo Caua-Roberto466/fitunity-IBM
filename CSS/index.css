@@ -18,6 +18,9 @@ h2{
     font-size: 250%;
 }
 
+/*=============================================================================================================
+Banner
+=============================================================================================================*/
 .banner-home{
     background-image: url('../Imagens/Imagens_home/TreinodeForçanoGinásio.png');
     object-fit: cover;
@@ -158,6 +161,10 @@ h2{
     transition: 0.3s;
 }
 
+/*=============================================================================================================
+Nossos serviços
+=============================================================================================================*/
+
 .SN_home{
     font-size: 3rem;
     width: 750px;
@@ -198,6 +205,9 @@ h3{
     border-radius: 5px;
 }
 
+/*=============================================================================================================
+Benefícios
+=============================================================================================================*/
 section{
     display: flex;
     justify-content: center;
@@ -245,37 +255,9 @@ section img{
     margin-bottom: 2%;
 }
 
-.T_online{
-   width: 178px;
-   border: 0.8px var(--cor_primaria) solid;
-   padding-left: 10px; 
-   margin-right: 60px;
-}
-
-.T_online img{
-    margin-right: 2%;
-    width: 95%;
-}
-
-.T_online p{
-    font-size: 20px;
-}
-
-.Dieta{
-   width: 178px;
-   border: 0.8px var(--cor_primaria) solid;
-   padding-left: 10px; 
-}
-
-.Dieta img{
-    margin-right: 2%;
-    width: 95%;
-}
-
-.Dieta p{
-    font-size: 20px;
-}
-
+/*=============================================================================================================
+Opiniões
+=============================================================================================================*/
 .opinioes{
     background-color: rgba(0, 217, 248, 0.2);
     display: block;
@@ -322,7 +304,6 @@ section img{
     transition: 0.3s;
 }
 
-
 /* e coloca isso */
 .Pessoa:hover p {
     font-size: 18px;
@@ -358,6 +339,9 @@ section img{
     margin: 0px;
 }
 
+/*=============================================================================================================
+Carrossel
+=============================================================================================================*/
 /* Estilos do carrossel */
 .carrossel-container {
     position: relative;
@@ -442,12 +426,28 @@ section img{
 .indicador:hover {
     background-color: var(--cor_secundaria);
 }
+/* Ajuste para a pessoa no carrossel */
+.carrossel-item .Pessoa {
+    margin: 10px;
+    width: 300px;
+    max-width: 90%;
+}
 
+body.darkmode .NS_texto{
+    border: 0.8px var(--CP_darkmode) solid;
+}
+
+body.darkmode .Casa{
+    border: 0.8px var(--CP_darkmode) solid;
+}
+
+/*=============================================================================================================
+Planos
+=============================================================================================================*/
 .planos-home{
     width: 80%;
 
 }
-
 /*Plano básico*/
 .plano-basico{
     border: 1px var(--cor_primaria) solid;
@@ -544,39 +544,13 @@ section img{
     transition: 0.3s;
 }
 
-/* Ajuste para a pessoa no carrossel */
-.carrossel-item .Pessoa {
-    margin: 10px;
-    width: 300px;
-    max-width: 90%;
-}
+/*=============================================================================================================
+Responsividade
+=============================================================================================================*/
 
-body.darkmode .NS_texto{
-    border: 0.8px var(--CP_darkmode) solid;
-}
-
-body.darkmode .Casa{
-    border: 0.8px var(--CP_darkmode) solid;
-}
-
-body.darkmode .T_online{
-    border: 0.8px var(--CP_darkmode) solid;
-}
-
-body.darkmode .Dieta{
-    border: 0.8px var(--CP_darkmode) solid;
-}
-
-body.darkmode .Pessoa{
-    border: 0.8px var(--CP_darkmode) solid;
-}
-
-/* ===========================
-   RESPONSIVIDADE DO SITE
-   =========================== */
 
 /* Tablets e telas médias (até 900px) */
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   /* HEADER */
   .conteiner-header-home {
     flex-direction: column;
@@ -588,6 +562,10 @@ body.darkmode .Pessoa{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+  }
+
+  .links a{
+    font-size: 18px;
   }
 
   .empresa h2 {
@@ -623,9 +601,7 @@ body.darkmode .Pessoa{
   }
 
   .ns-img {
-    width: 90%;
-    height: auto;
-    margin: 20px 0;
+    display: none;
   }
 
   /* BENEFÍCIOS */
@@ -635,8 +611,15 @@ body.darkmode .Pessoa{
   }
 
   .beneficios-card {
-    width: 45%;
+    width: 38%;
     margin: 10px 0;
+  }
+  .beneficios-card:hover{
+    width: 40%;
+  }
+  
+  .opinioes{
+    margin-top: 2rem;
   }
 
   /* PLANOS */
@@ -647,8 +630,18 @@ body.darkmode .Pessoa{
     gap: 20px;
   }
 
-  .planos-home > div {
-    width: 90%;
+  .plano-basico{
+    width: 92%;
+    font-size: 120%;
+  }
+  .plano-adaptado{
+    width: 92%;
+    font-size: 120%;
+  }
+  .plano-avancado{
+    width: 92%;
+    font-size: 120%;
+    margin-left: -38px;
   }
 
   .plano-basico:hover{
@@ -671,11 +664,24 @@ body.darkmode .Pessoa{
   .carrossel-item .Pessoa {
     width: 90%;
   }
+  .carrossel-item .Pessoa:hover{
+    width: 92%;
+  }
+}
+
+@media (max-width: 770px){
+    .logo-home{
+        width: 40px;
+    }
 }
 
 /* Celulares e telas pequenas (até 480px) */
 @media (max-width: 480px) {
   /* HEADER */
+  .empresa img{
+    width: 60px;
+    height: 60px;
+  }
   .links ul {
     flex-direction: column;
     align-items: center;
@@ -684,21 +690,27 @@ body.darkmode .Pessoa{
 
   .links a {
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   /* BANNER */
   .titulo-banner-home {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .texto-banner-home {
-    font-size: 0.9rem;
+    font-size: 19px;
+  }
+
+  .ns-texto{
+    max-width: 400px;
+    display: block;
+    margin: auto;
   }
 
   .entrar-banner,
   .cadastro-banner {
-    font-size: 120%;
+    font-size: 140%;
     width: auto;
     padding: 6px 12px;
   }
@@ -707,10 +719,13 @@ body.darkmode .Pessoa{
   .beneficios-card {
     width: 90%;
   }
+  .beneficios-card:hover{
+    width: 93%;
+  }
 
   /* PLANOS */
-  .planos-home > div {
-    width: 100%;
+  .plano-avancado{
+    margin-left: -12px;
   }
 
   /* PESSOAS DO CARROSSEL */
@@ -722,4 +737,40 @@ body.darkmode .Pessoa{
   .Pessoa p {
     font-size: 18px;
   }
+}
+
+@media (max-width: 322px){
+    .links{
+        margin-bottom: -20px;
+    }
+    .links a{
+        font-size: 22px;
+    }
+    .opinioes{
+        display: none;
+    }
+    .planos-home{
+        margin-top: 30px;
+    }
+    .plano-basico{
+        width: 294px;
+        margin-left: -25px;
+    }
+    .plano-basico:hover{
+        width: 295px;
+    }
+    .plano-adaptado{
+        width: 294px;
+        margin-left: -25px;
+    }
+    .plano-adaptado:hover{
+        width: 295px;
+    }
+    .plano-avancado{
+        width: 294px;
+        margin-left: -37px;
+    }
+    .plano-avancado:hover{
+        width: 295px;
+    }
 }

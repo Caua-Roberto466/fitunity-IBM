@@ -32,97 +32,119 @@ h3, h4, h5, h6{
     font-weight: bold;
 }
 
-/*Personalização do header*/
-.fitunity {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 24px;
-}
-
-.logo{
-    width: 60px;
-    border-radius: 100%;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px; /* menor altura */
-    flex-wrap: nowrap; /* evita quebra */
-}
-
-.Empresa {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.botaodk{
-    background-color: transparent;
-    font-size: 16px;
-    padding: 7px;
-    border-radius: 10px;
-    border: 2px var(--CP_darkmode) solid;
-    outline: none; /*remove o contorno extra ao focar*/
-    box-shadow: none; /*Remove as sombras*/
-    border-color: var(--CP_darkmode);
-    color: white;
-    margin-right: 8px;
-    margin-left: 10px;
-}
-
-.botaodk:hover{
-    transition: 0.4s;
-    background-color: var(--CP_darkmode);
-}
-
-header a{
-    color: white;
-    overflow: hidden;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.Hlinks{
-    margin-left: 10px;
-}
-
-.cadastroH{
-    color: white;
-    padding: 7px;
-    background-color: var(--CP_darkmode);
-    border: var(--CP_darkmode) solid;
-    border-radius: 12px;
-    font-size: 16px;
-}
-
-.entrarH{
-    color: white;
-    padding: 9px;
-    border: 2px var(--CP_darkmode) solid;
-    background-color: transparent;
-    border-radius: 10px;
-    font-size: 16px; 
-    margin-right: 8px;
-}
-
-.entrarH:hover{
-    background-color: var(--CP_darkmode);
-    transition: 0.4s;
-}
-
-.botaodk, .cadastroH, .entrarH {
-    padding: 4px 8px;
-    font-size: 14px;
-}
-
+/*=============================================================================================================
+Personalização do header
+=============================================================================================================*/
 header{
     background-color: var(--cor_primaria);
 }
 
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4px;
+}
 
-/*Personalisação do footer*/
+.empresa{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 10px;
+}
+.empresa img{
+    border-radius: 100%;
+}
+.fitunity{
+    color: white;
+    font-size: 30px;
+}
+.nav-list{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    margin-top: 13px;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.nav-link:hover{
+    color: var(--CP_darkmode);
+}
+
+.botoes-navbar a{
+    color: white;
+    text-decoration: none;
+}
+.botoes-navbar button{
+    border: 2px var(--CP_darkmode) solid;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 4px;
+    padding-inline: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.botoes-navbar button:hover{
+    background-color: var(--CP_darkmode);
+}
+.cadastro-header{
+    background-color: var(--CP_darkmode)!important; 
+    transition: 0.3s;
+}
+.botoes-navbar-mobile a{
+    color: white;
+    text-decoration: none;
+}
+.botoes-navbar-mobile button{
+    border: 2px var(--CP_darkmode) solid;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 4px;
+    padding-inline: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+.botoes-navbar-mobile button:hover{
+    background-color: var(--CP_darkmode);
+}
+.cadastro-header{
+    background-color: var(--CP_darkmode)!important; 
+    transition: 0.3s;
+}
+.cadastro-header:hover{
+    background-color: var(--CS_darkmode) !important;
+    border-color: var(--CS_darkmode);
+}
+.menu-mobile-icone{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+/*=============================================================================================================
+Personalisação do footer
+=============================================================================================================*/
 footer{
     background-color: var(--CP_darkmode);
     display: flex;
@@ -182,41 +204,44 @@ footer h4{
     text-align: left;
 }
 
-/*Cores do modo escuro*/
+/*=============================================================================================================
+Cores do modo escuro
+=============================================================================================================*/
 
 body.darkmode {
     background-color: var(--BKG_darkmode);
 }
-
 body.darkmode header{
     background-color: var(--CP_darkmode);
 }
-
-body.darkmode .botaodk{
-    border: 2px var(--cor_secundaria) solid;
+body.darkmode .botoes-navbar button{
+    border-color: var(--cor_primaria);
 }
-
-body.darkmode .botaodk:hover{
-    background-color: var(--cor_secundaria);
+body.darkmode .botoes-navbar button:hover{
+    transition: 0.3s;
+    background-color: var(--cor_primaria);
 }
+body.darkmode .botoes-navbar-mobile button{
+    border-color: var(--cor_primaria);
 
-body.darkmode .cadastroH{
-    background-color: var(--cor_secundaria);
+}
+body.darkmode .botoes-navbar-mobile button:hover{
+    background-color: var(--cor_primaria) !important;
+}
+body.darkmode .cadastro-header{
+    background-color: var(--cor_primaria) !important;
+}
+body.darkmode .cadastro-header:hover{
+    transition: 0.3s;
+    background-color: var(--cor_secundaria) !important;
     border-color: var(--cor_secundaria);
 }
-
-body.darkmode .entrarH{
-    border-color: var(--cor_secundaria);
+body.darkmode .nav-link:hover{
+    color: var(--cor_primaria);
 }
-
-body.darkmode .entrarH:hover{
-    background-color: var(--cor_secundaria)
-}
-
 body.darkmode p{
     color: #fff;
 }
-
 body.darkmode h1,
 body.darkmode h2,
 body.darkmode h3,
@@ -224,7 +249,9 @@ body.darkmode h4 {
     color: #fff;
 }
 
-/*Responsividades*/
+/*==============================================================================================================
+Responsividades
+=============================================================================================================*/
 
 @media (max-width: 900px){
     footer{
@@ -233,50 +260,22 @@ body.darkmode h4 {
 }
 
 /* Responsividade do header */
-@media (max-width: 768px) {
-    .container {
-        align-items: center; /* Centraliza os itens */
-        padding: 20px;
+@media (max-width: 770px){
+    .nav-link{
+        font-size: 14px;
     }
-
-    .Empresa {
-        margin-bottom: 15px; /* Adiciona um pequeno espaço entre a logo e os links */
+    .empresa img{
+        width: 50px;
     }
-
-    .links-header {
-        display: flex;
+    .fitunity{
+        font-size: 20px;
+    }
+    header ul{
         gap: 10px;
-        align-items: center; /* Centraliza os links */
     }
-
-    .Hlinks {
+    .botoes-navbar button{
         font-size: 14px;
-        margin-left: 0;
-        text-align: center;
     }
-
-    .botaodk, .cadastroH, .entrarH {
-        font-size: 14px;
-        padding: 8px;
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    .botaodk {
-        border-color: var(--CP_darkmode);
-    }
-
-    .logo {
-        width: 50px; /* Reduz o tamanho da logo */
-    }
-
-    .fitunity {
-        font-size: 20px; /* Reduz o tamanho do nome da empresa */
-    }
-}
-
-/* Responsividade do footer */
-@media (max-width: 768px) {
     footer {
         gap: 26px;
         padding: 20px;
@@ -311,7 +310,52 @@ body.darkmode h4 {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 484px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .botoes-navbar{
+        display: none;
+    }
+    .empresa{
+        margin-left: -40px;
+    }
+    .menu-mobile-icone{
+        display: block;
+    }
+    .menu-mobile-icone button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        margin-top: 27%;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .botoes-navbar-mobile{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .botoes-navbar-mobile button{
+        width: 200px;
+        display: block;
+        margin: auto;
+        margin-bottom: 13px;
+    }
+    .open{
+        display: block;
+    }
     .fitunity_footer {
         font-size: 20px; /* Ajusta ainda mais o tamanho da logo no rodapé */
     }
@@ -327,41 +371,6 @@ body.darkmode h4 {
     footer{
         display: block;
     }
-}
-
-/* Ajustes para telas pequenas */
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
-        flex-direction: column;
-    }
-
-    .logo {
-        width: 45px; /* Diminui ainda mais o tamanho da logo em telas pequenas */
-    }
-
-    .fitunity {
-        font-size: 22px; /* Diminui o tamanho da fonte do nome da empresa */
-    }
-
-    .links-header {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .Hlinks {
-        font-size: 22px; /* Ajuste de tamanho de fonte */
-        margin-left: 0;
-        text-align: center;
-        max-width: 500px;
-    }
-
-    .botaodk, .cadastroH, .entrarH {
-        font-size: 14px;
-        width: 190px;
-        text-align: center;
-    }
-
     footer p{
         text-align: center;
         font-size: 20px;
@@ -380,3 +389,40 @@ body.darkmode h4 {
         display: block;
     }
 }
+
+@media (max-width: 323px){
+    .menu-mobile-icone{
+        margin-right: -45px;
+    }
+    .empresa{
+        margin-left: -60px;
+    }
+    .empresa img{
+        width: 50px;
+    }
+    .fitunity{
+        font-size: 22px;
+    }
+    .logo-footer{
+        width: 80px;
+        height: 80px;
+    }
+    .fitunity_footer{
+        font-size: 30px;
+    }
+    .mobile-menu .botoes-navbar-mobile button{
+        width: 190px;
+        display: block;
+        margin: auto;
+        margin-bottom: 13px;
+        font-size: 16px;
+    }
+    .nav-link{
+        font-size: 16px;
+        text-align: center;
+    }
+    ul{
+        margin-left: -25px;
+    }
+}
+
