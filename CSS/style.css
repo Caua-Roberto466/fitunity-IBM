@@ -252,10 +252,18 @@ body.darkmode h4 {
 /*==============================================================================================================
 Responsividades
 =============================================================================================================*/
+@media(max-width: 1024px){
+    footer{
+        gap: 12px;
+    }
+}
 
 @media (max-width: 900px){
     footer{
         gap: 30px;
+    }
+    .nav-link{
+        font-size: 14px;
     }
 }
 
@@ -271,7 +279,7 @@ Responsividades
         font-size: 20px;
     }
     header ul{
-        gap: 10px;
+        gap: 8px;
     }
     .botoes-navbar button{
         font-size: 14px;
