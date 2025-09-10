@@ -166,6 +166,16 @@ footer a{
     text-align: left;
 }
 
+.Empresa{
+    display: flex;
+    gap: 4px;
+}
+.Empresa img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: -5px;
+}
+
 footer p{
     color: #fff;
     text-align: left;

@@ -160,6 +160,9 @@ ul li::before {
 Modo Noturno
 ===============================================================================================================
 */
+body.darkmode .treino-card1{
+    border: var(--borda-dk);
+}
 body.darkmode .treino-card{
     border: var(--borda-dk);
 }

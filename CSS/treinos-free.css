@@ -926,6 +926,20 @@ Responsividade
     margin: auto;
     margin-bottom: 15px;
    }
+   .video-braco{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .iframe-braco{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+   }
+   .texto-video-braco{
+    width: 400px;
+    margin: auto;
+   }
 }
 
 /*Tamanho de 768px*/
