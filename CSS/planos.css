@@ -1,3 +1,8 @@
+/*
+===============================================================================================================
+Geral
+===============================================================================================================
+*/
 :root{
     --cor_primaria: #00d9f8;
     --cor_secundaria: #1da3b8;
@@ -77,6 +82,11 @@ span{
     margin-bottom: 4rem;
 }
 
+/*
+===============================================================================================================
+Botões de contratar
+===============================================================================================================
+*/
 .Contratar{
     width: 59%;
     background-color: var(--CP_darkmode);
@@ -120,13 +130,13 @@ span{
 .bb{color: white;}
 .a{text-decoration: none;}
 
-ul {
+section ul {
   list-style: none;       /* remove as bolinhas padrão */
   padding-left: 0;
   margin-top: 25px;
 }
 
-ul li {
+section ul li {
   position: relative;
   padding-left: 1.2em;    /* espaço pro ícone */
   margin-right: 0;
@@ -135,7 +145,7 @@ ul li {
   font-family: 'Open Sans';
 }
 
-ul li::before {
+section ul li::before {
   content: "";   /* obrigatório */
   position: absolute;
   left: 0;
@@ -150,6 +160,11 @@ ul li::before {
     background-color: var(--cor_primaria);
 }
 
+/*
+===============================================================================================================
+Plano Avaçado
+===============================================================================================================
+*/
 .plano-avancado{
     background-color: var(--CP_darkmode);
 }
@@ -174,7 +189,11 @@ ul li::before {
     color: white;
 }
 
-/*modo noturno*/
+/*
+===============================================================================================================
+modo noturno
+===============================================================================================================
+*/
 body.darkmode section{
     border-color: var(--CP_darkmode);
 }
@@ -201,4 +220,38 @@ body.darkmode .plano-adaptado{
 
 body.darkmode .plano-avancado{
     background-color: var(--CS_darkmode);
+}
+
+/*
+===============================================================================================================
+Responsividades
+===============================================================================================================
+*/
+@media (max-width: 900px){
+    main{
+        width: 100%;
+    }
+    .Contratar, .Contratar2, .Contratar3{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px){
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 90%;
+        margin-left: 25px;
+    }
+    .Contratar, .Contratar2, .Contratar3{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 320px){
+    section{
+        width: 94%;
+        margin-left: 10px;
+    }
 }
