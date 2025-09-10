@@ -13,6 +13,11 @@
     --borda-dk: 0.9px #213872 solid;
 }
 
+/*
+===============================================================================================================
+Formulário
+===============================================================================================================
+*/
 form{
     width: 30%;
     display: block;
@@ -35,6 +40,7 @@ form h3{
     font-size: 37px;
 }
 
+
 .nome{
     width: 100%;
     margin-top: 10px;
@@ -46,6 +52,7 @@ form h3{
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .email{
@@ -59,6 +66,7 @@ form h3{
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .senha{
@@ -67,12 +75,12 @@ form h3{
     margin-bottom: 20px;
 }
 
-
 #senha{
     width: 55%;
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .peso{
@@ -86,6 +94,7 @@ form h3{
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .alturac{
@@ -99,6 +108,7 @@ form h3{
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .nascimento{
@@ -112,8 +122,8 @@ form h3{
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
+    background-color: transparent;
 }
-
 
 label{
     font-size: 20px;
@@ -141,32 +151,6 @@ label{
   flex-wrap: wrap; /* caso fique apertado em telas pequenas */
 }
 
-/*
-.estado{
-    margin-bottom: 20px;
-}
-
-#estado{
-    width: 250px;
-    background-color: transparent;
-    border: 1px var(--cor_secundaria) solid;
-    height: 30px;
-    border-radius: 5px;
-}
-
-.menssagem{
-    margin-bottom: 20px;
-}
-
-#menssagem{
-    width: 300px;
-    height: 200px;
-    resize: none;
-    border: 1px var(--cor_secundaria) solid;
-    border-radius: 5px;
-}
-*/
-
 .envi{
     margin-bottom: 10px;
 }
@@ -179,6 +163,7 @@ label{
     border: 1px var(--CP_darkmode) solid;
     border-radius: 7px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 #enviar:hover{
@@ -202,4 +187,78 @@ select{
     color: var(--cor_primaria);
     text-decoration: none;
     overflow: hidden;
+}
+
+/*
+===============================================================================================================
+Modo Noturno
+===============================================================================================================
+*/
+body.darkmode form{
+    border-color: var(--CP_darkmode);
+}
+body.darkmode label{
+    color: white;
+}
+body.darkmode #nome, body.darkmode #email, body.darkmode #senha, body.darkmode #peso-cad, body.darkmode #alturac, body.darkmode #nasci, body.darkmode .radio{
+    border-color: var(--CP_darkmode);
+}
+body.darkmode #nasci{
+    color: white;
+}
+body.darkmode #enviar{
+    border-color: var(--cor_primaria);
+    color: white;
+}
+body.darkmode #enviar:hover{
+    background-color: var(--cor_primaria);
+}
+
+/*
+===============================================================================================================
+Responsividades
+===============================================================================================================
+*/
+
+@media (max-width: 1026px){
+    form{
+        width: 36%;
+    }
+    #nome, #email, #senha, #peso-cad, #alturac, #nasci{
+        width: 65%;
+    }
+}
+
+@media (max-width: 902px){
+    form{
+        width: 43%;
+    }
+    #nome, #email, #senha, #peso-cad, #alturac, #nasci{
+        width: 75%;
+    }
+}
+
+@media (max-width: 770px){
+    form{
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px){
+    form{
+        width: 73%;
+    }
+}
+
+@media (max-width: 322px){
+    form{
+        width: 94%;
+    }
+    .radio{
+        flex-direction: column;
+        width: 70%;
+    }
+    .radio label{
+        margin-bottom: 10px;
+    }
 }

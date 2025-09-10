@@ -338,6 +338,7 @@ Responsividades
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
+        margin-left: -35px;
     }
     .mobile-menu .nav-item{
         display: block;
@@ -357,14 +358,16 @@ Responsividades
         display: block;
     }
     .fitunity_footer {
-        font-size: 20px; /* Ajusta ainda mais o tamanho da logo no rodapé */
+        font-size: 30px; /* Ajusta ainda mais o tamanho da logo no rodapé */
     }
-    
+    .logo-footer{
+        width: 90px;
+        height: 90px;
+    }
     footer p {
         font-size: 14px; /* Reduz o tamanho da fonte dos contatos */
         text-align: center;
     }
-
     footer a {
         font-size: 14px; /* Ajusta o tamanho das fontes no rodapé */
     }
@@ -421,8 +424,8 @@ Responsividades
         font-size: 16px;
         text-align: center;
     }
-    ul{
-        margin-left: -25px;
+    .mobile-menu ul{
+        margin-left: -35px;
     }
 }
 
