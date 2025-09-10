@@ -1,3 +1,8 @@
+/*
+===============================================================================================================
+Estilo Geral
+===============================================================================================================
+*/
 :root{
     --cor_primaria: #00d9f8;
     --cor_secundaria: #1da3b8;
@@ -45,7 +50,11 @@ main{
     justify-content: space-between;
 }
 
-/*Perfil do usuário a esquerda*/
+/*
+===============================================================================================================
+Perfil do usuário a esquerda
+===============================================================================================================
+*/
 .foto-user{
     width: 200px;   /* largura fixa */
     height: 200px;  /* altura fixa */
@@ -86,7 +95,11 @@ main{
     height: 20px;
 }
 
-/*dados do usuário a direita*/
+/*
+===============================================================================================================
+Dados do usuário à direita
+===============================================================================================================
+*/
 .dados-user{
     margin-right: 22px;
 }
@@ -157,10 +170,11 @@ main{
     color: black !important;
 }
 
-body.darkmode .info-user-text {
-    color: white !important;
-}
-
+/*
+===============================================================================================================
+Sistema de metas
+===============================================================================================================
+*/
 .xpHud{
     margin: 10px;
 }
@@ -229,10 +243,18 @@ input {
     background-color: transparent;
 }
 
-/*Modo noturno*/
+/*
+===============================================================================================================
+Modo Noturno
+===============================================================================================================
+*/
 
 body.darkmode #nome-user{
     color: white;
+}
+
+body.darkmode .info-user-text {
+    color: white !important;
 }
 
 body.darkmode main{
@@ -291,4 +313,66 @@ body.darkmode .progress-bar{
 
 body.darkmode strong{
     color: white;
+}
+
+/*
+===============================================================================================================
+Responsividade
+===============================================================================================================
+*/
+@media (max-width: 480px){
+    main{
+        width: 400px;
+    }
+    .conteudo{
+        flex-direction: column;
+    }
+    .info-user{
+        margin: auto;
+    }
+    .dados-user{
+        margin: auto;
+    }
+    #nome-user{
+        font-size: 30px;
+    }
+    #id-user{
+        font-size: 25px;
+    }
+    .meta{
+        width: 380px;
+    }
+    #nomeMeta{
+        width: 200px;
+    }
+    #valorMeta{
+        width: 100px;
+    }
+}
+
+@media (max-width: 320px){
+    main{
+        width: 294px;
+    }
+    .foto-user{
+        width: 190px;
+        height: 190px;
+        margin-left: 28px;
+    }
+    .peso, .altura, .idade, .imc{
+        width: 230px;
+    }
+    .meta{
+        width: 290px;
+    }
+    #nomeMeta{
+        display: block;
+        width: 290px;
+        margin-left: 15px;
+        margin-bottom: 12px;
+    }
+    #valorMeta{
+        width: 120px;
+        margin-left: 32px;
+    }
 }
