@@ -254,11 +254,20 @@ Responsividades
 =============================================================================================================*/
 @media(max-width: 1024px){
     footer{
-        gap: 12px;
+        gap: 70px;
+    }
+    .Empresa{
+        flex-direction: column;
+    }
+    .Empresa img{
+        display: block;
+        margin: auto;
+        margin-top: 8px;
+        margin-bottom: -15px;
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 902px){
     footer{
         gap: 30px;
     }
@@ -285,7 +294,7 @@ Responsividades
         font-size: 14px;
     }
     footer {
-        gap: 26px;
+        gap: 32px;
         padding: 20px;
         text-align: center;
     }

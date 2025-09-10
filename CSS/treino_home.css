@@ -12,6 +12,11 @@
     --borda-dk: 1px #213872 solid;
 }
 
+/*
+===============================================================================================================
+Estilo geral
+===============================================================================================================
+*/
 #treinolink{
     color: var(--CS_darkmode);
 }
@@ -28,14 +33,36 @@ h1{
 }
 
 main{
-    width: 80%;
+    width: 100%;
     display: block;
     margin: auto;
+}
+
+/*
+===============================================================================================================
+Card de treinos
+===============================================================================================================
+*/
+.container-th1{
+    display: flex;
+    justify-content: center;
+    padding-inline: 20px;
 }
 
 .container-th{
     display: flex;
     justify-content: center;
+}
+
+.treino-card1{
+    border: var(--borda);
+    width: 30%;
+    border-radius: 13px;
+    margin-bottom: 5%;
+}
+
+#treino-card1{
+    margin-right: 7%;
 }
 
 .treino-card{
@@ -49,9 +76,13 @@ main{
     margin-right: 7%;
 }
 
-.treino-card h3{
+.treino-card h3, .treino-card1 h3{
     font-size: 150%;
     margin-top: -2px;
+}
+
+.treino-card1 p{
+    margin: 3%;
 }
 
 .treino-card p{
@@ -63,13 +94,30 @@ main{
     margin-left: 6%;
 }
 
-ul {
+.treino-card1 ul {
   list-style: none;       /* remove as bolinhas padrão */
   padding-left: 0;
   margin-top: 25px;
 }
 
-ul li {
+.treino-card1 ul li {
+  position: relative;
+  padding-left: 1.2em;    /* espaço pro ícone */
+  margin-right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  
+  font-family: 'Open Sans';
+}
+
+.treino-card ul {
+  list-style: none;       /* remove as bolinhas padrão */
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+.treino-card ul li {
   position: relative;
   padding-left: 1.2em;    /* espaço pro ícone */
   margin-right: 0;
@@ -107,7 +155,11 @@ ul li::before {
     margin-bottom: 8%;
 }
 
-/*Modo noturno*/
+/*
+===============================================================================================================
+Modo Noturno
+===============================================================================================================
+*/
 body.darkmode .treino-card{
     border: var(--borda-dk);
 }
@@ -119,4 +171,47 @@ body.darkmode ul li{
 body.darkmode #ir-plano{
     border: var(--borda-dk);
     background-color: var(--CP_darkmode);
+}
+
+/*
+===============================================================================================================
+Responsividade
+===============================================================================================================
+*/
+
+@media (max-width: 902px){
+    .treino-card{
+        width: 30%;
+    }
+    .treino-card1{
+        width: 100%;
+    }
+    #treino-card1{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 770px){
+    .container-th1{
+        padding-inline: 10px;
+    }
+    .treino-card{
+        width: 33%;
+    }
+}
+
+@media(max-width: 480px){
+    .container-th, .container-th1{
+        flex-direction: column;
+    }
+    .container-th{
+        padding-inline: 10px;
+    }
+    .treino-card{
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    
 }

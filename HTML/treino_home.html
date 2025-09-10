@@ -15,21 +15,42 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="Empresa">
-                <img src="../Imagens/Logo@.png" alt="Coração simulando batimentos cardiácos com halteres na ponta" class="logo">
+        <nav class="nav-bar">
+            <div class="empresa">
+                <img src="../Imagens/Logo@.png" width="70px" alt="">
                 <h2 class="fitunity">FitUnity</h2>
             </div>
-            <nav class="links-header">
-
-                <a href="perfil.html" class="Hlinks"><b>Perfil</b></a>
-                <a href="sobre-nos.html" class="Hlinks"><b>Sobre nós</b></a>
-                <a href="#" class="Hlinks"><b>Dieta</b></a>
-                <a href="#" class="Hlinks" id="treinolink"><b>Treino</b></a>
-                <button id="toggle-dark" class="botaodk"><b>Modo noturno</b></button>
-                <button class="entrarH"><a href="entrar.html" class="Elink"><b>Entrar</b></a></button>
-                <button class="cadastroH"><a href="cadastro.html" class="Clink"><b>Cadastre-se</b></a></button>
-            </nav>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                    <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+                </ul>
+                <div class="botoes-navbar">
+                    <button id="toggle-dark">Modo Noturno</button>
+                    <button><a href="#">Entrar</a></button>
+                    <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
+                </div>
+            </div>
+            <div class="menu-mobile-icone">
+                <button onclick="mostrar()"><img src="../Imagens/menu_white_36dp.svg" class="icone" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+            </ul>
+            <div class="botoes-navbar-mobile">
+                <button id="toggle-dark-mobile">Modo Noturno</button>
+                <button><a href="#">Entrar</a></button>
+                <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
+            </div>
         </div>
     </header>
 
@@ -37,8 +58,8 @@
     <p id="tth">Escolha um treino e acompanhamento ideal para você</p>
 
     <main>
-        <section class="container-th">
-            <div class="treino-card" id="treino-card">
+        <section class="container-th1">
+            <div class="treino-card1" id="treino-card1">
                 <img src="../Imagens/Imagens_treino_home/treino-free.png" id="treino-img" alt="">
                 <h3>Treino Grátis</h3>
                 <p>
@@ -53,7 +74,7 @@
                 </ul>
                 <a href="treinos-free.html" id="ath"><button id="ir-plano">Ir ao treino</button></a>
             </div>
-            <div class="treino-card" id="treino-card">
+            <div class="treino-card1" id="treino-card1">
                 <img src="../Imagens/Imagens_treino_home/personalize.png" id="treino-img" alt="">
                 <h3>Personalize seu treino</h3>
                 <p>
@@ -66,7 +87,7 @@
                 </ul>
                 <a href="planos.html" id="ath"><button id="ir-plano">Ir ao plano</button></a>
             </div>
-            <div class="treino-card">
+            <div class="treino-card1">
                 <img src="../Imagens/Imagens_treino_home/avncado.png" id="treino-img" alt="">
                 <h3>Treino avançado</h3>
                 <p>
@@ -163,5 +184,6 @@
         </div>
     </footer>
     <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/menu.js" defer></script>
 </body>
 </html>
