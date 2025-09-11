@@ -14,120 +14,193 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="Empresa">
-                <img src="../Imagens/Logo@.png" alt="Coração simulando batimentos cardiácos com halteres na ponta" class="logo">
-                <h2 class="fitunity"><a href="index.html" class="fitunity">FitUnity</a></h2>
+        <nav class="nav-bar">
+            <div class="empresa">
+                <img src="../Imagens/Logo@.png" width="70px" alt="">
+                <h2 class="fitunity">FitUnity</h2>
             </div>
-            <nav class="links-header">
-
-                <a href="perfil.html" class="Hlinks"><b>Perfil</b></a>
-                <a href="#" class="Hlinks" id="SNlink"><b>Sobre nós</b></a>
-                <a href="#" class="Hlinks"><b>Dieta</b></a>
-                <a href="treino_home.html" class="Hlinks"><b>Treino</b></a>
-                <button id="toggle-dark" class="botaodk"><b>Modo noturno</b></button>
-                <button class="entrarH"><a href="entrar.html" class="Elink"><b>Entrar</b></a></button>
-                <button class="cadastroH"><a href="cadastro.html" class="Clink"><b>Cadastre-se</b></a></button>
-            </nav>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                    <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+                </ul>
+                <div class="botoes-navbar">
+                    <button id="toggle-dark">Modo Noturno</button>
+                    <button><a href="entrar.html">Entrar</a></button>
+                    <button class="cadastro-header"><a href="cadastro.html">Cadastre-se</a></button>
+                </div>
+            </div>
+            <div class="menu-mobile-icone">
+                <button onclick="mostrar()"><img src="../Imagens/menu_white_36dp.svg" class="icone" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+            </ul>
+            <div class="botoes-navbar-mobile">
+                <button id="toggle-dark-mobile">Modo Noturno</button>
+                <button><a href="cadastro.html">Entrar</a></button>
+                <button class="cadastro-header"><a href="cadastro.html">Cadastre-se</a></button>
+            </div>
         </div>
     </header>
 
-    <h1>Entenda um pouco mais sobre nós</h1>
-    <h2>Nossa história</h2>
-    <section class="nossa-historia">
-        
-        <div class="historia-box">
+    <!--Imagem de Introdução-->
+    <img src="../Imagens/Imagens_sobre-nos/intro-sobre.png" class="img-intro" alt="">
+
+    <!--Sessão do sobre nós-->
+    <section class="sobre-nos">
+        <div class="texto-intro-sobre">
+            <h3>Sobre Nós</h3>
             <p>
-                A FitUnity nasceu do sonho de transformar vidas por meio do equilíbrio entre corpo e mente. Tudo começou quando um grupo de profissionais da área da saúde e tecnologia, percebeu uma grande dificuldade: muitas pessoas queriam cuidar da saúde, mas não sabiam por onde começar ou não encontravam tempo para isso.
+                A FitUnity nasceu do sonho de transformar vidas por meio do equilíbrio entre corpo e mente. Tudo começou quando um grupo de profissionais da área da saúde e tecnologia, percebeu uma grande dificuldade: muitas pessoas queriam cuidar da saúde, mas não sabiam por onde começar ou não encontravam tempo para isso. 
                 <br>
                 Foi aí que surgiu a ideia de criar uma plataforma digital completa, com treinos personalizados, acompanhamento nutricional e suporte profissional — tudo ao alcance de um clique e adaptado à rotina de cada usuário.
-                <br>
-                Desde o início, nossa missão foi clara: tornar o cuidado com o corpo algo simples, acessível e motivador para todos. Com isso, desenvolvemos um aplicativo e um site responsivo focado em três pilares:
-                <br>
-	            •	Treinos adaptáveis, com ou sem equipamentos; <br>
-	            •	Planos alimentares personalizados, criados por nutricionistas; <br>
-	            •	Acompanhamento com personal trainers online, para garantir resultados reais. <br>
-            
-                Hoje, a Vida+Fit impacta centenas de pessoas que decidiram mudar de vida, melhorar sua autoestima e investir no bem estar mais precioso: a saúde.
             </p>
         </div>
+        <img src="../Imagens/Imagens_sobre-nos/sobre-img.png" alt="">
     </section>
 
-    <section class="MVV">
-        <div class="ContainerMissao">
-            <img src="../Imagens/Imagens_sobre-nos/Nossa-missao.png" alt="" class="imgMVV">
-            <div class="Missao-card">
-                <h4>Nossa missão</h4>
-                <p>
-                    Espalhar a saúde para todos de uma forma facil e igualitaria.
-                </p>
-            </div>
-        </div>
-        <div class="ContainerValores">
-            <div class="Valores-card">
-                <h4>Nossos valores</h4>
-                <p>
-                    Sua saúde e segurança vale mais que todo o seu dinhero.
-                </p>
-            </div>
-            <img src="../Imagens/Imagens_sobre-nos/Nossos-valores.png" alt="" class="imgMVV">
-        </div>
-        <div class="ContainerVisao">
-            <img src="../Imagens/Imagens_sobre-nos/Nossa-visao.png" alt="" class="imgMVV">
-            <div class="Visao-card">
-                <h4>Nossa visão</h4>
-                <p>
-                    Um mundo onde todos se sentem confortaveis com seus corpos e com uma saúde melhor, é o melhor mundo para se alcançar.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="Nosso-objetivo">
-        <h2>Nosso Objetivo</h2>
-        <div class="Objetivo-box">
+    <!--Sessão dos nossos objetivos-->
+    <section class="nossos-objetivos">
+        <img src="../Imagens/Imagens_sobre-nos/objetivo-img.png" alt="">
+        <div class="texto-objetivo">
+            <h3>Nossos Obejtivos</h3>
             <p>
-                Torna treinos acessíveis para todas as pessoas que buscam emagrecer, de uma forma que se adeque a suas rotinas, e posisibilitar um acesso para treinos especifícos para cada usuário.
+                Proporcionar saúde e bem-estar acessíveis a todos, oferecendo treinos personalizados, orientação nutricional e acompanhamento profissional em uma plataforma digital prática e inovadora, adaptada à rotina e às necessidades individuais de cada usuário sem cobrar preços absurdos para disponibilizar nossos serviços.
             </p>
         </div>
     </section>
 
+    <!--Sessão dos fatos sobre nós-->
+    <section class="fatos">
+        <h2>Fatos sobre nossa empresa</h2>
+        <div class="container-fatos">
+            <div class="fato-card">
+                <h3>+ 18 mil</h3>
+                <p>Usuários ativos diariamente</p>
+            </div>
+            <div class="fato-card">
+                <h3>+ 24 mil</h3>
+                <p>Fichas de treino prontas para você</p>
+            </div>
+            <div class="fato-card">
+                <h3>1.000</h3>
+                <p>
+                    personais trainer para te ajudar
+                </p>
+            </div>
+            <div class="fato-card">
+                <h3>+ 12 mil</h3>
+                <p>Usuários com plano ativo</p>
+            </div>
+        </div>
+        <div class="container-fatos">
+            <div class="fato-card">
+                <h3>+ 1,1 mil</h3>
+                <p>Funcionários ativos semanalmente</p>
+            </div>
+            <div class="fato-card">
+                <h3>476</h3>
+                <p>Médicos para te monitorar</p>
+            </div>
+            <div class="fato-card">
+                <h3>298</h3>
+                <p>Nutricionistas para você</p>
+            </div>
+            <div class="fato-card">
+                <h3>+ 1,4 mil</h3>
+                <p>Usuários novos mensalmente</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão das nossas metas-->
+    <section class="nossas-metas">
+        <h2>Nossas metas</h2>
+        <div class="container-meta">
+            <div class="meta-card">
+                <h3>Metas de curto prazo</h3>
+                <p>
+                    Desenvolver e lançar a plataforma digital com funcionalidades básicas (cadastro, treinos personalizados e acompanhamento nutricional).
+                </p>
+                <p>
+                    Alcançar os primeiros 500 usuários ativos na plataforma.
+                </p>
+                <p>
+                    Criar presença digital forte em redes sociais, compartilhando conteúdos de saúde, treinos e bem-estar.
+                </p>
+                <p>
+                    Firmar parcerias iniciais com profissionais de educação física e nutrição.
+                </p>
+            </div>
+            <div class="meta-card">
+                <h3>Metas de médio prazo</h3>
+                <p>
+                    Expandir a base de usuários para 20 mil assinantes ativos.
+                </p>
+                <p>
+                    Ampliar os serviços com recursos de inteligência artificial para personalização de treinos e dietas.
+                </p>
+                <p>
+                    Lançar um aplicativo mobile completo para iOS e Android.
+                </p>
+                <p>
+                    Estabelecer parcerias com academias, clínicas e empresas para programas corporativos de saúde.
+                </p>
+            </div>
+            <div class="meta-card">
+                <h3>metas de longo prazo</h3>
+                <p>
+                    Tornar-se referência nacional em treinos personalizados e saúde digital.
+                </p>
+                <p>
+                    Expandir a atuação para outros países da América Latina.
+                </p>
+                <p>
+                    Criar uma comunidade interativa de usuários, instrutores e nutricionistas dentro da plataforma.
+                </p>
+                <p>
+                    Impactar a vida de mais de 1 milhão de pessoas, promovendo qualidade de vida e bem-estar sustentável.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão da nossa equipe-->
     <section class="nossa-equipe">
         <h2>Nossa Equipe</h2>
-        <div class="Equipe1">
-            <div class="Caio-card">
+        <div class="container-equipe">
+            <div class="membro">
+                <img src="../Imagens/Imagens_sobre-nos/Caio.jpeg" alt="Caio Novaes">
                 <h4>Caio Novaes</h4>
-                <p>
-                    Engenheiro de Software, especialista em sistemas escaláveis, Caio foca em soluções robustas e seguras, com experiência em Java, Python e bancos de dados distribuídos.
-                </p>
+                <p>Engenheira de Software, especialista em sistemas escaláveis</p>
             </div>
-            <div class="Caua-card">
+            <div class="membro">
+                <img src="../Imagens/Imagens_sobre-nos/Caua.jpeg" alt="Cauã Roberto">
                 <h4>Cauã Roberto</h4>
-                <p>
-                    Desenvolvedor Full Stack, apaixonado por tecnologia e inovação, Cauã atua no desenvolvimento completo de aplicações web, unindo funcionalidade e design com eficiência.
-                </p>
+            </div>
+            <div class="membro">
+                <img src="../Imagens/Imagens_sobre-nos/Claudia.jpeg" alt="Claudia Vieira">
+                <h4>Heloisa SIlva</h4>
             </div>
         </div>
-        <div class="Equipe2">
-            <div class="Claudia-card">
-                <h4>Claudia Vieira</h4>
-                <p>
-                    Analista de Sistemas, responsável por planejar e otimizar processos tecnológicos, Claudia  une análise de requisitos a soluções práticas em ambientes corporativos.
-                </p>
+        <div class="container-equipe">
+            <div class="membro">
+                <img src="../Imagens/Imagens_sobre-nos/Guilherme.jpeg" alt="Guilherme Araújo">
+                <h4>Guilherme Araújo</h4>
             </div>
-            <div class="Guilherme-card">
-                <h4>Guilherme Araujo</h4>
-                <p>
-                    Programador Front-End, com talento para transformar ideías em interfaces intuitivas, Guilherme domina HTML, CSS e JavaScript para criar experiências visuais cativantes.
-                </p>
-            </div>
-        </div>
-        <div class="Equipe3">
-            <div class="Heloisa-card">
+            <div class="membro">
+                <img src="../Imagens/Imagens_sobre-nos/Heloisa.jpeg" alt="Heloisa Silva">
                 <h4>Heloisa Silva</h4>
-                <p>
-                    Desenvolvedora Back-End, Heloisa desenvolve a lógica por trás das aplicações, garantindo desempenho e integração entre sistemas com foco em Node.js e APIs REST.
-                </p>
             </div>
         </div>
     </section>
@@ -181,5 +254,6 @@
         </div>
     </footer>
     <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/menu.js"></script>
 </body>
 </html>

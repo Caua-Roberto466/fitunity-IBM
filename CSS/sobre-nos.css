@@ -1,3 +1,8 @@
+/*
+===============================================================================================================
+Geral
+===============================================================================================================
+*/
 :root{
     --cor_primaria: #00d9f8;
     --cor_secundaria: #1da3b8;
@@ -13,322 +18,148 @@
     --borda-dk: 0.9px #213872 solid;
 }
 
-.historia-box{
-    width: 600px;
-    border: var(--borda);
-    box-shadow: var(--box-shadow);
-    display: block;
-    margin: auto;
-    padding: 7px;
-    margin-bottom: 25px;
+.img-intro{
+    width: 100%;
+    margin-top: 0;
+    max-height: 510px;
 }
 
-.MVV{
-    width: 600px;
-    display: block;
-    margin: auto;
-    margin-top: 25px;
+h2{
+    font-size: 220%;
+    margin-top: 6%;
 }
-
-/*Personalização do card de missão*/
-.ContainerMissao{
+/*
+===============================================================================================================
+Estilização do Sobre Nós
+===============================================================================================================
+*/
+.sobre-nos{
+    margin-top: 4%;
     display: flex;
     justify-content: space-between;
+    padding-inline: 5%;
+    align-items: flex-start;
 }
 
-.imgMVV{
-    width: 250px;
-    margin-left: 20px;
+.texto-intro-sobre{
+    max-width: 65%;
+    font-size: 110%;
 }
 
-.Missao-card{
-    width: 200px;
-    border: var(--borda);
-    margin-right: 20px;
-    box-shadow: var(--box-shadow);
-}
-
-.Missao-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 15px;
-    font-size: 22px;
-}
-
-.Missao-card p{
-    padding: 8px;
-}
-
-/*Personalização do card de valores*/
-.ContainerValores{
+/*
+===============================================================================================================
+Estilização dos nossos objetivos
+===============================================================================================================
+*/
+.nossos-objetivos{
     display: flex;
+    margin-top: 5%;
+    padding-inline: 4%;
     justify-content: space-between;
-    margin-top: 70px;
+    align-items: flex-start;
+}
+.texto-objetivo{
+    max-width: 65%;
+    font-size: 130%;
 }
 
-.Valores-card{
-    width: 200px;
-    border: var(--borda);
-    margin-right: 20px;
-    box-shadow: var(--box-shadow);
+/*
+===============================================================================================================
+Estilização do fatos de nossa empresa
+===============================================================================================================
+*/
+.fatos{
+    margin-top: 5%;
 }
-
-.Valores-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 15px;
-    font-size: 22px;
-}
-
-.Valores-card p{
-    padding: 8px;
-}
-
-/*Personalização do car de visão*/
-.ContainerVisao{
+.container-fatos{
     display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 2%;
 }
-
-.Visao-card{
-    width: 200px;
-    border: var(--borda);
-    margin-right: 20px;
-    box-shadow: var(--box-shadow);
+.fato-card{
+    width: 20%;
+    background-color: var(--cor_secundaria);
+    text-align: center;
+    border-radius: 15px
 }
-
-.Visao-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 15px;
-    font-size: 22px;
+.fato-card h3{
+    font-size: 140%;
 }
-
-.Visao-card p{
-    padding: 8px;
-}
-
-.nosso-objetivo{
-    margin-top: 70px;
-}
-
-.Objetivo-box{
-    width: 570px;
-    border: var(--borda);
+.fato-card p{
+    max-width: 70%;
+    font-size: 130%;
     display: block;
     margin: auto;
-    padding-left: 7px;
-    box-shadow: var(--box-shadow);
-    margin-bottom: 70px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+    font-weight: 450;
 }
 
+/*
+===============================================================================================================
+Nossas metas
+===============================================================================================================
+*/
+.nossas-metas{
+    margin-top: 8%;
+}
+.container-meta{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+.meta-card{
+    width: 26%;
+    border-radius: 15px;
+    border: var(--borda);
+}
+.meta-card p{
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/*
+===============================================================================================================
+Nossa Equipe
+===============================================================================================================
+*/
 .nossa-equipe{
-    display: block;
-    margin: auto;
-    width: 550px;
+    margin-top: 8%;
 }
-
-.Equipe1{
+.container-equipe{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+.membro img{
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+.membro h4{
+    font-size: 150%;
+}
+.membro p{
+    max-width: 250px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -20px;
 }
 
-.Caio-card{
-    width: 220px;
-    border: var(--borda);
-    border-radius: 20px;
-    box-shadow: var(--box-shadow);
-}
-
-.Caio-card p{
-    padding: 7px;
-}
-
-.Caio-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 17px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 27px;
-}
-
-.Caua-card{
-    width: 220px;
-    border: var(--borda);
-    border-radius: 20px;
-    box-shadow: var(--box-shadow);
-}
-
-.Caua-card p{
-    padding: 7px;
-}
-
-.Caua-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 17px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 27px;
-}
-
-.Equipe2{
-    display: flex;
-    justify-content: space-between;
-}
-
-.Claudia-card{
-    width: 220px;
-    border: var(--borda);
-    border-radius: 20px;
-    box-shadow: var(--box-shadow);
-    margin-top: 40px;
-}
-
-.Claudia-card p{
-    padding: 7px;
-}
-
-.Claudia-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 17px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 27px;
-}
-
-.Guilherme-card{
-    width: 220px;
-    margin-top: 40px;
-    border: var(--borda);
-    border-radius: 20px;
-    box-shadow: var(--box-shadow);
-}
-
-.Guilherme-card p{
-    padding: 7px;
-}
-
-.Guilherme-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 17px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 27px;
-}
-
-.Equipe3{
-    display: block;
-    width: 220px;
-    margin: auto;
-}
-
-.Heloisa-card{
-    margin-top: 40px;
-    width: 220px;
-    border: var(--cor_primaria);
-    border-radius: 20px;
-    box-shadow: var(--box-shadow);
-}
-
-.Heloisa-card p{
-    padding: 7px;
-}
-
-.Heloisa-card h4{
-    background-color: var(--cor_primaria);
-    color: #fff;
-    margin: 0;
-    padding: 17px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 27px;
-}
-
-#SNlink{
-    color: var(--CS_darkmode);
-}
-
-/*Modo noturno*/
-body.darkmode .historia-box{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Missao-card{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Missao-card h4{
+/*
+===============================================================================================================
+Modo Noturno
+===============================================================================================================
+*/
+body.darkmode .fato-card{
     background-color: var(--CP_darkmode);
 }
-
-body.darkmode .Visao-card{
+body.darkmode .meta-card{
     border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Visao-card h4{
-    background-color: var(--CP_darkmode);
-}
-
-body.darkmode .Valores-card{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Valores-card h4{
-    background-color: var(--CP_darkmode);
-}
-
-body.darkmode .Objetivo-box{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Caio-card{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Caio-card h4{
-    background-color: var(--CP_darkmode);
-}
-
-body.darkmode .Caua-card{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Caua-card h4{
-    background-color: var(--CP_darkmode);
-}
-
-body.darkmode .Claudia-card{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Claudia-card h4{
-    background-color: var(--CP_darkmode);
-}
-
-body.darkmode .Guilherme-card{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Guilherme-card h4{
-    background-color: var(--CP_darkmode);
-}
-
-body.darkmode .Heloisa-card{
-    border-color: var(--CP_darkmode);
-}
-
-body.darkmode .Heloisa-card h4{
-    background-color: var(--CP_darkmode);
 }
