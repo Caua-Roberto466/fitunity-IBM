@@ -125,6 +125,33 @@ ul{
     display: none;
 }
 
+
+
+
+/*
+===============================================================================================================
+Pop-up
+===============================================================================================================
+*/
+#pagamento{
+    border: none;
+}
+.pagamento-popup{
+    width: 600px;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 48vh;
+    margin-left: 54vh;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px var(--CP_darkmode) solid;
+    box-shadow: -20px -10px -10px -10px  rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
 @media (max-width: 770px){
     .nav-link{
         font-size: 14px;

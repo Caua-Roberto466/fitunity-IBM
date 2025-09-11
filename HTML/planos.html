@@ -81,7 +81,7 @@
                 <li>Acompanhamento físico leve</li>
                 <li>Ambiente confortável para treinar com segurança</li>
             </ul>
-            <button class="Contratar"><a href="pagamento-plano.html" class="a"><b class="bb">Contratar agora</b></a></button>
+            <button class="Contratar" popovertarget="popup"><b class="bb">Contratar agora</b></button>
         </section>
         <section class="plano-adaptado">
             <h2>Plano adaptado</h2>
@@ -103,7 +103,7 @@
                 <li>suporte emocional e técnico individualizado</li>
             </ul>
 
-            <button class="Contratar2"><a href="pagamento-plano.html" class="a"><b class="bb">Contratar agora</b></a></button>
+            <button class="Contratar2" popovertarget="popup"><b class="bb">Contratar agora</b></button>
         </section>
         <section class="plano-avancado">
             <h2>Plano avançado</h2>
@@ -125,7 +125,35 @@
                 <li>Acompanhamento médico mensal (caso utilize de anabolizantes)</li>
                 <li>Suporte para competições</li>
             </ul>
-            <button class="Contratar3"><a href="pagamento-plano.html" class="a"><b class="bb">Contratar agora</b></a></button>
+            <button class="Contratar3" popovertarget="popup"><b class="bb">Contratar agora</b></button>
+        </section>
+        <section id="popup" popover>
+            <h2>Pagamento</h2>
+                <form action="#">
+                    <div class="campo-input">
+                        <!--Campo de email-->
+                        <div class="email">
+                            <label for="email">Email</label>
+                           <input type="email" name="email" id="email" placeholder="Coloque seu email" required>
+                        </div>
+                        <!--Campo do telefone-->
+                        <div class="telefone">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Ex: 11945431290" required>
+                        </div>
+                    </div>
+                    <div class="campo-input">
+                        <div class="cartao">
+                        <label for="cartao">Cartão</label>
+                        <input type="text" name="cartao" id="cartao" placeholder="Ex: 1234 5678 9100 1213" required>
+                        </div>
+                        <div class="cvc">
+                        <label for="cvc">CVC</label>
+                        <input type="text" name="cvc" id="cvc" placeholder="Ex: 121" required>
+                        </div>
+                    </div>
+                    <button id="pagar">Pagar</button>
+                </form>
         </section>
     </main>
 

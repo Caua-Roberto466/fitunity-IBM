@@ -126,7 +126,6 @@ Botões de contratar
     margin-bottom: 3rem;
 }
 
-
 .bb{color: white;}
 .a{text-decoration: none;}
 
@@ -191,6 +190,57 @@ Plano Avaçado
 
 /*
 ===============================================================================================================
+POP-UP
+===============================================================================================================
+*/
+#popup{
+    z-index: 1000;
+    position: fixed;
+    margin-left: 23%;
+    margin-top: 7%;
+    height: 70%;
+    border: 4px var(--cor_primaria) solid;
+    width: 55%;
+}
+#popup label{
+    font-size: 30px;
+    font-family: 'Montserrat' , sans-serif;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: -10px;
+}
+.campo-input{
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin-top: 8%;
+}
+#email, #telefone, #cartao, #cvc{
+    border: var(--borda);
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+}
+#pagar{
+    width: 30%;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid var(--cor_primaria);
+    background-color: var(--cor_primaria);
+    color: white;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 9%;
+    margin-bottom: 5px;
+}
+
+/*
+===============================================================================================================
 modo noturno
 ===============================================================================================================
 */
@@ -222,17 +272,36 @@ body.darkmode .plano-avancado{
     background-color: var(--CS_darkmode);
 }
 
+body.darkmode #popup{
+    background-color: var(--CP_darkmode);
+}
+body.darkmode #popup label{
+    color: white;
+}
+
 /*
 ===============================================================================================================
 Responsividades
 ===============================================================================================================
 */
+@media (max-width:1024px){
+    #popup{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 12%;
+    }
+}
+
 @media (max-width: 900px){
     main{
         width: 100%;
     }
     .Contratar, .Contratar2, .Contratar3{
         width: 80%;
+    }
+    #email, #telefone, #cartao, #cvc{
+        width: 250px;
+        height: 30px;
     }
 }
 
