@@ -199,7 +199,7 @@ POP-UP
     margin-left: 23%;
     margin-top: 7%;
     height: 70%;
-    border: 4px var(--cor_primaria) solid;
+    border: 4px var(--CS_darkmode) solid;
     width: 55%;
 }
 #popup label{
@@ -331,6 +331,7 @@ Responsividades
     }
     #popup{
         height: 68%;
+        border: 2px var(--CS_darkmode) solid;
     }
     .campo-input{
         flex-direction: column;
