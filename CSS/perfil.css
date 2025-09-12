@@ -22,13 +22,13 @@ Estilo Geral
     color: var(--CS_darkmode);
 }
 
-main{
-    width: 610px;
-    margin: auto;
+main {
+    width: 100%;
+    max-width: 610px; /* limite no desktop */
+    margin: 50px auto 70px auto;
     border: 1px var(--cor_primaria) solid;
     border-radius: 15px;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    box-sizing: border-box;
 }
 
 .min{
@@ -63,7 +63,10 @@ Perfil do usuário a esquerda
     border-radius: 100%; /* opcional: cantos arredondados */
     border: 1px var(--cor_primaria) solid;
     margin: 8px;
-    margin-bottom: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 6%;
 }
 
 #nome-user{
@@ -197,7 +200,11 @@ Sistema de metas
     display: block;
     margin-bottom: 50px;
 }
-
+.meta, .metas-usuario {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
 .progress-container {
     width: 100%;
     background: #ddd;
@@ -343,13 +350,36 @@ Responsividade
         width: 380px;
     }
     #nomeMeta{
-        width: 200px;
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 2%;
     }
     #valorMeta{
-        width: 100px;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    #addmeta{
+        display: block;
+        margin: auto;
+        margin-top: 3%;
     }
 }
-
+@media (max-width: 421px){
+    main{
+        overflow: hidden;
+        width: 95%;
+    }
+    .meta{
+        width: 95%;
+        overflow: hidden;
+    }
+    #nomeMeta, #valorMeta{
+        width: 90%;
+        display: block;
+    }
+}
 @media (max-width: 320px){
     main{
         width: 294px;
@@ -367,12 +397,11 @@ Responsividade
     }
     #nomeMeta{
         display: block;
-        width: 290px;
+        width: 90%;
         margin-left: 15px;
         margin-bottom: 12px;
     }
     #valorMeta{
-        width: 120px;
-        margin-left: 32px;
+        width: 90%;
     }
 }
