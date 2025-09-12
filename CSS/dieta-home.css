@@ -65,14 +65,20 @@ Navegação entre dietas
 Estilização da sessão de refeição
 ===============================================================================================================
 */
+.container-refecao{
+    display: flex;
+    gap: 3%;
+    padding-inline: 1%;
+}
 .refeicao{
-    width: 75%;
+    width: 40%;
     border: 1px solid var(--cor_primaria);
     border-radius: 15px;
     display: block;
     margin: auto;
     margin-top: 3%;
     margin-bottom: 4%;
+    align-self: flex-start;
 }
 .refeicao p{
     margin-right: -30px;
