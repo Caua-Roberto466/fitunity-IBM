@@ -1242,10 +1242,10 @@ Responsividade
 
 @media(max-width: 420px){
     #fullbody-card{
-        width: 90%;
+        width: 92%;
     }
     .explicacao-fullbody{
-        max-width: 90%;
+        max-width: 92%;
     }
     .fullbody-casa, .fullbody-academia, .peito-casa, .peito-academia, .costa-casa, .costa-academia, .perna-casa, .perna-academia, .braco-casa, .braco-academia{
         width: 90%;
