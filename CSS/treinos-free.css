@@ -1013,6 +1013,7 @@ Responsividade
     }
     #fullbody-card{
         width: 440px;
+        margin-left: 9px;
     }
     #fullbody-card p{
         font-size: 20px;
@@ -1236,5 +1237,35 @@ Responsividade
     .texto-video-braco{
         width: 296px;
         margin-left: -4px;
+    }
+}
+
+@media(max-width: 330px){
+    #fullbody-card{
+        width: 90%;
+    }
+    .explicacao-fullbody{
+        max-width: 90%;
+    }
+    .fullbody-casa, .fullbody-academia, .peito-casa, .peito-academia, .costa-casa, .costa-academia, .perna-casa, .perna-academia, .braco-casa, .braco-academia{
+        width: 90%;
+    }
+    #card-treino-peito{
+        width: 90%;
+    }
+    .intro-costa{
+        width: 90%;
+    }
+    .intro-perna{
+        width: 90%;
+    }
+    #iframe-perna{
+        width: 90%;
+    }
+    .video-perna-texto{
+        width: 90%;
+    }
+    .iframe-braco{
+        width: 90%;
     }
 }

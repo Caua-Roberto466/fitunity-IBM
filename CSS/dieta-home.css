@@ -1,0 +1,30 @@
+/*
+===============================================================================================================
+CSS Geral
+===============================================================================================================
+*/
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --borda: 1px #00d9f8 solid;
+    --borda-dk: 1px #213872 solid;
+}
+
+h1{
+    margin-top: 6%;
+    font-size: 250%;
+    margin-bottom: 8%;
+}
+
+#navD{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
