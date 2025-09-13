@@ -51,8 +51,10 @@ Navegação entre dietas
 .topo{
     color: var(--cor_primaria);
     text-decoration: none;
-    margin-left: 42%;
+    display: block;
+    margin: 2% auto;
     font-size: 150%;
+    text-align: center;
     font-weight: bolder;
     transition: 0.3s;
 }
@@ -156,6 +158,7 @@ Responsividade
         gap: 1%;
         padding-inline: 0.5%;
     }
+    
 }
 @media(max-width:480px){
     .intro-perder-peso{
@@ -175,5 +178,34 @@ Responsividade
     }
     .navD-link{
         font-size: 100%;
+    }
+}
+@media(max-width:420px){
+    #navD{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navD-link{
+        display: block;
+        margin: auto;
+        margin-bottom: 9%;
+        text-align: center;
+    }
+    h2{
+        max-width: 90%;
+        font-size: 150%;
+        display: block;
+        margin: auto;
+        margin-bottom: 6%;
+    }
+}
+@media(max-width:320px){
+    h1{
+        max-width: 90%;
+        font-size: 180%;
+        display: block;
+        margin: auto;
+        margin-bottom: 12%;
+        margin-top: 5%;
     }
 }

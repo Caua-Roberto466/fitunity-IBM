@@ -58,7 +58,7 @@ function esconder3(){
     div_escondida3.style.display = "none"
     lerMais3.style.display = "block"
 }
-/*
+
 var div_escondida4 = document.getElementById("div-escondida4")
 var lerMais4 = document.getElementById("ler-mais4")
 var lerMenos4 = document.getElementById("ler-menos4")
@@ -74,7 +74,7 @@ function esconder4(){
     div_escondida4.style.display = "none"
     lerMais4.style.display = "block"
 }
-
+/*
 var div_escondida5 = document.getElementById("div-escondida5")
 var lerMais5 = document.getElementById("ler-mais5")
 var lerMenos5 = document.getElementById("ler-menos5")
@@ -170,4 +170,53 @@ function ler10(){
 function esconder10(){
     div_escondida10.style.display = "none"
     lerMais10.style.display = "block"
-}*/
+}
+
+var div_escondida11 = document.getElementById("div-escondida11")
+var lerMais11  = document.getElementById("ler-mais11")
+var lerMenos11 = document.getElementById("ler-menos11")
+
+div_escondida11.style.display = "none"
+
+function ler11(){
+    div_escondida11.style.display = "block"
+    lerMais11.style.display = "none"
+}
+
+function esconder11(){
+    div_escondida11.style.display = "none"
+    lerMais11.style.display = "block"
+}
+
+var div_escondida12 = document.getElementById("div-escondida12")
+var lerMais12  = document.getElementById("ler-mais12")
+var lerMenos12 = document.getElementById("ler-menos12")
+
+div_escondida12.style.display = "none"
+
+function ler12(){
+    div_escondida12.style.display = "block"
+    lerMais12.style.display = "none"
+}
+
+function esconder12(){
+    div_escondida12.style.display = "none"
+    lerMais12.style.display = "block"
+}
+
+var div_escondida13 = document.getElementById("div-escondida13")
+var lerMais13  = document.getElementById("ler-mais13")
+var lerMenos13 = document.getElementById("ler-menos13")
+
+div_escondida13.style.display = "none"
+
+function ler13(){
+    div_escondida13.style.display = "block"
+    lerMais13.style.display = "none"
+}
+
+function esconder13(){
+    div_escondida13.style.display = "none"
+    lerMais13.style.display = "block"
+}
+*/
