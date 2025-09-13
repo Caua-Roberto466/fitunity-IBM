@@ -59,7 +59,16 @@ Navegação entre dietas
 .topo:hover{
     color: var(--CS_darkmode);
 }
-
+.ler{
+    font-size: 140%;
+    color: var(--cor_primaria);
+    font-weight: bolder;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.ler:hover{
+    color: var(--CP_darkmode);
+}
 /*
 ===============================================================================================================
 Estilização da sessão de refeição
