@@ -142,3 +142,38 @@ body.darkmode .refeicao{
 body.darkmode .refeicao li{
     color: var(--cor_primaria);
 }
+
+/*
+===============================================================================================================
+Responsividade
+===============================================================================================================
+*/
+@media(max-width: 768px){
+    #navD{
+        gap: 7%;
+    }
+    .container-refecao{
+        gap: 1%;
+        padding-inline: 0.5%;
+    }
+}
+@media(max-width:480px){
+    .intro-perder-peso{
+        max-width: 95%;
+    }
+    .container-refecao{
+        flex-direction: column;
+    }
+    .refeicao{
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    #navD{
+        gap: 1.7%
+    }
+    .navD-link{
+        font-size: 100%;
+    }
+}
