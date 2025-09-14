@@ -106,7 +106,7 @@ function esconder6(){
     div_escondida6.style.display = "none"
     lerMais6.style.display = "block"
 }
-/*
+
 var div_escondida7 = document.getElementById("div-escondida7")
 var lerMais7 = document.getElementById("ler-mais7")
 var lerMenos7 = document.getElementById("ler-menos7")
@@ -203,7 +203,7 @@ function esconder12(){
     div_escondida12.style.display = "none"
     lerMais12.style.display = "block"
 }
-
+/*
 var div_escondida13 = document.getElementById("div-escondida13")
 var lerMais13  = document.getElementById("ler-mais13")
 var lerMenos13 = document.getElementById("ler-menos13")
