@@ -27,7 +27,7 @@ h1{
 }
 
 h2{
-    font-size: 160%;
+    font-size: 200%;
 }
 
 /*
@@ -252,6 +252,7 @@ Responsividade
 @media(max-width:480px){
     .intro-perder-peso{
         max-width: 95%;
+        width: 95%;
     }
     .container-refecao{
         flex-direction: column;
