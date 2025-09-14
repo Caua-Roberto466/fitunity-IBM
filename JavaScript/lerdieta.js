@@ -74,7 +74,7 @@ function esconder4(){
     div_escondida4.style.display = "none"
     lerMais4.style.display = "block"
 }
-/*
+
 var div_escondida5 = document.getElementById("div-escondida5")
 var lerMais5 = document.getElementById("ler-mais5")
 var lerMenos5 = document.getElementById("ler-menos5")
@@ -90,7 +90,7 @@ function esconder5(){
     div_escondida5.style.display = "none"
     lerMais5.style.display = "block"
 }
-
+/*
 var div_escondida6 = document.getElementById("div-escondida6")
 var lerMais6 = document.getElementById("ler-mais6")
 var lerMenos6 = document.getElementById("ler-menos6")
@@ -219,4 +219,53 @@ function esconder13(){
     div_escondida13.style.display = "none"
     lerMais13.style.display = "block"
 }
+
+var div_escondida14 = document.getElementById("div-escondida14")
+var lerMais14  = document.getElementById("ler-mais14")
+var lerMenos14 = document.getElementById("ler-menos14")
+
+div_escondida14.style.display = "none"
+
+function ler14(){
+    div_escondida14.style.display = "block"
+    lerMais13.style.display = "none"
+}
+
+function esconder14(){
+    div_escondida14.style.display = "none"
+    lerMais14.style.display = "block"
+}
+
+var div_escondida15 = document.getElementById("div-escondida15")
+var lerMais15  = document.getElementById("ler-mais15")
+var lerMenos15 = document.getElementById("ler-menos15")
+
+div_escondida15.style.display = "none"
+
+function ler15(){
+    div_escondida15.style.display = "block"
+    lerMais15.style.display = "none"
+}
+
+function esconder15(){
+    div_escondida15.style.display = "none"
+    lerMais15.style.display = "block"
+}
+
+var div_escondida16 = document.getElementById("div-escondida16")
+var lerMais16  = document.getElementById("ler-mais16")
+var lerMenos16 = document.getElementById("ler-menos16")
+
+div_escondida16.style.display = "none"
+
+function ler16(){
+    div_escondida16.style.display = "block"
+    lerMais16.style.display = "none"
+}
+
+function esconder16(){
+    div_escondida16.style.display = "none"
+    lerMais16.style.display = "block"
+}
+
 */

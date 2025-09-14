@@ -10,11 +10,14 @@ CSS Geral
     --CP_darkmode: #213872;
     --CS_darkmode: #0e2555;
     --BKG_darkmode: #303030;
+    --transparente: rgba(0, 217, 248, 0.3);
+    --transparent_dk: rgba(33, 56, 114, 0.3);
 
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
     --borda: 1px #00d9f8 solid;
     --borda-dk: 1px #213872 solid;
+    
 }
 
 h1{
@@ -108,12 +111,13 @@ Dieta para perder peso
 */
 .intro-perder-peso{
     display: block;
-    max-width: 80%;
+    width: 80%;
     margin: auto;
     margin-top:3%;
     margin-bottom: 6%;
     border: 1px var(--cor_primaria) solid;
     border-radius: 15px;
+    transition: 0.4s;
 }
 .intro-perder-peso h3{
     font-size: 150%;
@@ -122,13 +126,35 @@ Dieta para perder peso
     font-size: 140%;
     margin: 2%;
 }
+.intro-perder-peso:hover{
+    width: 83%;
+    background-color: var(--cor_primaria);
+    font-size: 108%;
+}
 
 /*
 ===============================================================================================================
 Dieta para ganhar massa
 ===============================================================================================================
 */
-
+.intro-ganhar-massa{
+    background-color: var(--transparente);
+    padding-block: 1%;
+    margin-bottom: 6%;
+    margin-top: 8%;
+}
+.intro-ganhar-massa h3{
+    margin-top: 0;
+    margin-bottom: 1%;
+    font-size: 160%;
+}
+.intro-ganhar-massa p{
+    width: 80%;
+    display: block;
+    margin: 1% auto;
+    font-size: 135%;
+    margin-bottom: 3%;
+}
 
 /*
 ===============================================================================================================
@@ -144,11 +170,17 @@ body.darkmode .navD-link:hover{
 body.darkmode .intro-perder-peso{
     border-color: var(--CP_darkmode);
 }
+body.darkmode .intro-perder-peso:hover{
+    background-color: var(--CP_darkmode);
+}
 body.darkmode .refeicao{
     border-color: var(--CP_darkmode);
 }
 body.darkmode .refeicao li{
     color: var(--cor_primaria);
+}
+body.darkmode .intro-ganhar-massa{
+    background-color: var(--transparent_dk);
 }
 
 /*

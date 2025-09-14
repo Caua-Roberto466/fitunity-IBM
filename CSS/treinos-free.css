@@ -10,8 +10,8 @@ Váriaveis gerais da página
     --CP_darkmode: #213872;
     --CS_darkmode: #0e2555;
     --BKG_darkmode: #303030;
-    --transparente: rgba(0, 217, 248, 0.4);
-    --transparent_dk: rgba(33, 56, 114, 0.4);
+    --transparente: rgba(0, 217, 248, 0.3);
+    --transparent_dk: rgba(33, 56, 114, 0.3);
 
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
