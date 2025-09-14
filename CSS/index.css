@@ -445,7 +445,7 @@ body.darkmode .Casa{
 Planos
 =============================================================================================================*/
 .planos-home{
-    width: 80%;
+    width: 100%;
 
 }
 /*Plano básico*/
@@ -547,9 +547,12 @@ Planos
 /*=============================================================================================================
 Responsividade
 =============================================================================================================*/
+@media(max-width: 1024px){
+    .plano-basico, .plano-adaptado, .plano-avancado{
+        width: 45%;
+    }
+}
 
-
-/* Tablets e telas médias (até 900px) */
 @media (max-width: 901px) {
   /* HEADER */
   .conteiner-header-home {
@@ -625,23 +628,27 @@ Responsividade
   /* PLANOS */
   .planos-home {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 20px;
   }
 
   .plano-basico{
     width: 92%;
     font-size: 120%;
+    display: block;
+    margin: auto;
   }
   .plano-adaptado{
     width: 92%;
     font-size: 120%;
+    display: block;
+    margin: auto;
   }
   .plano-avancado{
     width: 92%;
     font-size: 120%;
-    margin-left: -38px;
+    display: block;
+    margin: auto;
   }
 
   .plano-basico:hover{
@@ -671,11 +678,12 @@ Responsividade
 
 @media (max-width: 770px){
     .logo-home{
-        width: 40px;
+        max-width: 100px;
+        width: 80px;
+        height: auto;
     }
 }
 
-/* Celulares e telas pequenas (até 480px) */
 @media (max-width: 480px) {
   /* HEADER */
   .empresa img{
@@ -683,9 +691,10 @@ Responsividade
     height: 60px;
   }
   .links ul {
-    flex-direction: column;
+    
     align-items: center;
     gap: 5px;
+    margin-bottom: -70px;
   }
 
   .links a {
@@ -722,55 +731,31 @@ Responsividade
   .beneficios-card:hover{
     width: 93%;
   }
-
-  /* PLANOS */
-  .plano-avancado{
-    margin-left: -12px;
+  .beneficios-card p{
+    font-size: 30px;
   }
+
 
   /* PESSOAS DO CARROSSEL */
-  .Pessoa {
-    width: 95%;
-    font-size: 90%;
-  }
-
-  .Pessoa p {
-    font-size: 18px;
-  }
+  .opinioes{
+    display: none;
+    }
 }
 
 @media (max-width: 322px){
     .links{
         margin-bottom: -20px;
     }
+    .links ul{
+        gap: 14px;
+    }
     .links a{
-        font-size: 22px;
+        padding: 0;
+        padding-block: 5px;
+        font-size: 18px;
     }
-    .opinioes{
-        display: none;
-    }
-    .planos-home{
-        margin-top: 30px;
-    }
-    .plano-basico{
-        width: 294px;
-        margin-left: -25px;
-    }
-    .plano-basico:hover{
-        width: 295px;
-    }
-    .plano-adaptado{
-        width: 294px;
-        margin-left: -25px;
-    }
-    .plano-adaptado:hover{
-        width: 295px;
-    }
-    .plano-avancado{
-        width: 294px;
-        margin-left: -37px;
-    }
-    .plano-avancado:hover{
-        width: 295px;
+    .beneficios-card{
+        margin: auto;
+        margin-bottom: 10px;
     }
 }
