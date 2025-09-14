@@ -35,7 +35,6 @@ section{
     border: 1px var(--cor_primaria) solid;
     border-radius: 30px;
     margin: 2%;
-    height: 90%;
 }
 
 section h2{
@@ -94,10 +93,9 @@ Botões de contratar
     border-radius: 45px;
     display: block;
     margin: 0 auto;
-    margin-top: 45%;
     font-size: 18px;
     height: 40px;
-    margin-bottom: 3rem;
+    margin-bottom: 2%;
 }
 
 .Contratar2{
@@ -107,10 +105,9 @@ Botões de contratar
     border-radius: 45px;
     display: block;
     margin: 0 auto;
-    margin-top: 50%;
     font-size: 18px;
     height: 40px;
-    margin-bottom: 3rem;
+    margin-bottom: 2%;
 }
 
 .Contratar3{
@@ -120,10 +117,9 @@ Botões de contratar
     border-radius: 45px;
     display: block;
     margin: 0 auto;
-    margin-top: 25%;
     font-size: 18px;
     height: 40px;
-    margin-bottom: 3rem;
+    margin-bottom: 2%;
 }
 
 .bb{color: white;}
@@ -289,12 +285,23 @@ Responsividades
         width: 70%;
         margin-left: 15%;
         margin-top: 12%;
+        height: auto;
+    }
+    main{
+        width: 99%;
+    }
+    section{
+        width: 95%;
+        
     }
 }
 
 @media (max-width: 900px){
     main{
         width: 100%;
+    }
+    section{
+        height: 90%;
     }
     .Contratar, .Contratar2, .Contratar3{
         width: 80%;
@@ -310,7 +317,18 @@ Responsividades
         width: 220px;
     }
     #popup{
-        height: 54%;
+        height: 69%;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+    .Contratar, .Contratar2, .Contratar3{
+        width: 40%;
     }
 }
 
@@ -332,6 +350,8 @@ Responsividades
     #popup{
         height: 68%;
         border: 2px var(--CS_darkmode) solid;
+        height: auto;
+        margin-top: 5%;
     }
     .campo-input{
         flex-direction: column;
@@ -353,5 +373,9 @@ Responsividades
     #popup{
         width: 90%;
         margin-left: 15px;
+        height: auto;
+    }
+    .Contratar, .Contratar2, .Contratar3{
+        width: 50%;
     }
 }

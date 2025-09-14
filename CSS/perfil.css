@@ -350,23 +350,14 @@ Responsividade
         width: 380px;
     }
     #nomeMeta{
-        width: 90%;
-        display: block;
-        margin: auto;
-        margin-bottom: 2%;
+        margin-left: 5%;
+        width: 30%;
     }
     #valorMeta{
-        width: 90%;
-        display: block;
-        margin: auto;
-    }
-    #addmeta{
-        display: block;
-        margin: auto;
-        margin-top: 3%;
+        width: 30%;
     }
 }
-@media (max-width: 421px){
+@media (max-width: 420px){
     main{
         overflow: hidden;
         width: 95%;
@@ -378,6 +369,12 @@ Responsividade
     #nomeMeta, #valorMeta{
         width: 90%;
         display: block;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    #addmeta{
+        display: block;
+        margin: auto;
     }
 }
 @media (max-width: 320px){
