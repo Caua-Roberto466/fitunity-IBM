@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Arthur Ozório, Caio Novaes, Cauã Roberto, Claudia Vieira, Guilherme Araujo, Heloisa Silva">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/pagamento.css">
+    <link rel="stylesheet" href="../CSS/home-premium.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -14,26 +14,52 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="Empresa">
-                <img src="../Imagens/Logo@.png" alt="Coração simulando batimentos cardiácos com halteres na ponta" class="logo">
-                <h2 class="fitunity"><a href="index.html" class="fitunity">FitUnity</a></h2>
+        <nav class="nav-bar">
+            <div class="empresa">
+                <img src="../Imagens/Logo@.png" width="70px" alt="">
+                <h2 class="fitunity">FitUnity</h2>
             </div>
-            <nav class="links-header">
-
-                <a href="perfil.html" class="Hlinks" id="Plink"><b>Perfil</b></a>
-                <a href="sobre-nos.html" class="Hlinks"><b>Sobre nós</b></a>
-                <a href="#" class="Hlinks"><b>Dieta</b></a>
-                <a href="treino_home.html" class="Hlinks" id="treinolink"><b>Treino</b></a>
-                <button id="toggle-dark" class="botaodk"><b>Modo noturno</b></button>
-                <button class="entrarH"><a href="entrar.html" class="Elink"><b>Entrar</b></a></button>
-                <button class="cadastroH"><a href="cadastro.html" class="Clink"><b>Cadastre-se</b></a></button>
-            </nav>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                    <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+                </ul>
+                <div class="botoes-navbar">
+                    <button id="toggle-dark">Modo Noturno</button>
+                    <button><a href="entrar.html">Entrar</a></button>
+                    <button class="cadastro-header"><a href="cadastro.html">Cadastre-se</a></button>
+                </div>
+            </div>
+            <div class="menu-mobile-icone">
+                <button onclick="mostrar()"><img src="../Imagens/menu_white_36dp.svg" class="icone" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+                <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
+                <li class="nav-item"><a href="treino_home.html" class="nav-link">Treino</a></li>
+            </ul>
+            <div class="botoes-navbar-mobile">
+                <button id="toggle-dark-mobile">Modo Noturno</button>
+                <button><a href="cadastro.html">Entrar</a></button>
+                <button class="cadastro-header"><a href="cadastro.html">Cadastre-se</a></button>
+            </div>
         </div>
     </header>
 
-    <h1>Faça o pagamento do seu plano</h1>
+    <h1>Confira os benefícios do seu plano</h1>
 
+    <!--
+    ===========================================================================================================
+    
+    ===========================================================================================================
+    -->
 
     <footer>
         <div class="Coluna1">
@@ -43,11 +69,10 @@
             </div>
             <div class="Redes_sociais">
                 <h4>Redes Sociais</h4>
-                <p>@fitunityoficial</p>
+                <a href="https://www.instagram.com/fitunityofc?igsh=MXhveWN5ZGNocmZyYQ==" target="_blank">@fitunityofc</a>
                 <p>@fitunity_oficial</p>
                 <p>@fitunity_saude</p>
             </div>
-            
         </div>
         <div class="Coluna2">
             <div class="Navegação">
