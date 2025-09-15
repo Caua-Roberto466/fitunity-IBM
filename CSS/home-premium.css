@@ -27,24 +27,7 @@ h1{
 h2{
     font-size: 200%;
 }
-.ir-treino{
-    width: 23%;
-    font-size: 140%;
-    text-decoration: none;
-    background-color: var(--cor_primaria);
-    border-radius: 15px;
-    color: white;
-    padding-block: 1%;
-    padding-inline: 1%;
-    font-weight: bold;
-    display: block;
-    margin: auto;
-    margin-top: 2%;
-    transition: 0.4s;
-}
-.ir-treino:hover{
-    background-color: var(--cor_secundaria);
-}
+
 /*
 ===============================================================================================================
 Benefícios do plano
@@ -91,21 +74,42 @@ Treinos premium
 .treinos{
     margin-top: 7%;
 }
-.treino-adaptado{
+.treino-intro{
     background-color: var(--transparente);
     padding-block: 1%;
 }
-.treino-adaptado h3{
+.treino-intro h3{
     font-size: 140%;
 }
-.treino-adaptado p{
+.treino-intro p{
     font-size: 130%;
     width: 90%;
     display: block;
     margin: auto;
     margin-bottom: 3%;
 }
-
+.ir-treino{
+    width: 23%;
+    font-size: 140%;
+    text-decoration: none;
+    background-color: var(--cor_primaria);
+    border-radius: 15px;
+    color: white;
+    padding-block: 1%;
+    padding-inline: 1%;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    transition: 0.4s;
+}
+.ir-treino:hover{
+    background-color: var(--cor_secundaria);
+}
+.personalize-treino{
+    margin-top: 5%;
+}
 /*
 ===============================================================================================================
 Modo Noturno
@@ -114,7 +118,7 @@ Modo Noturno
 body.darkmode .beneficio-card{
     background-color: var(--CP_darkmode);
 }
-body.darkmode .treino-adaptado{
+body.darkmode .treino-intro{
     background-color: var(--transparent_dk);
 }
 body.darkmode .ir-treino{
