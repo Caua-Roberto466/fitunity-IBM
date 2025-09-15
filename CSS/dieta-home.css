@@ -113,14 +113,15 @@ Dieta para perder peso
     display: flex;
     justify-content: space-between;
     padding-inline: 1%;
+    margin-bottom: 5%;
 
 }
 .intro-perder-peso img{
     border-radius: 16px;
-    width: 30%;
+    width: 20%;
 }
 .texto-intro-perder-peso{
-    max-width: 70%;
+    max-width: 75%;
 }
 .intro-perder-peso h3{
     font-size: 150%;
@@ -137,10 +138,15 @@ Dieta para ganhar massa
 ===============================================================================================================
 */
 .intro-ganhar-massa{
-    background-color: var(--transparente);
-    padding-block: 1%;
-    margin-bottom: 6%;
-    margin-top: 8%;
+    display: flex;
+    padding-inline: 1%;
+    justify-content: space-between;
+    margin-block: 8%
+    
+}
+.intro-ganhar-massa img{
+    width: 30%;
+    border-radius: 15px;
 }
 .intro-ganhar-massa h3{
     margin-top: 0;
@@ -148,10 +154,10 @@ Dieta para ganhar massa
     font-size: 160%;
 }
 .intro-ganhar-massa p{
-    width: 80%;
+    width: 96%;
     display: block;
     margin: 1% auto;
-    font-size: 135%;
+    font-size: 125%;
     margin-bottom: 3%;
 }
 
@@ -164,18 +170,22 @@ Dieta para veganos
     margin-top: 6%;
 }
 .intro-vegana{
-    background-color: var(--transparente);
-    padding-block: 1%;
-    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1%;
+    margin-block: 5%;
+
+}
+.intro-vegana img{
+    width: 30%;
+    border-radius: 15px;
 }
 .intro-vegana h3{
     font-size: 155%;
 }
 .intro-vegana p{
     font-size: 135%;
-    width: 85%;
-    display: block;
-    margin: auto;
+    width: 96%;
     margin-bottom: 2%;
 }
 
@@ -185,16 +195,21 @@ Dieta zero glúten
 ===============================================================================================================
 */
 .intro-gluten{
-    background-color: var(--transparente);
-    padding-block: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 5%;
+    padding-inline: 1%;
+}
+.intro-gluten img{
+    height: 68vh;
+    border-radius: 15px;
 }
 .intro-gluten h3{
     font-size: 165%;
 }
 .intro-gluten p{
     font-size: 135%;
-    max-width:90%;
-    width: 85%;
+    width:96%;
     display: block;
     margin: auto;
     margin-bottom: 2%;
@@ -214,23 +229,11 @@ body.darkmode .navD-link:hover{
 body.darkmode .intro-perder-peso{
     border-color: var(--CP_darkmode);
 }
-body.darkmode .intro-perder-peso:hover{
-    background-color: var(--CP_darkmode);
-}
 body.darkmode .refeicao{
     border-color: var(--CP_darkmode);
 }
 body.darkmode .refeicao li{
     color: var(--cor_primaria);
-}
-body.darkmode .intro-ganhar-massa{
-    background-color: var(--transparent_dk);
-}
-body.darkmode .intro-vegana{
-    background-color: var(--transparent_dk);
-}
-body.darkmode .intro-gluten{
-    background-color: var(--transparent_dk);
 }
 
 /*
@@ -238,6 +241,30 @@ body.darkmode .intro-gluten{
 Responsividade
 ===============================================================================================================
 */
+@media(max-width:900px){
+    .intro-perder-peso img{
+        height: 40%;
+        margin-top: 7%;
+    }
+    .texto-intro-perder-peso p{
+        font-size: 125%;
+    }
+    .intro-ganhar-massa img{
+        width: 32%;
+    }
+    .intro-ganhar-massa p{
+        font-size: 125%;
+    }
+    .intro-vegana p{
+        font-size: 125%;
+    }
+    .intro-gluten img{
+        height: 88vh;
+    }
+    .intro-gluten p{
+        font-size: 128%;
+    }
+}
 @media(max-width: 768px){
     #navD{
         gap: 7%;
@@ -246,12 +273,40 @@ Responsividade
         gap: 1%;
         padding-inline: 0.5%;
     }
-    
+    .intro-perder-peso img, .intro-ganhar-massa img, .intro-vegana img, .intro-gluten img{
+        display: none;
+    }
+    .texto-intro-perder-peso{
+        display: block;
+        margin: auto;
+        width: 90%;
+        max-width: 90%;
+    }
+    .intro-perder-peso, .intro-ganhar-massa, .intro-vegana, .intro-gluten{
+        background-color: var(--transparente);
+    }
+    .intro-ganhar-massa p, .intro-vegana p, .intro-gluten p{
+        max-width: 90%;
+    }
+    body.darkmode .intro-perder-peso, body.darkmode .intro-ganhar-massa, body.darkmode .intro-vegana, body.darkmode .intro-gluten{
+        background-color: var(--transparent_dk);
+        padding-block: 1%;
+    }
+    .intro-vegana{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1%;
+    }
+    .intro-vegana p{
+        max-width: 90%;
+        width: auto;        
+        margin: 0 auto;       
+    }
 }
 @media(max-width:480px){
     .intro-perder-peso{
-        max-width: 95%;
-        width: 95%;
+        max-width: 100%;
+        width: 100%;
     }
     .container-refecao{
         flex-direction: column;
