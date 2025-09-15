@@ -250,6 +250,12 @@ Responsividades
     }
 }
 
+@media(max-width:420px){
+    form{
+        width: 90%;
+    }
+}
+
 @media (max-width: 322px){
     form{
         width: 94%;

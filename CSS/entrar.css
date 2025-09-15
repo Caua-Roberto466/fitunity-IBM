@@ -166,6 +166,12 @@ Responsividade
     }
 }
 
+@media(max-width: 420){
+    form{
+        width: 90%;
+    }
+}
+
 @media (max-width: 321px){
     form{
         width: 92%;
