@@ -1065,7 +1065,7 @@ Responsividade
         font-size: 20px;
     }
     #fullbody-card:hover{
-        width: 450px;
+        width: 96%;
         transition: 0.3s;
     }
     .container-video{
@@ -1103,9 +1103,6 @@ Responsividade
     }
     .iframe-peito{
         width: 320px;
-    }
-    #card-treino-peito{
-        width: 400px;
     }
     .peito-casa{
         width: 370px;

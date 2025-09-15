@@ -14,12 +14,76 @@ Estilo geral
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
     --tamanho_fonte: 19px;
-    --borda: 0.9px #1da3b8 solid;
-    --borda-dk: 0.9px #213872 solid;
+    --borda: 1px #00d9f8 solid;
+    --borda-dk: 1px #213872 solid;
+    --transparente: rgba(0, 217, 248, 0.3);
+    --transparent_dk: rgba(33, 56, 114, 0.3);
 }
 h1{
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    font-size: 220%;
+}
+h2{
+    font-size: 200%;
 }
 
+/*
+===============================================================================================================
+Benefícios do plano
+===============================================================================================================
+*/
+.beneficios{
+    margin-top: 8%;
+}
+.container-beneficio{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+.beneficio-card{
+    width: 21%;
+    background-color: var(--cor_primaria);
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.beneficio-card:hover{
+    width: 22%;
+    box-shadow: var(--box-shadow);
+}
+.beneficio-card h3{
+    font-size: 150%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.beneficio-card p{
+    width: 92%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 130%;
+    margin-bottom: 4%;
+    font-weight: 410;
+}
 
+/*
+===============================================================================================================
+Treinos premium
+===============================================================================================================
+*/
+.treinos{
+    margin-top: 7%;
+}
+.treino-adaptado{
+    background-color: var(--transparente);
+}
+.treino-adaptado h3{
+    font-size: 140%;
+}
+.treino-adaptado p{
+    font-size: 130%;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+}
