@@ -1207,6 +1207,14 @@ Responsividade
     .iframe-braco{
         width: 90%;
     }
+    .nav{
+        flex-direction: column;
+    }
+    .navA{
+        display: block;
+        margin: auto;
+        margin-bottom: 4%;
+    }
 }
 @media (max-width: 322px){
     /*-------Fullbody-------*/
