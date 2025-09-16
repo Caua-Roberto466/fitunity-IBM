@@ -218,10 +218,11 @@ POPUP
     background: none;
     border: none;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 100%;
     color: var(--CS_darkmode);
     cursor: pointer;
     transition: 0.4s;
+    text-align: center;
 }
 .linkar-pop:hover{
     color: var(--cor_secundaria);
