@@ -123,11 +123,36 @@ Treinos premium
 
 /*
 ===============================================================================================================
+Navegação entre dietas
+===============================================================================================================
+*/
+.nav-dieta{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    margin-top: 3%;
+}
+.nav-linkd{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    font-size: 140%;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.nav-linkd:hover{
+    color: var(--CP_darkmode);
+}
+
+/*
+===============================================================================================================
 Dietas premium
 ===============================================================================================================
 */
 .dietas{
     margin-top: 8%;
+}
+.dietas h3{
+    font-size: 130%;
 }
 .intro-dieta{
     margin-top: 9%;
@@ -148,10 +173,11 @@ th {
     background-color: var(--cor_primaria);
     color: white;
     font-size: 135%;
-    padding-inline: 25px;
-    padding-block: 15px;
+    padding-inline: 3vh;
+    padding-block: 2vh;
     border-radius: 6px;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 th:hover {
     background-color: var(--cor_secundaria);
@@ -161,6 +187,44 @@ td{
     font-size: 110%;
     font-weight: bold;
     color: var(--CS_darkmode);
+    transition: 0.4s;
+    cursor: pointer;
+}
+td:hover{
+    color: var(--cor_secundaria);
+}
+
+/*
+===============================================================================================================
+POPUP
+===============================================================================================================
+*/
+.popup{
+    width: 60%;
+    background: linear-gradient(45deg, var(--cor_primaria), var(--cor_secundaria));
+    border: none;
+    border-radius: 16px;
+    border: 1px var(--CP_darkmode) solid;
+}
+.popup p{
+    width: 90%;
+    font-size: 130%;
+    font-weight: 430;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.linkar-pop{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 110%;
+    color: var(--CS_darkmode);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.linkar-pop:hover{
+    color: var(--cor_secundaria);
 }
 
 /*
@@ -171,14 +235,36 @@ Modo Noturno
 body.darkmode .beneficio-card{
     background-color: var(--CP_darkmode);
 }
+/*
 body.darkmode .treino-intro{
     background-color: var(--transparent_dk);
-}
+}*/
 body.darkmode .ir-treino{
     background-color: var(--CP_darkmode);
 }
 body.darkmode .ir-treino:hover{
     background-color: var(--CS_darkmode);
+}
+body.darkmode .popup{
+    background: linear-gradient(45deg, var(--CP_darkmode), var(--CS_darkmode));
+}
+body.darkmode th{
+    background-color: var(--CP_darkmode);
+}
+body.darkmode th:hover{
+    background-color: var(--CS_darkmode);
+}
+body.darkmode td{
+    color: var(--cor_primaria);
+}
+body.darkmode td:hover{
+    color: var(--CP_darkmode);
+}
+body.darkmode .linkar-pop{
+    color: var(--cor_primaria);
+}
+body.darkmode .linkar-pop:hover{
+    color: var(--CP_darkmode);
 }
 
 /*
@@ -203,5 +289,15 @@ Responsividade
     }
     #link-pro{
         width: 30%;
+    }
+    table{
+        border-spacing: 2vh;
+    }
+    th{
+        padding-inline: 4vh;
+    }
+    td, .linkar-pop{
+        font-size: 100%;
+        padding-block: 1.5%;
     }
 }

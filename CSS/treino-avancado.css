@@ -1,0 +1,32 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+    --transparente: rgba(0, 217, 248, 0.3);
+    --transparent_dk: rgba(33, 56, 114, 0.3);
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --borda: 1px #00d9f8 solid;
+    --borda-dk: 1px #213872 solid;
+}
+h1{
+    font-size: 200%;
+}
+.voltar{
+    background-color: var(--cor_primaria);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    text-decoration: none;
+    padding-block: 1%;
+    padding-inline: 2%;
+    display: block;
+    width: 20.9%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
