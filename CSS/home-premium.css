@@ -75,15 +75,22 @@ Treinos premium
     margin-top: 7%;
 }
 .treino-intro{
-    background-color: var(--transparente);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1%;
     padding-block: 1%;
+    margin-top: 10%;
+}
+.treino-intro img{
+    width: 22%;
+    border-radius: 15px;
 }
 .treino-intro h3{
     font-size: 140%;
 }
 .treino-intro p{
-    font-size: 130%;
-    width: 90%;
+    font-size: 125%;
+    width: 96%;
     display: block;
     margin: auto;
     margin-bottom: 3%;
@@ -110,6 +117,9 @@ Treinos premium
 .personalize-treino{
     margin-top: 5%;
 }
+#link-personalizado{
+    width: 23.6%;
+}
 
 /*
 ===============================================================================================================
@@ -121,6 +131,36 @@ Dietas premium
 }
 .intro-dieta{
     margin-top: 9%;
+}
+.intro-dieta h3{
+    font-size: 130%;
+}
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+table{
+    display: block;
+    border-collapse: separate;
+    border-spacing: 6vh;
+}
+th {
+    background-color: var(--cor_primaria);
+    color: white;
+    font-size: 135%;
+    padding-inline: 25px;
+    padding-block: 15px;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+th:hover {
+    background-color: var(--cor_secundaria);
+}
+td{
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+    color: var(--CS_darkmode);
 }
 
 /*
@@ -139,4 +179,29 @@ body.darkmode .ir-treino{
 }
 body.darkmode .ir-treino:hover{
     background-color: var(--CS_darkmode);
+}
+
+/*
+===============================================================================================================
+Responsividade
+===============================================================================================================
+*/
+@media(max-width:1024px){
+    .treino-intro img{
+        display: none;
+    }
+    .treino-intro p{
+        width: 90%;
+        margin-bottom: 4%;
+    }
+    .ir-treino{
+        margin-bottom: 12%;
+        width: 29%;
+    }
+    #link-personalizado{
+        width: 30%;
+    }
+    #link-pro{
+        width: 30%;
+    }
 }

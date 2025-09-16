@@ -132,7 +132,7 @@
         </section>
         <section id="popup" popover>
             <h2>Pagamento</h2>
-                <form action="#">
+                <form action="#" id="formPagamento">
                     <div class="campo-input">
                         <!--Campo de email-->
                         <div class="email">
@@ -155,7 +155,7 @@
                         <input type="text" name="cvc" id="cvc" placeholder="Ex: 121" required>
                         </div>
                     </div>
-                    <button id="pagar">Pagar</button>
+                    <button id="pagar" onclick="levar()">Pagar</button>
                 </form>
         </section>
     </main>
@@ -211,5 +211,19 @@
 
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/menu.js" defer></script>
+    <script>
+    const form = document.getElementById("formPagamento");
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault(); // impede envio automático
+
+        if(form.checkValidity()){ 
+            // se todos os campos obrigatórios estiverem preenchidos corretamente
+            window.location.href = "home-premium.html";
+        } else {
+            form.reportValidity(); // força o navegador a mostrar os erros
+        }
+    });
+</script>
 </body>
 </html>
