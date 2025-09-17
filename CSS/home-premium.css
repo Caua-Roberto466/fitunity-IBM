@@ -210,6 +210,30 @@ td:hover{
 
 /*
 ===============================================================================================================
+Dieta mobile
+===============================================================================================================
+*/
+.dieta-mob{
+    display: none;
+    margin-top: 8%;
+}
+.dia{
+    background-color: var(--cor_primaria);
+    width: 50%;
+    padding-block: 2vh;
+    font-size: 130%;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+/*
+===============================================================================================================
 POPUP
 ===============================================================================================================
 */
@@ -358,6 +382,16 @@ Responsividade
 }
 
 @media (max-width: 768px) {
+    .ir-treino{
+        width: 40%;
+        font-size: 120%;
+    }
+    .nav-dieta{
+        gap: 3%;
+    }
+    .nav-linkd{
+        font-size: 130%;
+    }
     table {
         border-spacing: 3vh;
     }
@@ -375,8 +409,39 @@ Responsividade
 }
 
 @media (max-width: 480px) {
+    .container-beneficio{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .beneficio-card{
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    .ir-treino{
+        font-size: 110%;
+        width: 48%;
+    }
+    #link-pro{
+        width: 47%;
+    }
+    #link-personalizado{
+        width: 50%;
+    }
+    .nav-dieta{
+        flex-direction: column;
+        gap: 7%;
+    }
+    .nav-linkd{
+        font-size: 110%;
+        display: block;
+        margin: auto;
+        margin-bottom: 3%;
+    }
     table {
-        border-spacing: 1vh;
+        border-spacing: 0.7vh;
     }
     th {
         font-size: 0.9rem;
@@ -384,41 +449,58 @@ Responsividade
         padding-block: 1vh;
     }
     td {
+        width: 99%;
         font-size: 0.8rem;
     }
     .linkar-pop {
         font-size: 0.8rem;
+        width: 98%;
+        padding-block: 0.5vh;
+    }
+    .popup{
+        width: 80%;
+        height: 80vh;
     }
 }
 
 @media (max-width: 420px) {
-    table {
-        border-collapse: collapse;
-        border-style: line;
-        border: 1px solid var(--cor_primaria);
+    .dietas{
+        display: none;
     }
-    th {
-        font-size: 0.8rem;
-        padding-inline: 0.5vh;
-        padding-block: 0.5vh;
-        border-radius: 0;
-    }
-    td {
-        font-size: 0.6rem;
-        border: 1px solid var(--cor_primaria);
+    .dieta-mob{
+        display: block;
     }
     .linkar-pop {
-        font-size: 0.75rem;
+        font-size: 1.3rem;
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    #link-personalizado{
+        width: 55%;
     }
 }
 
 @media(max-width:320px){
-    table{
-        display: flex;
-        flex-direction: column;
+    .ir-treino{
+        width: 60%;
+        font-size: 100%;
     }
-    table, td{
-        border: none;
+    #link-pro{
+        width: 60%;
+        font-size: 100%;
     }
-    
+    #link-personalizado{
+        width: 60%;
+        font-size: 100%;
+    }
+    .linkar-pop {
+        font-size: 1.rem;
+    }
+    .dia{
+        width: 70%;
+        padding-block: 3vh;
+        font-size: 120%;
+    }
 }
