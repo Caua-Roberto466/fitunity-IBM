@@ -193,6 +193,19 @@ td{
 td:hover{
     color: var(--cor_secundaria);
 }
+.linkar-pop{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 100%;
+    color: var(--CS_darkmode);
+    cursor: pointer;
+    transition: 0.4s;
+    text-align: center;
+}
+.linkar-pop:hover{
+    color: var(--cor_secundaria);
+}
 
 /*
 ===============================================================================================================
@@ -291,14 +304,87 @@ Responsividade
     #link-pro{
         width: 30%;
     }
-    table{
-        border-spacing: 2vh;
+    table {
+        border-spacing: 5vh;
     }
-    th{
-        padding-inline: 4vh;
+    th {
+        font-size: 1.2rem;
+        padding-inline: 2.5vh;
+        padding-block: 1.8vh;
     }
-    td, .linkar-pop{
-        font-size: 100%;
-        padding-block: 1.5%;
+    td {
+        font-size: 1rem;
+    }
+    .linkar-pop {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 900px) {
+    table {
+        border-spacing: 4vh;
+    }
+    th {
+        font-size: 1.1rem;
+        padding-inline: 2vh;
+        padding-block: 1.5vh;
+    }
+    td {
+        font-size: 0.95rem;
+    }
+    .linkar-pop {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        border-spacing: 3vh;
+    }
+    th {
+        font-size: 1rem;
+        padding-inline: 1.5vh;
+        padding-block: 1.2vh;
+    }
+    td {
+        font-size: 0.9rem;
+    }
+    .linkar-pop {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        border-spacing: 1vh;
+    }
+    th {
+        font-size: 0.9rem;
+        padding-inline: 0.9vh;
+        padding-block: 1vh;
+    }
+    td {
+        font-size: 0.8rem;
+    }
+    .linkar-pop {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    table {
+        border-spacing: 1.3vh;
+    }
+    th {
+        font-size: 0.8rem;
+        padding-inline: 0.5vh;
+        padding-block: 0.5vh;
+    }
+    td {
+        font-size: 0.6rem;
+    }
+    .linkar-pop {
+        font-size: 0.75rem;
     }
 }
