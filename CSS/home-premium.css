@@ -98,6 +98,7 @@ Treinos premium
 .ir-treino{
     width: 23%;
     font-size: 140%;
+    text-align: center;
     text-decoration: none;
     background-color: var(--cor_primaria);
     border-radius: 15px;
@@ -321,6 +322,24 @@ Responsividade
 }
 
 @media (max-width: 900px) {
+    .ir-treino{
+        width: 34%;
+    }
+    #link-pro{
+        width: 36%;
+    }
+    #link-personalizado{
+        width: 37%;
+    }
+    .container-beneficio{
+        padding-inline: 1%;
+    }
+    .beneficio-card:hover{
+        width: 33%;
+    }
+    .beneficio-card{
+        width: 32%;
+    }
     table {
         border-spacing: 4vh;
     }
@@ -374,17 +393,32 @@ Responsividade
 
 @media (max-width: 420px) {
     table {
-        border-spacing: 1.3vh;
+        border-collapse: collapse;
+        border-style: line;
+        border: 1px solid var(--cor_primaria);
     }
     th {
         font-size: 0.8rem;
         padding-inline: 0.5vh;
         padding-block: 0.5vh;
+        border-radius: 0;
     }
     td {
         font-size: 0.6rem;
+        border: 1px solid var(--cor_primaria);
     }
     .linkar-pop {
         font-size: 0.75rem;
     }
+}
+
+@media(max-width:320px){
+    table{
+        display: flex;
+        flex-direction: column;
+    }
+    table, td{
+        border: none;
+    }
+    
 }
