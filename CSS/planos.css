@@ -409,7 +409,6 @@ Responsividades
     }
     section{
         width: 90%;
-        margin-left: 25px;
     }
     .Contratar, .Contratar2, .Contratar3{
         margin-top: 20px;
@@ -442,6 +441,9 @@ Responsividades
 @media(max-width:420px){
     label{
         margin-left: 16%;
+    }
+    .Contratar, .Contratar2, .Contratar3{
+        width: 50%;
     }
 }
 

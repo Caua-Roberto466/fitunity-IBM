@@ -274,6 +274,9 @@ Responsividade
         display: block;
         margin: auto;
     }
+    .voltar-pag{
+        width: 80%;
+    }
 }
 @media(max-width:320px){
     input, textarea{
