@@ -16,7 +16,7 @@
 h1{
     font-size: 200%;
 }
-.voltar{
+.voltar-pag{
     background-color: var(--cor_primaria);
     color: white;
     font-weight: bold;
@@ -25,8 +25,110 @@ h1{
     padding-block: 1%;
     padding-inline: 2%;
     display: block;
-    width: 20.9%;
+    width: 23%;
+    text-align: center;
     margin: auto;
     margin-top: 3%;
     margin-bottom: 4%;
 }
+
+.nav-ta{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+.nav-ta a{
+    color: var(--cor_primaria);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 4vh;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.treino {
+  display: block;
+  align-items: stretch;
+  margin-bottom: 80px;
+  gap: 20px;
+}
+
+.treino:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.card {
+  flex: 1;
+  background: #1da3b8;
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  margin-left: -3vh;
+  margin-bottom: 15px;
+}
+
+.card li{
+    margin-bottom: 2vh;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.explicacao {
+  flex: 2;
+  background: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.voltar {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #213872;
+      color: white;
+  text-decoration: none;
+  width: fit-content;
+  font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .treino {
+        flex-direction: column;
+      }
+      .treino:nth-child(even) {
+        flex-direction: column;
+      }
+      .explicacao {
+        padding: 0;
+      }
+    }

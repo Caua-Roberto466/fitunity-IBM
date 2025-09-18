@@ -1,73 +1,242 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="teste.css">
-    <title>Teste</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinos Avançados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #213872;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #213872;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .treino {
+      display: flex;
+      align-items: stretch;
+      margin-bottom: 80px;
+      gap: 20px;
+    }
+
+    .treino:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .card {
+      flex: 1;
+      background: #1da3b8;
+      color: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1rem;
+    }
+
+    .explicacao {
+      flex: 2;
+      background: none;
+      color: #333;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .voltar {
+      display: block;
+      margin: 30px auto;
+      text-align: center;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: #213872;
+      color: white;
+      text-decoration: none;
+      width: fit-content;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .treino {
+        flex-direction: column;
+      }
+      .treino:nth-child(even) {
+        flex-direction: column;
+      }
+      .explicacao {
+        padding: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="empresa">
-                <img src="../../Imagens/Logo@.png" width="70px" alt="">
-                <h2 class="fitunity">FitUnity</h2>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Treino</a></li>
-                </ul>
-                <div class="botoes-navbar">
-                    <button id="toggle-dark">Modo Noturno</button>
-                    <button><a href="#">Entrar</a></button>
-                    <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
-                </div>
-            </div>
-            <div class="menu-mobile-icone">
-                <button onclick="mostrar()"><img src="menu_white_36dp.svg" class="icone" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Dieta</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Treino</a></li>
-            </ul>
-            <div class="botoes-navbar-mobile">
-                <button id="toggle-dark">Modo Noturno</button>
-                <button><a href="#">Entrar</a></button>
-                <button class="cadastro-header"><a href="#">Cadastre-se</a></button>
-            </div>
-        </div>
-    </header>
 
-    <button popovertarget="pagamento">Contratar</button>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum veritatis facilis sit maiores distinctio, laborum provident omnis. Error, quod, enim nostrum ullam quisquam quas, quis sint nesciunt eveniet exercitationem laborum.
-        Minima esse, porro libero exercitationem laudantium deleniti consequuntur natus, atque quae maxime officiis dignissimos commodi blanditiis error obcaecati fugit. Dicta excepturi ipsam ex unde quae magni harum autem voluptas dolorum?
-        Voluptas temporibus excepturi modi maiores libero fugit aspernatur velit nostrum ipsum. Nam, adipisci tempore dolore odit accusamus molestias corrupti explicabo sequi voluptates placeat quo voluptatibus repellat blanditiis mollitia doloremque sint!
-        Architecto, voluptas. Saepe vel quod fugiat deserunt explicabo dolore possimus fuga, ratione labore molestias culpa voluptate ipsum voluptas laudantium veritatis magnam aliquam numquam dolores soluta perferendis dicta. At, obcaecati ducimus.
-        Atque minus, deserunt sit cum aliquid soluta ad eum. Quidem, fugiat doloribus magni commodi harum sapiente deserunt sunt ullam cupiditate doloremque quisquam libero dolores facilis eveniet et debitis fugit minima?
-        Amet aspernatur sequi quam mollitia ut adipisci debitis voluptatibus tempore, earum exercitationem fugit consectetur. Omnis excepturi nam facere in dolore at soluta eligendi, et, nesciunt velit corrupti voluptas dolor ullam!
-        Vero fugit neque vel est eum atque, eaque maxime rem, tenetur ex esse similique repellendus voluptate consectetur. Quisquam architecto voluptas alias ipsam velit repudiandae explicabo, voluptates sequi saepe ullam harum?
-        Consectetur, omnis ex autem culpa asperiores ipsam inventore debitis iusto dolore, repudiandae obcaecati provident ea libero laborum dolorum, animi quia expedita voluptates molestias sit perspiciatis enim! Nisi quas debitis earum.
-        Reprehenderit repellat dolorem eligendi animi, vero quae minima magni ducimus temporibus nostrum, voluptatem at quam rem esse vel quas sint nemo sapiente blanditiis fugit laborum mollitia qui? Veritatis, labore sed.
-        Qui dicta a accusamus! Tempora, odio fugit nisi eum vel eaque consectetur! Ducimus incidunt blanditiis, mollitia ab ad facere, harum consequatur sint vitae fugit ipsum excepturi modi in cupiditate autem?
-    </p>
-    <div id="pagamento" popover>
-        <div class="pagamento-popup">
-            <h2>Pagamento</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste laborum fuga, consequuntur nam quaerat, saepe inventore soluta odio suscipit illo, dolorum omnis? Doloribus consequuntur debitis harum numquam eaque provident!</p>
-        </div>
-    </div>
+  <header id="topo">
+    <h1>Treinos Avançados</h1>
+    <nav>
+      <a href="#forca">Força</a>
+      <a href="#hipertrofia">Hipertrofia</a>
+      <a href="#funcional">Funcional</a>
+      <a href="#resistencia">Resistência</a>
+    </nav>
+  </header>
 
-    <script src="../../JavaScript/script.js"></script>
-    <script src="teste.js"></script>
+  <main>
+    <!-- TREINO DE FORÇA -->
+    <section class="section" id="forca">
+      <h2>Treino de Força</h2>
+      <p>O treino de força tem como objetivo aumentar a capacidade de gerar força máxima, melhorar a densidade óssea e preparar músculos e articulações para cargas maiores. É fundamental para atletas que buscam performance e também para praticantes que querem prevenir lesões.</p>
+
+      <div class="treino">
+        <div class="card">
+          <h3>Exercícios</h3>
+          <ul>
+            <li>Agachamento Livre – 5x5</li>
+            <li>Levantamento Terra – 5x5</li>
+            <li>Supino Reto – 5x5</li>
+            <li>Remada Curvada – 5x5</li>
+          </ul>
+          <p><strong>Tutorial:</strong> O método 5x5 consiste em poucas repetições com cargas progressivas. Mantenha técnica perfeita, controle a respiração e evite falhar cedo. O descanso entre séries deve ser de 2 a 3 minutos.</p>
+        </div>
+
+        <div class="explicacao">
+          <p>Este treino recruta grandes grupos musculares com foco em movimentos compostos. Ele aumenta a força neural e estimula adaptações que melhoram potência, coordenação e estabilidade corporal.</p>
+        </div>
+      </div>
+
+      <a href="#topo" class="voltar">Voltar ao Menu</a>
+    </section>
+
+    <!-- TREINO DE HIPERTROFIA -->
+    <section class="section" id="hipertrofia">
+      <h2>Treino de Hipertrofia</h2>
+      <p>O treino de hipertrofia foca no aumento do volume muscular, através de sobrecarga progressiva, maior tempo sob tensão e técnicas de intensidade. É o mais procurado por quem deseja ganho estético e melhora de composição corporal.</p>
+
+      <div class="treino">
+        <div class="card">
+          <h3>Exercícios</h3>
+          <ul>
+            <li>Supino Inclinado – 4x10</li>
+            <li>Puxada Aberta – 4x12</li>
+            <li>Desenvolvimento de Ombros – 3x12</li>
+            <li>Agachamento Hack – 4x12</li>
+          </ul>
+          <p><strong>Tutorial:</strong> Use carga moderada que permita 10–12 repetições com esforço real nas últimas. O intervalo deve ser entre 60–90 segundos. Concentre-se na execução lenta e controlada.</p>
+        </div>
+
+        <div class="explicacao">
+          <p>Neste treino, o tempo sob tensão é maior. O objetivo é microlesionar fibras musculares para estimular reparo e crescimento. A nutrição e descanso são cruciais para melhores resultados.</p>
+        </div>
+      </div>
+
+      <a href="#topo" class="voltar">Voltar ao Menu</a>
+    </section>
+
+    <!-- TREINO FUNCIONAL -->
+    <section class="section" id="funcional">
+      <h2>Treino Funcional</h2>
+      <p>O treino funcional busca melhorar padrões de movimento, estabilidade, equilíbrio e força integrada. É excelente para o dia a dia, atletas de esportes e prevenção de lesões.</p>
+
+      <div class="treino">
+        <div class="card">
+          <h3>Exercícios</h3>
+          <ul>
+            <li>Kettlebell Swing – 4x15</li>
+            <li>Burpees – 4x12</li>
+            <li>Avanço com Halteres – 3x12 cada perna</li>
+            <li>Prancha com Alternância de Braços – 3x45s</li>
+          </ul>
+          <p><strong>Tutorial:</strong> O foco é a qualidade do movimento. Use o core para estabilizar e controle a respiração. Os exercícios exigem coordenação, então reduza carga se a técnica se perder.</p>
+        </div>
+
+        <div class="explicacao">
+          <p>Este treino simula movimentos naturais do corpo. Ele integra força, mobilidade e resistência, gerando condicionamento global. Também ajuda no gasto calórico e no desempenho atlético.</p>
+        </div>
+      </div>
+
+      <a href="#topo" class="voltar">Voltar ao Menu</a>
+    </section>
+
+    <!-- TREINO DE RESISTÊNCIA -->
+    <section class="section" id="resistencia">
+      <h2>Treino de Resistência</h2>
+      <p>O treino de resistência tem como foco a capacidade cardiovascular e muscular de sustentar esforço prolongado. É indicado para quem pratica esportes de longa duração ou deseja melhorar o condicionamento físico geral.</p>
+
+      <div class="treino">
+        <div class="card">
+          <h3>Exercícios</h3>
+          <ul>
+            <li>Circuito: 500m Corrida</li>
+            <li>20 Flexões</li>
+            <li>20 Agachamentos com Salto</li>
+            <li>15 Barra Fixa</li>
+          </ul>
+          <p><strong>Tutorial:</strong> Realize todos os exercícios em sequência, descansando apenas ao final. Repita o circuito 3 a 4 vezes. O objetivo é manter a intensidade elevada por períodos mais longos.</p>
+        </div>
+
+        <div class="explicacao">
+          <p>O foco é aumentar a eficiência cardiovascular e muscular. Esse treino trabalha tanto o sistema aeróbico quanto o anaeróbico, desenvolvendo resistência e recuperação rápida entre esforços.</p>
+        </div>
+      </div>
+
+      <a href="#topo" class="voltar">Voltar ao Menu</a>
+    </section>
+  </main>
 </body>
 </html>
