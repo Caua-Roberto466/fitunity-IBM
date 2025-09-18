@@ -420,6 +420,9 @@ Responsividade
         margin: auto;
         margin-bottom: 2%;
     }
+    .beneficio-card:hover{
+        width: 73%;
+    }
     .ir-treino{
         font-size: 110%;
         width: 48%;

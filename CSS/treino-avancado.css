@@ -28,7 +28,7 @@ h1{
     width: 23%;
     text-align: center;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 5vh;
     margin-bottom: 4%;
 }
 
@@ -119,16 +119,55 @@ section p {
   text-decoration: none;
   width: fit-content;
   font-size: 1rem;
-    }
+}
 
-    @media (max-width: 768px) {
-      .treino {
+/*
+===============================================================================================================
+Modo noturno
+===============================================================================================================
+*/
+body.darkmode .voltar-pag{
+  background-color: var(--CP_darkmode);
+}
+body.darkmode .voltar{
+  background-color: var(--cor_primaria);
+}
+body.darkmode .card{
+  background-color: var(--CP_darkmode);
+}
+body.darkmode .nav-ta a{
+  color: var(--CP_darkmode);
+}
+
+/*
+===============================================================================================================
+Responsividade
+===============================================================================================================
+*/
+@media(max-width:900px){
+  .voltar-pag{
+    width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .treino {
         flex-direction: column;
-      }
-      .treino:nth-child(even) {
+  }
+  .treino:nth-child(even) {
         flex-direction: column;
-      }
-      .explicacao {
+  }
+  .explicacao {
         padding: 0;
-      }
-    }
+  }
+  .voltar-pag{
+    width: 38%;
+  }
+}
+
+@media(max-width:480px){
+  .voltar-pag{
+    width: 50vh;
+    padding-block: 2vh;
+  }
+}
