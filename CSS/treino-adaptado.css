@@ -41,7 +41,7 @@ h1{
     color: var(--cor_primaria);
     font-weight: bold;
     text-decoration: none;
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 .section {
@@ -144,6 +144,15 @@ body.darkmode .nav-ta a{
 Responsividade
 ===============================================================================================================
 */
+@media(max-width:1024px){
+    .nav-ta{
+        gap: 3%;
+        text-align: center;
+    }
+    .ta{
+        font-size: 120%;
+    }
+}
 @media(max-width:900px){
   .voltar-pag{
     width: 33%;
@@ -170,4 +179,16 @@ Responsividade
     width: 50vh;
     padding-block: 2vh;
   }
+  .nav-ta{
+    flex-direction: column;
+  }
+  .nav-ta a{
+    margin-bottom: 5%;
+  }
+}
+
+@media(max-width:320px){
+    .ta{
+        font-size: 3vh;
+    }
 }

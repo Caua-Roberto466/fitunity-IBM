@@ -171,3 +171,14 @@ Responsividade
     padding-block: 2vh;
   }
 }
+
+@media(max-width:420px){
+  .nav-ta{
+    flex-direction: column;
+  }
+  .nav-ta a{
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+}
