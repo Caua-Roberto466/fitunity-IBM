@@ -810,8 +810,12 @@ body.darkmode .navA:hover{
 }
 
 body.darkmode #fullbody-card{
-    background-color: var(--transparent_dk);
+    
+    border-color: var(--CP_darkmode);
     color: white;
+}
+body.darkmode #fullbody-card:hover{
+    background-color: var(--CP_darkmode);
 }
 
 body.darkmode .container-video{
@@ -1104,6 +1108,11 @@ Responsividade
     .iframe-peito{
         width: 320px;
     }
+    #card-treino-peito{
+        width: 200%;
+        padding-inline: 2%;
+        border-radius: 15px;
+    }
     .peito-casa{
         width: 370px;
         display: block;
@@ -1118,6 +1127,9 @@ Responsividade
     }
     .intro-costa{
         width: 400px;
+    }
+    #iframe-costas{
+        width: 80%;
     }
     .video-costa-texto{
         max-width: 410px;
