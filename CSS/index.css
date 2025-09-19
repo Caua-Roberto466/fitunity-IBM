@@ -211,6 +211,7 @@ Benefícios
 section{
     display: flex;
     justify-content: center;
+    gap: 4%;
     margin: auto;
 }
 
@@ -224,17 +225,16 @@ section img{
 
 
 .beneficios-card{
-    width: 178px;
+    width: 24%;
     background-color: var(--cor_primaria);
     padding-left: 10px;
     padding-right: 10px;
-    margin-right: 60px;
     border-radius: 10px;
     margin-bottom: 3%;
 }
 
 .beneficios-card:hover{
-    width: 192px;
+    width: 26%;
     box-shadow: var(--box-shadow);
     font-size: 23px;
     transition: 0.3s;
@@ -261,44 +261,32 @@ Opiniões
 .opinioes{
     background-color: rgba(0, 217, 248, 0.2);
     display: block;
-    padding-bottom: 2%;
-    padding-top: 1%;
+    padding-bottom: 1vh;
 }
 
-.outras-op {
+.container-pessoa {
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center; /* centraliza o conteúdo horizontalmente */
     margin-bottom: 50px;
 }
-
-.ops {
-    display: flex;
-    justify-content: center; /* centraliza os itens dentro */
-    flex-wrap: wrap; /* para quebrar linha caso tenha mais opiniões */
-    gap: 20px; /* espaçamento entre opiniões */
-    width: 100%; /* ocupa toda a largura disponível */
-    max-width: 900px; /* limite máximo para não ficar esticado demais */
-}
-
-
 .Pessoa {
     margin-left: 19px;
     margin-top: 20px;
-    width: 400px;
+    width: 30%;
     border: 2px var(--cor_secundaria) solid;
     border-radius: 20px;
 }
 
 .Pessoa p{
     margin: 7px;
-    font-size: 25px;
+    font-size: 140%;
 }
 
 
 .Pessoa:hover{
-    width: 280px;
+    width: 31%;
     margin-left: 22px;
     box-shadow: var(--box-shadow);
     transition: 0.3s;
@@ -306,7 +294,7 @@ Opiniões
 
 /* e coloca isso */
 .Pessoa:hover p {
-    font-size: 18px;
+    font-size: 150%;
     transition: 0.3s;
 }
 
@@ -342,96 +330,7 @@ Opiniões
 /*=============================================================================================================
 Carrossel
 =============================================================================================================*/
-/* Estilos do carrossel */
-.carrossel-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto 50px;
-    overflow: hidden;
-}
 
-.carrossel-opinioes {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carrossel-item {
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.carrossel-item.active {
-    opacity: 1;
-    position: relative;
-}
-
-.carrossel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-}
-
-.carrossel-btn:hover {
-    background-color: var(--cor_primaria);
-}
-
-.carrossel-prev {
-    left: 10px;
-}
-
-.carrossel-next {
-    right: 10px;
-}
-
-.carrossel-indicadores {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 8px;
-}
-
-.indicador {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.indicador.active {
-    background-color: var(--cor_primaria);
-    transform: scale(1.2);
-}
-
-.indicador:hover {
-    background-color: var(--cor_secundaria);
-}
-/* Ajuste para a pessoa no carrossel */
-.carrossel-item .Pessoa {
-    margin: 10px;
-    width: 300px;
-    max-width: 90%;
-}
 
 body.darkmode .NS_texto{
     border: 0.8px var(--CP_darkmode) solid;
@@ -547,9 +446,25 @@ Planos
 /*=============================================================================================================
 Responsividade
 =============================================================================================================*/
+@media(min-width:1870px){
+    
+}
+
 @media(max-width: 1024px){
     .plano-basico, .plano-adaptado, .plano-avancado{
         width: 45%;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    .beneficios-card{
+        width: 25%;
+    }
+    .beneficios-card:hover{
+        width: 27%;
     }
 }
 
@@ -725,8 +640,13 @@ Responsividade
   }
 
   /* BENEFÍCIOS */
+  .Beneficio_site{
+    margin: auto;
+    margin-bottom: 3%;
+  }
   .beneficios-card {
     width: 90%;
+    margin-bottom: 3%;
   }
   .beneficios-card:hover{
     width: 93%;
@@ -737,9 +657,19 @@ Responsividade
 
 
   /* PESSOAS DO CARROSSEL */
-  .opinioes{
-    display: none;
-    }
+  .container-pessoa{
+    flex-direction: column;
+    margin: auto;
+  }
+  .Pessoa{
+    width: 91%;
+    display: block;
+    margin: auto;
+    margin-bottom: 7%;
+  }
+  .Pessoa:hover{
+    width: 92%;
+  }
 }
 
 @media (max-width: 322px){
