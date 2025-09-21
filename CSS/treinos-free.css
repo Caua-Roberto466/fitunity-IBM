@@ -906,6 +906,31 @@ body.darkmode .braco-casa{
 Responsividade
 ==============================================================================================================
 */
+@media(min-width: 1870px){
+    .intro-treino-free p, h1, h2, #fullbody, .nav, #peito, #nav, #costa, #perna, #braco{
+        font-size: 200%;
+    }
+    #fullbody-card{
+        width: 30%;
+    }
+    #fullbody-card:hover{
+        width: 32%;
+    }
+    .video-costas{
+        flex-direction: column;
+    }
+    #iframe-costas{
+        display: block;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    .video-costa-texto{
+        display: block;
+        width: 80%;
+        max-width: 90%;
+        margin: auto;
+    }
+}
 @media(max-width:1024px){
     .fullbody-cards{
         padding-inline: 2%;

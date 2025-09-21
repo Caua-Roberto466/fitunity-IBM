@@ -241,6 +241,20 @@ body.darkmode .refeicao li{
 Responsividade
 ===============================================================================================================
 */
+@media(min-width: 1870px){
+    body{
+        font-size: 140%;
+    }
+    .navD-link{
+        font-size: 150%;
+    }
+    .intro-perder-peso img{
+        width: 20%;
+    }
+    .texto-intro-perder-peso{
+        font-size: 140%;
+    }
+}
 @media(max-width:900px){
     .intro-perder-peso img{
         height: 40%;
