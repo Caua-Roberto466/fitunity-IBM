@@ -1,0 +1,44 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 0.9px #1da3b8 solid;
+    --borda-dk: 0.9px #213872 solid;
+}
+
+/*
+===============================================================================================================
+Formulário de contato
+===============================================================================================================
+*/
+form{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border: var(--cor_primaria) solid 1px;
+    border-radius: 15px;
+}
+.container-form{
+    display: flex;
+    padding-inline: 3%;
+}
+label{
+    color: var(--CS_darkmode);
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 140%;
+}
+form div{
+    width: 50%;
+    display: block;  
+}
+form input{
+    width: 200%;
+    margin-bottom: 4%;
+}

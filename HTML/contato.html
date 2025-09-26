@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caio Novaes, Cauã Roberto, Claudia Vieira, Guilherme Araujo, Heloisa Silva">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <link rel="stylesheet" href="../CSS/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap" rel="stylesheet">
-    <title>Cadastro</title>
+    <title>Contato</title>
 </head>
 <body>
     <header>
@@ -55,44 +55,29 @@
         </div>
     </header>
 
+    <h1>Contate nossa equipe</h1>
+
+    <!--
+    ===========================================================================================================
+    Contato com a equipe
+    ===========================================================================================================
+    -->
     <form action="#">
-        <h3>Cadastro</h3>
-        <div class="nome">
-            <label for="nome" class="nomeC">Nome completo</label> <br>
-            <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+        <h3>Entre em contato</h3>
+        <div class="container-form">
+            <div class="campos-input">
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="telefone">
+                    <label for="telefone">Telefone</label><br>
+                    <input type="tel" name="telefone" id="telefone">
+                </div>
+            </div>
         </div>
-        <div class="email">
-            <label for="email" class="Email">Email</label> <br>
-            <input type="email" id="email" name="email" required placeholder="Email">
-            <div id="erro-email" style="color: red; font-size: 14px; display: none; margin-top: 4px;"></div> <!-- Mensagem de erro -->
-
-        </div>
-        <div class="senha">
-            <label for="senha" class="Senha">Senha</label> <br>
-            <input type="password" name="senha" id="senha" required placeholder="Senha">
-        </div>
-        <div class="pesoC">
-            <label for="peso-cad">Peso</label><br>
-            <input type="number" name="peso-cad" id="peso-cad" required placeholder="Coloque seu peso" step="any">
-        </div>
-        <div class="alturac">
-            <label for="altura">Altura</label><br>
-            <input type="number" name="alturac" id="alturac" placeholder="Coloque sua altura" step="any">
-        </div>
-        <div class="nascimento">
-            <label for="nasci">Data de nascimento</label><br>
-            <input type="date" name="nasci" id="nasci">
-        </div>
-        
-        
-        <div class="envi">
-            <input type="submit" value="Enviar" id="enviar">
-        </div>
-
-        <p>Já tem uma conta? <a href="entrar.html" class="entre">Entrar</a></p>
     </form>
-
-
+    
     <footer>
         <div class="Coluna1">
             <div class="Empresa">
@@ -105,6 +90,7 @@
                 <p>@fitunity_oficial</p>
                 <p>@fitunity_saude</p>
             </div>
+            
         </div>
         <div class="Coluna2">
             <div class="Navegação">
@@ -140,9 +126,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="../JavaScript/script.js"></script>
-    <script src="../JavaScript/menu.js" defer></script>
-    <script src="../JavaScript/cadastro.js"></script>
 </body>
 </html>
