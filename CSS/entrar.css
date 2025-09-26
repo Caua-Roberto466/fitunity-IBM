@@ -23,7 +23,7 @@ Formulário
 ===============================================================================================================
 */
 form{
-    width: 30%;
+    width: 40%;
     display: block;
     margin: auto;
     margin-top: 70px;
@@ -54,7 +54,7 @@ Inputs
 }
 
 #nome{
-    width: 55%;
+    width: 60%;
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
@@ -67,7 +67,7 @@ Inputs
 }
 
 #email{
-    width: 55%;
+    width: 60%;
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;
@@ -81,7 +81,7 @@ Inputs
 }
 
 #senha{
-    width: 55%;
+    width: 60%;
     height: 30px;
     border: 1px var(--cor_secundaria) solid;
     border-radius: 5px;

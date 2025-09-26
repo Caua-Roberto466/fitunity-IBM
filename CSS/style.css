@@ -281,6 +281,15 @@ Responsividades
         margin-top: 8px;
         margin-bottom: -15px;
     }
+    .nav-list{
+        gap: 1%;
+    }
+    .nav-list ul{
+        gap: 4%;
+    }
+    .nav-list ul li{
+        white-space:  nowrap;
+    }
 }
 
 @media (max-width: 902px){
