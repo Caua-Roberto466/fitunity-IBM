@@ -56,8 +56,8 @@ Perfil do usuário a esquerda
 ===============================================================================================================
 */
 .foto-user{
-    width: 200px;   /* largura fixa */
-    height: 200px;  /* altura fixa */
+    width: 170px;   /* largura fixa */
+    height: 170px;  /* altura fixa */
     object-fit: cover; /* cobre todo o espaço cortando excesso */
     object-position: center; /* centraliza o recorte */
     border-radius: 100%; /* opcional: cantos arredondados */
@@ -65,7 +65,7 @@ Perfil do usuário a esquerda
     margin: 8px;
     display: block;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 4%;
     margin-bottom: 6%;
 }
 
@@ -91,6 +91,7 @@ Perfil do usuário a esquerda
     margin-top: 0px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
 #editar img{

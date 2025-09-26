@@ -10,8 +10,8 @@ Váriaveis gerais da página
     --CP_darkmode: #213872;
     --CS_darkmode: #0e2555;
     --BKG_darkmode: #303030;
-    --transparente: rgba(0, 217, 248, 0.3);
-    --transparent_dk: rgba(33, 56, 114, 0.3);
+    --transparente: rgba(0, 217, 248, 0.1);
+    --transparent_dk: rgba(33, 56, 114, 0.1);
 
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
@@ -929,6 +929,33 @@ Responsividade
         width: 80%;
         max-width: 90%;
         margin: auto;
+    }
+    .intro-braco{
+        padding-inline: 2%;
+    }
+    .intro-braco img{
+        width: 35%;
+    }
+    .texto-introB{
+        width: 100%;
+        max-width: 100%;
+    }
+    .video-braco{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .iframe-braco{
+        width: 50%;
+        max-width: 40%;
+        display: block;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    .texto-video-braco{
+        display: block;
+        margin: auto;
+        margin-bottom: 3%;
+        width: 40%;
     }
 }
 @media(max-width:1024px){

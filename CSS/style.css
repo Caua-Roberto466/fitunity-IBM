@@ -3,6 +3,7 @@
 Estilo Geral
 ===============================================================================================================
 */
+
 :root{
     --cor_primaria: #00d9f8;
     --cor_secundaria: #1da3b8;
@@ -71,14 +72,14 @@ header{
 }
 .nav-list{
     display: flex;
-    gap: 9px;
+    gap: 20px;
     align-items: center;
 }
 
 header ul{
     display: flex;
     list-style: none;
-    gap: 12px;
+    gap: 25px;
     margin-top: 13px;
 }
 
@@ -288,6 +289,9 @@ Responsividades
     }
     .nav-link{
         font-size: 14px;
+    }
+    header ul{
+        gap: 10px;
     }
 }
 

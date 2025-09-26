@@ -16,8 +16,8 @@ Estilo geral
     --tamanho_fonte: 19px;
     --borda: 1px #00d9f8 solid;
     --borda-dk: 1px #213872 solid;
-    --transparente: rgba(0, 217, 248, 0.3);
-    --transparent_dk: rgba(33, 56, 114, 0.3);
+    --transparente: rgba(0, 217, 248, 0.1);
+    --transparent_dk: rgba(33, 56, 114, 0.1);
 }
 h1{
     margin-top: 1.5em;
@@ -34,7 +34,7 @@ Benefícios do plano
 ===============================================================================================================
 */
 .beneficios{
-    margin-top: 8%;
+    margin-top: 5%;
 }
 .container-beneficio{
     display: flex;
@@ -72,17 +72,19 @@ Treinos premium
 ===============================================================================================================
 */
 .treinos{
-    margin-top: 7%;
+    margin-top: 3%;
 }
 .treino-intro{
     display: flex;
     justify-content: space-between;
     padding-inline: 1%;
     padding-block: 1%;
-    margin-top: 10%;
+    margin-top: 3%;
+    align-content: flex-start;
+    background-color: var(--transparente);
 }
 .treino-intro img{
-    width: 22%;
+    width: 24%;
     border-radius: 15px;
 }
 .treino-intro h3{
@@ -108,8 +110,8 @@ Treinos premium
     font-weight: bold;
     display: block;
     margin: auto;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     transition: 0.4s;
 }
 .ir-treino:hover{
@@ -156,10 +158,11 @@ Dietas premium
     font-size: 130%;
 }
 .intro-dieta{
-    margin-top: 9%;
+    margin-top: 3%;
 }
 .intro-dieta h3{
     font-size: 130%;
+    margin-bottom: -1%;
 }
 .tabela{
     display: flex;
@@ -190,6 +193,8 @@ td{
     color: var(--CS_darkmode);
     transition: 0.4s;
     cursor: pointer;
+    border-left: 1px var(--cor_primaria) solid;
+    border-right: 1px var(--cor_primaria) solid;
 }
 td:hover{
     color: var(--cor_secundaria);
@@ -274,10 +279,9 @@ Modo Noturno
 body.darkmode .beneficio-card{
     background-color: var(--CP_darkmode);
 }
-/*
 body.darkmode .treino-intro{
     background-color: var(--transparent_dk);
-}*/
+}
 body.darkmode .ir-treino{
     background-color: var(--CP_darkmode);
 }
@@ -311,6 +315,13 @@ body.darkmode .linkar-pop:hover{
 Responsividade
 ===============================================================================================================
 */
+@media(min-width:1870px){
+    .beneficio-card, .treino-intro, .dietas{
+        font-size: 170%;
+    }
+    
+}
+
 @media(max-width:1024px){
     .treino-intro img{
         display: none;

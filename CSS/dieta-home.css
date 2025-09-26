@@ -10,8 +10,8 @@ CSS Geral
     --CP_darkmode: #213872;
     --CS_darkmode: #0e2555;
     --BKG_darkmode: #303030;
-    --transparente: rgba(0, 217, 248, 0.3);
-    --transparent_dk: rgba(33, 56, 114, 0.3);
+    --transparente: rgba(0, 217, 248, 0.1);
+    --transparent_dk: rgba(33, 56, 114, 0.1);
 
     --Border_radius: 45px;
     --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
@@ -46,7 +46,7 @@ Navegação entre dietas
     font-weight: bolder;
     font-size: 18px;
     transition: 0.3s;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
 }
 .navD-link:hover{
     color: var(--CS_darkmode);
@@ -90,8 +90,8 @@ Estilização da sessão de refeição
     border-radius: 15px;
     display: block;
     margin: auto;
-    margin-top: 3%;
-    margin-bottom: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     align-self: flex-start;
 }
 .refeicao p{
@@ -113,8 +113,8 @@ Dieta para perder peso
     display: flex;
     justify-content: space-between;
     padding-inline: 1%;
-    margin-bottom: 5%;
-
+    margin-bottom: 3%;
+    background-color: var(--transparente);
 }
 .intro-perder-peso img{
     border-radius: 16px;
@@ -141,8 +141,8 @@ Dieta para ganhar massa
     display: flex;
     padding-inline: 1%;
     justify-content: space-between;
-    margin-block: 8%
-    
+    margin-block: 3%;
+    background-color: var(--transparente);
 }
 .intro-ganhar-massa img{
     width: 30%;
@@ -167,14 +167,14 @@ Dieta para veganos
 ===============================================================================================================
 */
 #vegana{
-    margin-top: 6%;
+    margin-top: 3%;
 }
 .intro-vegana{
     display: flex;
     justify-content: space-between;
     padding-inline: 1%;
-    margin-block: 5%;
-
+    margin-block: 3%;
+    background-color: var(--transparente);
 }
 .intro-vegana img{
     width: 30%;
@@ -197,8 +197,9 @@ Dieta zero glúten
 .intro-gluten{
     display: flex;
     justify-content: space-between;
-    margin-block: 5%;
+    margin-block: 3%;
     padding-inline: 1%;
+    background-color: var(--transparente);
 }
 .intro-gluten img{
     height: 68vh;
@@ -208,7 +209,7 @@ Dieta zero glúten
     font-size: 165%;
 }
 .intro-gluten p{
-    font-size: 135%;
+    font-size: 145%;
     width:96%;
     display: block;
     margin: auto;
@@ -226,8 +227,8 @@ body.darkmode .navD-link{
 body.darkmode .navD-link:hover{
     color: var(--CP_darkmode);
 }
-body.darkmode .intro-perder-peso{
-    border-color: var(--CP_darkmode);
+body.darkmode .intro-perder-peso, body.darkmode .intro-ganhar-massa, body.darkmode .intro-gluten, body.darkmode .intro-vegana{
+    background-color: var(--transparent_dk);
 }
 body.darkmode .refeicao{
     border-color: var(--CP_darkmode);

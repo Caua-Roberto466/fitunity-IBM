@@ -91,7 +91,8 @@ Card de treinos
 
 #treino-img{
     width: 20%;
-    margin-left: 6%;
+    display: block;
+    margin: auto;
 }
 
 .treino-card1 ul {
@@ -108,7 +109,7 @@ Card de treinos
   margin-right: 10px;
   margin-bottom: 16px;
   
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' sans-serif;
 }
 
 .treino-card ul {
@@ -125,14 +126,13 @@ Card de treinos
   margin-right: 10px;
   margin-bottom: 16px;
   
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' sans-serif;
 }
 
 ul li::before {
   content: "";   /* obrigatório */
   position: absolute;
-  left: 0;
-  top: 0.2em;                        /* joga pro meio vertical */
+  left: 0;                       /* joga pro meio vertical */
   transform: none;     /* centraliza certinho */
   width: 20px;                     /* tamanho fixo */
   height: 20px;

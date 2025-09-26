@@ -144,6 +144,23 @@ body.darkmode .nav-ta a{
 Responsividade
 ===============================================================================================================
 */
+@media(min-width:1870px){
+  h1{
+    font-size: 260%;
+  }
+  .section{
+    max-width: 80%;
+    width: 80%;
+    padding-inline: 2%;
+  }
+  .section li, .section p, .section h2, .section h3{
+    font-size: 170%;
+  }
+  .voltar{
+    font-size: 150%;
+  }
+}
+
 @media(max-width:900px){
   .voltar-pag{
     width: 33%;
