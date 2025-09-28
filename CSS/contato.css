@@ -19,7 +19,7 @@ Formulário de contato
 ===============================================================================================================
 */
 form{
-    width: 70%;
+    width: 60%;
     display: block;
     margin: auto;
     border: var(--cor_primaria) solid 1px;
@@ -27,8 +27,13 @@ form{
 }
 .container-form{
     display: flex;
-    padding-inline: 3%;
+    padding-left: 3%;
 }
+/*
+===============================================================================================================
+Parte dos inputs
+===============================================================================================================
+*/
 label{
     color: var(--CS_darkmode);
     font-family: 'Montserrat' , sans-serif;
@@ -39,9 +44,76 @@ form .campos-input{
     display: block;  
 }
 form input{
-    width: 70%;
+    background-color: transparent;
+    width: 93%;
     margin-bottom: 4%;
     height: 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px var(--cor_primaria) solid;
+}
+#enviar{
+    background-color: var(--CP_darkmode);
+    border-color: var(--CP_darkmode);
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#enviar:hover{
+    background-color: var(--CS_darkmode);
+    border-color: var(--CS_darkmode);
+    transform: scale(1.05);
+    box-shadow: 0 0 12px var(--CS_darkmode);
+}
+/*
+===============================================================================================================
+Parte da mensagem
+===============================================================================================================
+*/
+.card-contato{
+    width: 50%;
+    margin: 0;
+    background: linear-gradient(45deg, var(--cor_primaria), var(--cor_secundaria));
+    height: auto;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+textarea{
+    background-color: transparent;
+    border: 2px var(--CS_darkmode) solid;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+    resize: none;
+    height: 75%;
+    width: 75%;
+    color: var(--CS_darkmode);
+}
+
+/*
+===============================================================================================================
+Modo Noturno
+===============================================================================================================
+*/
+body.darkmode form, body.darkmode form input{
+    border-color: var(--CP_darkmode);
+    color: white;
+}
+body.darkmode label{
+    color: white;
+}
+body.darkmode #enviar{
+    background-color: var(--cor_primaria);
+    border-color: var(--cor_primaria);
+}
+body.darkmode #enviar:hover{
+    box-shadow: 0 0 13px var(--cor_primaria);
+}
+body.darkmode .card-contato{
+    background: linear-gradient(45deg, var(--CP_darkmode), var(--CS_darkmode));
+}
+body.darkmode textarea{
+    color: white;
+    border-color: var(--cor_primaria)
 }

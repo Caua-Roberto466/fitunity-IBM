@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Imagens/Favicon.png" type="image/x-icon">
     <title>Contato</title>
 </head>
 <body>
@@ -63,17 +64,26 @@
     ===========================================================================================================
     -->
     <form action="#">
-        <h3>Entre em contato</h3>
         <div class="container-form">
             <div class="campos-input">
+                <h3>Entre em contato</h3>
+                <div class="nome">
+                    <label for="nome">Nome completo</label><br>
+                    <input type="text" name="nome" id="nome" required placeholder="Ex: Mario Augusto Silva">
+                </div>
                 <div class="email">
                     <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com">
                 </div>
                 <div class="telefone">
                     <label for="telefone">Telefone</label><br>
-                    <input type="tel" name="telefone" id="telefone">
+                    <input type="tel" name="telefone" id="telefone" required placeholder="Ex: 11945431290">
                 </div>
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+            <div class="card-contato">
+                <h3>Envie sua mensagem</h3>
+                <textarea name="mensagem" id="mensagem" required placeholder="Deixe sua menssagem aqui"></textarea>
             </div>
         </div>
     </form>
@@ -126,5 +136,7 @@
             </div>
         </div>
     </footer>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/menu.js "></script>
 </body>
 </html>
