@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caio Novaes, Cauã Roberto, Claudia Vieira, Guilherme Araújo, Heloisa Silva">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/contato.css">
+    <link rel="stylesheet" href="../CSS/contato-profissional.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -64,12 +64,44 @@
     ===========================================================================================================
     -->
     <form action="#">
-        <div class="formulario">
-            <h3>Preencha o formulário</h3>
-        </div>
-        <div class="calendario">
-            <h3>Marque uma chamada ao vivo</h3>
-        </div>
+            <!--Formulário-->
+            <div class="formulario">
+                <h3>Preencha o formulário</h3>
+                <!--Nome-->
+                <div class="input">
+                    <label for="nome">Nome completo</label><br>
+                    <input type="text" name="nome" id="nome" required placeholder="Ex: Mario Augusto Silva">
+                </div>
+                <!--Email-->
+                <div class="input">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com">
+                </div>
+                <!--Telefone-->
+                <div class="input">
+                    <label for="telefone">Telefone</label><br>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="Ex: 11945431290">
+                </div>
+                <!--Tipo de profissional?-->
+                <div class="input">
+                    <label for="profissional">Escolha o profissional</label><br>
+                    <select name="profissional" id="profissional">
+                        <option value="selecione" selected>Selecione uma opção</option>
+                        <option value="personal">Personal Trainer</option>
+                        <option value="nutricionista">Nutricionista</option>
+                    </select>
+                </div>
+                <!--Mensagem-->
+                <div class="input">
+                    <label for="mensagem">O que você deseja conversar?</label><br>
+                    <textarea name="mensagem" id="mensagem" required placeholder="Deixe o assunto que você deseja tratar com o profissional aqui"></textarea>
+                </div>
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+            <!--Calendário-->
+            <div class="calendario">
+                <h3>Marque uma chamada ao vivo</h3>
+            </div>
     </form>
     
     <footer>

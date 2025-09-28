@@ -1,0 +1,105 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #fff;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --borda: 1px #00d9f8 solid;
+    --borda-dk: 1px #213872 solid;
+}
+
+/*
+===============================================================================================================
+Formulário
+===============================================================================================================
+*/
+form{
+    width: 70%; /*width: 50%;*/
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 15px;
+}
+.formulario{
+    width: 50%;
+}
+label{
+    color: var(--CS_darkmode);
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 130%;
+    font-weight: 450;
+}
+.input{
+    width: 70%; /*width: 85%;*/
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 105%;
+    color: var(--CS_darkmode);
+}
+select{
+    width: 100%;
+    height: 30px;
+    color: var(--CS_darkmode);
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 8px;
+    font-size: 105%;
+}
+option{
+    color: var(--CS_darkmode);
+    border-color: var(--cor_primaria);
+}
+textarea{
+    width: 100%;
+    height: 20vh;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 8px;
+    resize: none;
+    background-color: transparent;
+    color: var(--CS_darkmode);
+    font-size: 105%;
+}
+#enviar{
+    width: 70%;
+    display: block;
+    margin: auto;
+    background-color: var(--CP_darkmode);
+    border-color: var(--CP_darkmode);
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+    margin-bottom: 3%;
+    transition: 0.5s ease-in-out;
+}
+#enviar:hover{
+    background-color: var(--CS_darkmode);
+    border-color: var(--CS_darkmode);
+    transform: scale(1.05);
+    box-shadow: 0 0 13px var(--CS_darkmode);
+}
+
+/*
+===============================================================================================================
+Calendário
+===============================================================================================================
+*/
+.calendario{
+    width: 50%;
+    margin: 0;
+    background: linear-gradient(45deg, var(--cor_primaria), var(--cor_secundaria));
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    /*display: none;*/
+}
