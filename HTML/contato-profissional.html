@@ -63,7 +63,7 @@
     Formulário
     ===========================================================================================================
     -->
-    <form action="#">
+    <form id="formContato" action="#">
             <!--Formulário-->
             <div class="formulario">
                 <h3>Preencha o formulário</h3>
@@ -91,16 +91,16 @@
                         <option value="nutricionista">Nutricionista</option>
                     </select>
                 </div>
-                <!--Mensagem-->
-                <div class="input">
-                    <label for="mensagem">O que você deseja conversar?</label><br>
-                    <textarea name="mensagem" id="mensagem" required placeholder="Deixe o assunto que você deseja tratar com o profissional aqui"></textarea>
-                </div>
-                <input type="submit" value="Enviar" id="enviar">
+                <input type="submit" value="Enviar" id="enviar" class="enviar">
             </div>
             <!--Calendário-->
-            <div class="calendario">
-                <h3>Marque uma chamada ao vivo</h3>
+            <div class="card">
+                <h3>O que você deseja conversar?</h3>
+                <!--Mensagem-->
+                <div class="input">
+                    <textarea name="mensagem" id="mensagem" required placeholder="Deixe o assunto que você deseja tratar com o profissional aqui"></textarea>
+                </div>
+                <input type="submit" value="Enviar" id="enviar2" class="enviar">
             </div>
     </form>
     
@@ -156,5 +156,18 @@
     </footer>
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/menu.js "></script>
+    <script>
+        const form = document.getElementById('formContato')
+
+        form.addEventListener("submit" , function(event){
+            event.preventDefault()
+
+            if(form.checkValidity()){
+                window.location.href = 'chat-profisional.html'
+            }else{
+                form.reportValidity()
+            }
+        })
+    </script>
 </body>
 </html>
