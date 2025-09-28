@@ -281,14 +281,25 @@ Responsividades
         margin-top: 8px;
         margin-bottom: -15px;
     }
+    .nav-bar{
+        padding-right: 8%;
+    }
     .nav-list{
-        gap: 1%;
+        gap: 10%;
     }
     .nav-list ul{
         gap: 4%;
     }
-    .nav-list ul li{
+    .nav-link{
         white-space:  nowrap;
+        font-size: 100%;
+    }
+    .botoes-navbar{
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    .botoes-navbar button{
+        font-size: 100%;
     }
 }
 
@@ -300,14 +311,14 @@ Responsividades
         font-size: 14px;
     }
     header ul{
-        gap: 10px;
+        gap: 19px;
     }
 }
 
 /* Responsividade do header */
 @media (max-width: 770px){
     .nav-link{
-        font-size: 14px;
+        font-size: 13px;
     }
     .empresa img{
         width: 50px;
@@ -319,7 +330,7 @@ Responsividades
         gap: 8px;
     }
     .botoes-navbar button{
-        font-size: 14px;
+        font-size: 13px;
     }
     footer {
         gap: 32px;
@@ -387,17 +398,21 @@ Responsividades
     }
     .mobile-menu .nav-item{
         display: block;
-        padding-top: 1.2rem;
+        padding-top: 0.8rem;
+    }
+    .nav-link{
+        font-size: 130%;
     }
     .mobile-menu .botoes-navbar-mobile{
         display: block;
         padding: 1rem 2rem;
     }
     .mobile-menu .botoes-navbar-mobile button{
-        width: 200px;
+        width: 220px;
         display: block;
         margin: auto;
         margin-bottom: 13px;
+        font-size: 120%;
     }
     .open{
         display: block;
