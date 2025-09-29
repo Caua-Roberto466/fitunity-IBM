@@ -3,240 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treinos Avançados</title>
+  <title>Página de Chat</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      line-height: 1.8;
+      font-family: Arial, sans-serif;
+      display: flex; /* divide tela em barra lateral + chat */
+      height: 100vh; /* ocupa toda a altura da tela */
     }
 
-    header {
-      background: #213872;
-      padding: 20px;
-      text-align: center;
-      position: relative;
+    /* -------- BARRA LATERAL -------- */
+    .sidebar {
+      width: 25%; /* largura da barra lateral */
+      background: #f1f1f1;
+      display: flex;
+      flex-direction: column; /* contatos ficam empilhados */
     }
 
-    header h1 {
-      color: white;
-      margin-bottom: 10px;
+    .sidebar-header {
+      padding: 15px;
+      background: #ddd;
+      font-weight: bold;
     }
 
-    nav {
-      margin-top: 10px;
+    .contacts {
+      flex: 1; /* ocupa todo espaço sobrando */
+      overflow-y: auto; /* rolagem só dentro da lista de contatos */
     }
 
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
+    .contact {
+      padding: 15px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .contact:hover {
+      background: #e9e9e9;
+    }
+
+    /* -------- ÁREA DO CHAT -------- */
+    .chat {
+      flex: 1; /* ocupa todo espaço restante */
+      display: flex;
+      flex-direction: column; /* header, mensagens, footer empilhados */
+    }
+
+    .chat-header {
+      padding: 15px;
+      background: #0096f7;
       color: white;
       font-weight: bold;
-      font-size: 1rem;
     }
 
-    .section {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 20px;
+    .messages {
+      flex: 1; /* ocupa espaço fixo entre header e footer */
+      padding: 15px;
+      overflow-y: auto; /* rolagem só dentro das mensagens */
+      background: #fafafa;
     }
 
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #213872;
-    }
-
-    .section p {
-      font-size: 1.2rem;
-      margin-bottom: 40px;
-    }
-
-    .treino {
-      display: flex;
-      align-items: stretch;
-      margin-bottom: 80px;
-      gap: 20px;
-    }
-
-    .treino:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-
-    .card {
-      flex: 1;
-      background: #1da3b8;
-      color: white;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
-
-    .card ul {
-      margin-left: 20px;
-      margin-bottom: 15px;
-    }
-
-    .card p {
-      font-size: 1rem;
-    }
-
-    .explicacao {
-      flex: 2;
-      background: none;
-      color: #333;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
+    .message {
+      margin-bottom: 10px;
       padding: 10px;
+      border-radius: 8px;
+      max-width: 70%;
     }
 
-    .voltar {
-      display: block;
-      margin: 30px auto;
-      text-align: center;
-      padding: 12px 20px;
-      border-radius: 10px;
-      background: #213872;
+    .sent {
+      background: #d1ffd6; /* verde clarinho */
+      margin-left: auto; /* joga para direita */
+    }
+
+    .received {
+      background: #fff;
+      border: 1px solid #ddd;
+      margin-right: auto; /* joga para esquerda */
+    }
+
+    .chat-footer {
+      padding: 10px;
+      display: flex;
+      border-top: 1px solid #ccc;
+      background: #f1f1f1;
+    }
+
+    .chat-footer input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .chat-footer button {
+      padding: 10px 15px;
+      margin-left: 10px;
+      border: none;
+      background: #0096f7;
       color: white;
-      text-decoration: none;
-      width: fit-content;
-      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
-    @media (max-width: 768px) {
-      .treino {
-        flex-direction: column;
-      }
-      .treino:nth-child(even) {
-        flex-direction: column;
-      }
-      .explicacao {
-        padding: 0;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <header id="topo">
-    <h1>Treinos Avançados</h1>
-    <nav>
-      <a href="#forca">Força</a>
-      <a href="#hipertrofia">Hipertrofia</a>
-      <a href="#funcional">Funcional</a>
-      <a href="#resistencia">Resistência</a>
-    </nav>
-  </header>
+  <!-- -------- BARRA LATERAL -------- -->
+  <aside class="sidebar">
+    <div class="sidebar-header">Contatos</div>
+    <div class="contacts">
+      <div class="contact">Maria</div>
+      <div class="contact">João</div>
+      <div class="contact">Ana</div>
+      <div class="contact">Lucas</div>
+      <div class="contact">Pedro</div>
+      <div class="contact">Carla</div>
+      <div class="contact">Juliana</div>
+      <div class="contact">Ricardo</div>
+      <div class="contact">Amanda</div>
+      <div class="contact">Fernanda</div>
+    </div>
+  </aside>
 
-  <main>
-    <!-- TREINO DE FORÇA -->
-    <section class="section" id="forca">
-      <h2>Treino de Força</h2>
-      <p>O treino de força tem como objetivo aumentar a capacidade de gerar força máxima, melhorar a densidade óssea e preparar músculos e articulações para cargas maiores. É fundamental para atletas que buscam performance e também para praticantes que querem prevenir lesões.</p>
+  <!-- -------- ÁREA DO CHAT -------- -->
+  <section class="chat">
+    <div class="chat-header">Conversa com Maria</div>
+    <div class="messages">
+      <div class="message received">Oi, tudo bem?</div>
+      <div class="message sent">Oi Maria! Tudo sim e você?</div>
+      <div class="message received">Também, graças a Deus! Bora marcar o treino?</div>
+      <div class="message sent">Boa, pode ser amanhã às 10h?</div>
+      <div class="message received">Perfeito!</div>
+      <div class="message sent">Então combinado! 💪</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" placeholder="Digite uma mensagem...">
+      <button>Enviar</button>
+    </div>
+  </section>
 
-      <div class="treino">
-        <div class="card">
-          <h3>Exercícios</h3>
-          <ul>
-            <li>Agachamento Livre – 5x5</li>
-            <li>Levantamento Terra – 5x5</li>
-            <li>Supino Reto – 5x5</li>
-            <li>Remada Curvada – 5x5</li>
-          </ul>
-          <p><strong>Tutorial:</strong> O método 5x5 consiste em poucas repetições com cargas progressivas. Mantenha técnica perfeita, controle a respiração e evite falhar cedo. O descanso entre séries deve ser de 2 a 3 minutos.</p>
-        </div>
-
-        <div class="explicacao">
-          <p>Este treino recruta grandes grupos musculares com foco em movimentos compostos. Ele aumenta a força neural e estimula adaptações que melhoram potência, coordenação e estabilidade corporal.</p>
-        </div>
-      </div>
-
-      <a href="#topo" class="voltar">Voltar ao Menu</a>
-    </section>
-
-    <!-- TREINO DE HIPERTROFIA -->
-    <section class="section" id="hipertrofia">
-      <h2>Treino de Hipertrofia</h2>
-      <p>O treino de hipertrofia foca no aumento do volume muscular, através de sobrecarga progressiva, maior tempo sob tensão e técnicas de intensidade. É o mais procurado por quem deseja ganho estético e melhora de composição corporal.</p>
-
-      <div class="treino">
-        <div class="card">
-          <h3>Exercícios</h3>
-          <ul>
-            <li>Supino Inclinado – 4x10</li>
-            <li>Puxada Aberta – 4x12</li>
-            <li>Desenvolvimento de Ombros – 3x12</li>
-            <li>Agachamento Hack – 4x12</li>
-          </ul>
-          <p><strong>Tutorial:</strong> Use carga moderada que permita 10–12 repetições com esforço real nas últimas. O intervalo deve ser entre 60–90 segundos. Concentre-se na execução lenta e controlada.</p>
-        </div>
-
-        <div class="explicacao">
-          <p>Neste treino, o tempo sob tensão é maior. O objetivo é microlesionar fibras musculares para estimular reparo e crescimento. A nutrição e descanso são cruciais para melhores resultados.</p>
-        </div>
-      </div>
-
-      <a href="#topo" class="voltar">Voltar ao Menu</a>
-    </section>
-
-    <!-- TREINO FUNCIONAL -->
-    <section class="section" id="funcional">
-      <h2>Treino Funcional</h2>
-      <p>O treino funcional busca melhorar padrões de movimento, estabilidade, equilíbrio e força integrada. É excelente para o dia a dia, atletas de esportes e prevenção de lesões.</p>
-
-      <div class="treino">
-        <div class="card">
-          <h3>Exercícios</h3>
-          <ul>
-            <li>Kettlebell Swing – 4x15</li>
-            <li>Burpees – 4x12</li>
-            <li>Avanço com Halteres – 3x12 cada perna</li>
-            <li>Prancha com Alternância de Braços – 3x45s</li>
-          </ul>
-          <p><strong>Tutorial:</strong> O foco é a qualidade do movimento. Use o core para estabilizar e controle a respiração. Os exercícios exigem coordenação, então reduza carga se a técnica se perder.</p>
-        </div>
-
-        <div class="explicacao">
-          <p>Este treino simula movimentos naturais do corpo. Ele integra força, mobilidade e resistência, gerando condicionamento global. Também ajuda no gasto calórico e no desempenho atlético.</p>
-        </div>
-      </div>
-
-      <a href="#topo" class="voltar">Voltar ao Menu</a>
-    </section>
-
-    <!-- TREINO DE RESISTÊNCIA -->
-    <section class="section" id="resistencia">
-      <h2>Treino de Resistência</h2>
-      <p>O treino de resistência tem como foco a capacidade cardiovascular e muscular de sustentar esforço prolongado. É indicado para quem pratica esportes de longa duração ou deseja melhorar o condicionamento físico geral.</p>
-
-      <div class="treino">
-        <div class="card">
-          <h3>Exercícios</h3>
-          <ul>
-            <li>Circuito: 500m Corrida</li>
-            <li>20 Flexões</li>
-            <li>20 Agachamentos com Salto</li>
-            <li>15 Barra Fixa</li>
-          </ul>
-          <p><strong>Tutorial:</strong> Realize todos os exercícios em sequência, descansando apenas ao final. Repita o circuito 3 a 4 vezes. O objetivo é manter a intensidade elevada por períodos mais longos.</p>
-        </div>
-
-        <div class="explicacao">
-          <p>O foco é aumentar a eficiência cardiovascular e muscular. Esse treino trabalha tanto o sistema aeróbico quanto o anaeróbico, desenvolvendo resistência e recuperação rápida entre esforços.</p>
-        </div>
-      </div>
-
-      <a href="#topo" class="voltar">Voltar ao Menu</a>
-    </section>
-  </main>
 </body>
 </html>

@@ -1,0 +1,116 @@
+:root{
+    --cor_primaria: #00d9f8;
+    --cor_secundaria: #1da3b8;
+    --Backgroud: #dfdfdf;
+    --CP_darkmode: #213872;
+    --CS_darkmode: #0e2555;
+    --BKG_darkmode: #303030;
+
+    --Border_radius: 45px;
+    --box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    --tamanho_fonte: 19px;
+    --borda: 1px #00d9f8 solid;
+    --borda-dk: 1px #213872 solid;
+    --transparente: rgba(0, 217, 248, 0.1);
+    --transparent_dk: rgba(33, 56, 114, 0.1);
+}
+main{
+    display: flex;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 15px;
+    width: 95%;
+    margin: auto;
+    height: 90vh;
+}
+/*
+===============================================================================================================
+Contatos
+===============================================================================================================
+*/
+aside{
+    width: 23%;
+}
+aside h2{
+    background-color: var(--cor_primaria);
+    margin: auto;
+    padding-block: 4%;
+    border-top-left-radius: 12px;
+}
+.contatos{
+    width: 100%;
+    padding-bottom: 10%;
+    border-bottom: 2px var(--cor_primaria) solid;
+}
+.contato{
+    display: flex;
+    align-items: center;
+    border-block: 1px var(--CS_darkmode) solid;
+    transition: 0.5s ease-in-out;
+}
+.contato:hover{
+    background-color: #ddd;
+}
+.contato img{
+    width: 20%;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px var(--cor_primaria) solid;
+    margin: 2%;
+}
+.input{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+label{
+    color: var(--CS_darkmode);
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 6px;
+    margin-bottom: 3%;
+    color: var(--CS_darkmode);
+    font-size: 105%;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 6px;
+    font-size: 105%;
+    height: 20vh;
+}
+.enviar{
+    background-color: var(--CP_darkmode);
+    font-size: 110%;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+.enviar:hover{
+    transform: scale(1.05);
+    background-color: var(--CS_darkmode);
+    box-shadow: 0 0 13px var(--CS_darkmode);
+}
+
+/*
+===============================================================================================================
+Conversa
+===============================================================================================================
+*/
+article{
+    width: 77%;
+    border-left: 2px var(--cor_secundaria) solid;
+}
+article h2{
+    background-color: var(--cor_primaria);
+    margin: auto;
+    padding-block: 1.2%;
+    border-top-right-radius: 12px;
+}
