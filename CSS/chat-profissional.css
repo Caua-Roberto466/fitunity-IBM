@@ -50,7 +50,7 @@ aside h2{
 .contato:hover{
     background-color: #ddd;
 }
-.contato img{
+.foto-perfil{
     width: 20%;
     align-items: center;
     border-radius: 100%;
@@ -75,6 +75,7 @@ input{
     margin-bottom: 3%;
     color: var(--CS_darkmode);
     font-size: 105%;
+    background: transparent;
 }
 textarea{
     width: 100%;
@@ -83,6 +84,7 @@ textarea{
     border-radius: 6px;
     font-size: 105%;
     height: 20vh;
+    background: transparent;
 }
 .enviar{
     background-color: var(--CP_darkmode);
@@ -108,9 +110,40 @@ article{
     width: 77%;
     border-left: 2px var(--cor_secundaria) solid;
 }
-article h2{
+.perfil-profissional{
+    display: flex;
     background-color: var(--cor_primaria);
     margin: auto;
-    padding-block: 1.2%;
+    padding-block: 1%;
     border-top-right-radius: 12px;
+    align-items: center;
+    align-self: flex-start;
+    gap: 1%;
+}
+.perfil{
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    align-self: flex-start;
+}
+#foto-perfil{
+    margin-left: 1%;
+    width: 8%;
+    border-radius: 100%;
+    border: 2px var(--CS_darkmode) solid;
+}
+.icones{
+    display: flex;
+    gap: 25%;
+    margin-right: 10%;
+}
+i{
+    color: var(--CP_darkmode);
+    font-size: 220%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+i:hover{
+    color: var(--CS_darkmode);
+    transform: scale(1.06);
 }
