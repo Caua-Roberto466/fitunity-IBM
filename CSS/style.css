@@ -181,6 +181,21 @@ footer p{
     text-align: left;
 }
 
+footer i{
+    text-align: center;
+    font-size: 200%;
+    transition: 0.5s;
+}
+footer i:hover{
+    font-size: 220%;
+    color: var(--CS_darkmode);
+}
+
+.Redes_sociais div{
+    display: flex;
+    gap: 10%;
+}
+
 .Coluna1{
     margin-left: 20px;
 }

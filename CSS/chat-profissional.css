@@ -137,13 +137,71 @@ article{
     gap: 25%;
     margin-right: 10%;
 }
-i{
+.icones i{
     color: var(--CP_darkmode);
     font-size: 220%;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-i:hover{
+.icones i:hover{
     color: var(--CS_darkmode);
     transform: scale(1.06);
+}
+/*Mensagens*/
+.conversa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 1%;
+}
+.mensagem-profissional{
+    background-color: transparent;
+    border-block: 2px var(--cor_primaria) solid;
+    border-right: 2px var(--cor_primaria) solid;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 50%;
+    margin-block: 1%;
+    padding-inline: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mensagem-profissional p{
+    max-width: 90%;
+}
+.hora{
+    font-size: 80%;
+    color: gray;
+    margin-top: 3%;
+    margi
+}
+
+/*Enviar mensagem*/
+.enviar-mensagem{
+    display: flex;
+    padding-inline: 1%;
+    gap: 1%;
+    align-items: flex-start;
+}
+.enviar-mg{
+    width: 90%;
+    height: 40px;
+}
+.botao-mg{
+    width: 10%;
+    height: 40px;
+    background-color: var(--cor_primaria);
+    border: none;
+    border-radius: 8px;
+    font-size: 120%;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.botao-mg:hover{
+    background-color: var(--cor_secundaria);
+    transform: scale(1.04);
+    box-shadow: 0 0 14px var(--cor_secundaria);
 }
