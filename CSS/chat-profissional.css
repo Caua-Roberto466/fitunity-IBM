@@ -170,11 +170,27 @@ article{
 .mensagem-profissional p{
     max-width: 90%;
 }
+.sua-mensagem{
+    background-color: var(--cor_primaria);
+    border-block: 2px var(--cor_primaria) solid;
+    border-right: 2px var(--cor_primaria) solid;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-block: 1%;
+    padding-inline: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sua-mensagem p{
+    max-width: 90%;
+}
 .hora{
     font-size: 80%;
     color: gray;
     margin-top: 3%;
-    margi
 }
 
 /*Enviar mensagem*/
