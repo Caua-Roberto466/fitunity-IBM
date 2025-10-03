@@ -39,7 +39,6 @@ aside h2{
 .contatos{
     width: 100%;
     padding-bottom: 10%;
-    border-bottom: 2px var(--cor_primaria) solid;
 }
 .contato{
     display: flex;
@@ -172,8 +171,6 @@ article{
 }
 .sua-mensagem{
     background-color: var(--cor_primaria);
-    border-block: 2px var(--cor_primaria) solid;
-    border-right: 2px var(--cor_primaria) solid;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     width: 48%;
@@ -230,6 +227,12 @@ Calendário
 .calendario{
     margin-top: 2%;
 }
+.calendario-div{
+    width: 80%;
+    border: 1px var(--cor_primaria) solid;
+    border-radius: 15px;
+    margin: auto;
+}
 
 
 /*
@@ -240,9 +243,52 @@ Modo Noturno
 body.darkmode main, body.darkmode input, body.darkmode textarea{
     border-color: var(--CP_darkmode);
 }
+body.darkmode input, body.darkmode textarea{
+    color: white;
+}
 body.darkmode label{
     color: white;
 }
 body.darkmode aside h2{
     background-color: var(--CP_darkmode);
+}
+body.darkmode .perfil-profissional{
+    background-color: var(--CP_darkmode);
+}
+body.darkmode article{
+    border-left-color: var(--CS_darkmode);
+}
+body.darkmode article i{
+    color: var(--cor_primaria);
+}
+body.darkmode article i:hover{
+    color: var(--cor_secundaria);
+}
+body.darkmode .contato{
+    border-block-color: var(--cor_primaria);
+}
+body.darkmode .contato:hover{
+    background-color: #202020;
+}
+body.darkmode .mensagem-profissional{
+    border-block-color: var(--CP_darkmode);
+    border-right-color: var(--CP_darkmode);
+}
+body.darkmode .sua-mensagem{
+    background-color: var(--CP_darkmode);
+    
+}
+body.darkmode .enviar{
+    background-color: var(--cor_primaria);
+}
+body.darkmode .enviar:hover{
+    background-color: var(--cor_secundaria);
+    box-shadow: 0 0 13px var(--cor_secundaria);
+}
+body.darkmode .botao-mg{
+    background-color: var(--CP_darkmode);
+}
+body.darkmode .botao-mg:hover{
+    background-color: var(--CS_darkmode);
+    box-shadow: 0 0 13px var(--CS_darkmode);
 }
