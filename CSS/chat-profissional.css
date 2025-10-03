@@ -20,7 +20,7 @@ main{
     border-radius: 15px;
     width: 95%;
     margin: auto;
-    height: 90vh;
+    height: 94vh;
 }
 /*
 ===============================================================================================================
@@ -83,7 +83,7 @@ textarea{
     border: 1px var(--cor_primaria) solid;
     border-radius: 6px;
     font-size: 105%;
-    height: 20vh;
+    height: 24vh;
     background: transparent;
 }
 .enviar{
@@ -160,7 +160,7 @@ article{
     border-right: 2px var(--cor_primaria) solid;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    width: 50%;
+    width: 48%;
     margin-block: 1%;
     padding-inline: 0.5%;
     display: flex;
@@ -176,9 +176,9 @@ article{
     border-right: 2px var(--cor_primaria) solid;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    width: 50%;
+    width: 48%;
     margin-left: auto;
-    margin-block: 1%;
+    margin-block: 2%;
     padding-inline: 0.5%;
     display: flex;
     justify-content: space-between;
@@ -220,4 +220,29 @@ article{
     background-color: var(--cor_secundaria);
     transform: scale(1.04);
     box-shadow: 0 0 14px var(--cor_secundaria);
+}
+
+/*
+===============================================================================================================
+Calendário
+===============================================================================================================
+*/
+.calendario{
+    margin-top: 2%;
+}
+
+
+/*
+===============================================================================================================
+Modo Noturno
+===============================================================================================================
+*/
+body.darkmode main, body.darkmode input, body.darkmode textarea{
+    border-color: var(--CP_darkmode);
+}
+body.darkmode label{
+    color: white;
+}
+body.darkmode aside h2{
+    background-color: var(--CP_darkmode);
 }
