@@ -233,6 +233,35 @@ Calendário
     border-radius: 15px;
     margin: auto;
 }
+.calendario-div h3{
+    font-size: 140%;
+    background-color: var(--cor_primaria);
+    margin: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-block: 2%;
+}
+.container-calendario{
+    display: flex;
+    gap: 2%;
+    padding-inline: 1%;
+    margin-top: 0;
+    justify-content: center;
+}
+.dia-calendario{
+    font-size: 128%;
+    font-weight: bold;
+    background-color: var(--cor_primaria);
+    padding-inline: 5%;
+    padding-block: 3%;
+    border-radius: 15px;
+    margin-block: 1%;
+    transition: 0.5s ease-in-out;
+}
+.dia-calendario:hover{
+    transform: scale(1.05);
+    background-color: var(--cor_secundaria);
+}
 
 
 /*

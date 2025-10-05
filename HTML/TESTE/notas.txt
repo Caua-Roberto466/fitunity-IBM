@@ -145,3 +145,60 @@ nav{
     .mobile-menu.active .line3{
         transform: rotate(45deg) translate(-5px, -7px);
     }
+}
+            <div class="calendario-div">
+                <p class="dia-calendario">1</p>
+                <p class="dia-calendario">2</p>
+                <p class="dia-calendario">3</p>
+                <p class="dia-calendario">4</p>
+                <p class="dia-calendario">5</p>
+                <p class="dia-calendario">6</p>
+                <p class="dia-calendario">7</p>
+                <p class="dia-calendario">8</p>
+                <p class="dia-calendario">9</p>
+                <p class="dia-calendario">10</p>
+                <p class="dia-calendario">11</p>
+                <p class="dia-calendario">12</p>
+                <p class="dia-calendario">13</p>
+                <p class="dia-calendario">14</p>
+                <p class="dia-calendario">15</p>
+                <p class="dia-calendario">16</p>
+                <p class="dia-calendario">17</p>
+                <p class="dia-calendario">18</p>
+                <p class="dia-calendario">19</p>
+                <p class="dia-calendario">20</p>
+                <p class="dia-calendario">21</p>
+                <p class="dia-calendario">22</p>
+                <p class="dia-calendario">23</p>
+                <p class="dia-calendario">24</p>
+                <p class="dia-calendario">25</p>
+                <p class="dia-calendario">26</p>
+                <p class="dia-calendario">27</p>
+                <p class="dia-calendario">28</p>
+                <p class="dia-calendario">29</p>
+                <p class="dia-calendario">30</p>
+            </div>
+        </div>
+.calendario-div {
+  width: 80%;
+  border: 1px var(--cor_primaria) solid;
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 colunas fixas */
+  gap: 15px;
+}
+.dia-calendario {
+  font-size: 120%;
+  font-weight: bold;
+  background-color: var(--cor_primaria);
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px ;
+  transition: 0.4s ease-in-out;
+}
+.dia-calendario:hover {
+  transform: scale(1.05);
+  background-color: var(--cor_secundaria);
+}
