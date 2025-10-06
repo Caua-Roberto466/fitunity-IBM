@@ -401,4 +401,34 @@ Responsividades
     aside h2{
         font-size: 110%;
     }
+    input{
+        font-size: 100%;
+    }
+    textarea{
+        height: 34vh;
+    }
+    #ho3{
+        margin-top: 0;
+        margin-top: 13%;
+    }
+    #ho4{
+        margin-top: 0;
+        margin-top: 11%;
+    }
+    .enviar-mensagem{
+        margin-top: 7%;
+    }
+    .dia-calendario, .dia-invalido{
+        padding-inline: 0;
+        padding-inline: 4%;
+        padding-block: 0;
+        padding-block: 2%;
+    }
+    #ultimo{
+        margin-left: 5.5%;
+    }
+    .contato h3{
+        font-size: 90%;
+        white-space: nowrap;
+    }
 }
