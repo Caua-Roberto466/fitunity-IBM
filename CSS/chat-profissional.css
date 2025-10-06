@@ -277,6 +277,9 @@ Calendário
     background-color: var(--CP_darkmode);
     color: white;
 }
+#ultimo{
+    margin-left: 1%;
+}
 
 
 /*
@@ -350,4 +353,27 @@ body.darkmode .dia-calendario:hover{
 }
 body.darkmode .dia-calendario.ativo{
     background-color: var(--cor_primaria);
+}
+
+/*
+===============================================================================================================
+Responsividades
+===============================================================================================================
+*/
+@media(min-width:1870px){
+    main{
+        height: 75vh;
+    }
+    .enviar-mensagem{
+        margin-top: 12%;
+    }
+    .calendario-div h3{
+        font-size: 200%;
+    }
+    #ultimo{
+        margin-left: 2.9%;
+    }
+    .dia-calendario{
+        font-size: 140%;
+    }
 }

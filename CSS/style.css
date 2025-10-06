@@ -151,6 +151,7 @@ footer{
     margin-top: 130px;
     justify-content: center;
     gap: 10%;
+    padding-bottom: 8px;
 }
 
 footer img{
