@@ -189,6 +189,15 @@ article{
     color: gray;
     margin-top: 3%;
 }
+#ho2{
+    margin-top: 12%;
+}
+#ho3{
+    margin-top: 6%;
+}
+#ho4{
+    margin-top: 9%;
+}
 
 /*Enviar mensagem*/
 .enviar-mensagem{
@@ -364,6 +373,14 @@ Responsividades
     main{
         height: 75vh;
     }
+    #ho2{
+        margin-top: 0;
+        margin-top: 5%;
+    }
+    #ho4{
+        margin-top: 0;
+        margin-top: 5%;
+    }
     .enviar-mensagem{
         margin-top: 12%;
     }
@@ -375,5 +392,13 @@ Responsividades
     }
     .dia-calendario{
         font-size: 140%;
+    }
+    .icones{
+        gap: 30%;
+    }
+}
+@media(max-width:1024px){
+    aside h2{
+        font-size: 110%;
     }
 }
