@@ -110,9 +110,10 @@ article{
     border-left: 2px var(--cor_secundaria) solid;
 }
 .perfil-profissional{
+    width: 100%;
     display: flex;
     background-color: var(--cor_primaria);
-    margin: auto;
+    margin: 0 auto;
     padding-block: 1%;
     border-top-right-radius: 12px;
     align-items: center;
@@ -430,5 +431,70 @@ Responsividades
     .contato h3{
         font-size: 90%;
         white-space: nowrap;
+    }
+}
+@media(max-width:900px){
+    main{
+        width: 92%;
+        height: 103vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .contatos{
+        margin-bottom: 29%;
+    }
+    .contato h3{
+        font-size: 80%;
+    }
+    aside label{
+        font-size: 97%;
+    }
+    textarea{
+        height: 30vh;
+    }
+    .enviar-mensagem{
+        margin-top: 3%;
+    }
+    .botao-mg{
+        font-size: 100%;
+    }
+    .sua-mensagem p, .mensagem-profissional p{
+        font-size: 90%;
+    }
+    .sua-mensagem, .mensagem-profissional{
+        width: 50%;
+    }
+    .sua-mensagem{
+        overflow: hidden;
+        margin-left: 0 auto;
+    }
+    input{
+        font-size: 80%;
+    }
+    .hora{
+        font-size: 80%;
+        margin-right: 0;
+    }
+    .icones i{
+        font-size: 200%;
+    }
+    #ho1{
+        margin-top: 7%;
+    }
+    #ho2{
+        margin-top: 0;
+        margin-top: 13%;
+    }
+    #ho4{
+        margin-top: 0;
+        margin-top: 14%;
+    }
+    .dia-calendario, .dia-invalido{
+        padding-block: 2.5%;
+        padding-inline: 4.5%;
+    }
+    #ultimo{
+        margin-left: 0;
+        margin-left: 1%;
     }
 }
