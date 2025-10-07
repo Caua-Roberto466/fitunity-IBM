@@ -336,9 +336,12 @@ Responsividades
 }
 
 /* Responsividade do header */
-@media (max-width: 770px){
+@media (max-width: 768px){
     .nav-link{
         font-size: 13px;
+    }
+    .botoes-navbar{
+        gap: 8px;
     }
     .empresa img{
         width: 50px;
@@ -346,16 +349,25 @@ Responsividades
     .fitunity{
         font-size: 20px;
     }
+    .nav-bar{
+        justify-content: center;
+    }
+    .nav-list{
+        margin-right: 1%;
+    }
+    .empresa{
+        margin-right: -1%;
+    }
     header ul{
-        gap: 8px;
+        gap: 7px;
     }
     .botoes-navbar button{
         font-size: 13px;
     }
     footer {
-        gap: 32px;
+        gap: 38px;
         padding: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .Coluna1, .Coluna2, .Coluna3, .Coluna4 {

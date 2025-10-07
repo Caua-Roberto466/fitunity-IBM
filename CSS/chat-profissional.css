@@ -497,4 +497,45 @@ Responsividades
         margin-left: 0;
         margin-left: 1%;
     }
+    .perfil-profissional h2{
+        font-size: 120%;
+    }
+}
+@media(max-width:768px){
+    main{
+        width: 96%;
+        height: 111vh;
+    }
+    .mensagem-profissional, .sua-mensagem{
+        width: 55%;
+    }
+    .enviar-mensagem{
+        margin-top: 11%;
+    }
+    .enviar-mg{
+        width: 87%;
+    }
+    .botao-mg{
+        width: 13%;
+    }
+    #ho2{
+        margin-top: 0;
+        margin-top: 19%;
+    }
+    .icones i{
+        font-size: 180%;
+    }
+    .contatos{
+        margin-bottom: 0;
+        margin-bottom: 53%;
+    }
+    aside label{
+        font-size: 85%;
+    }
+    .calendario-div{
+        width: 86%;
+    }
+    #ultimo{
+        margin-left: 0;
+    }
 }
