@@ -601,4 +601,31 @@ Responsividades
         padding-block: 2.5%;
         padding-inline: 4%;
     }
+    article #foto-perfil{
+        width: 20%;
+    }
+}
+@media(max-width:425px){
+    .cont{
+        width: 100%;
+        margin-right: 118%;
+    }
+    .contatos{
+        width: 218%;
+    }
+    form input, textarea{
+        width: 142%;
+    }
+    main{
+        height: 172vh;
+    }
+    .enviar-mg{
+        width: 80%;
+    }
+    .botao-mg{
+        width: 20%;
+    }
+    .calendario-div{
+        width: 96%;
+    }
 }
