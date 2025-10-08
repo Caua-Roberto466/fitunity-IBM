@@ -539,3 +539,66 @@ Responsividades
         margin-left: 0;
     }
 }
+@media(max-width:480px){
+    main{
+        flex-direction: column;
+        height: 168vh;
+    }
+    aside{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contatos{
+        width: 250%;
+    }
+    .cont h2{
+        width: 100%;
+        padding-block: 4%;
+    }
+    .cont{
+        margin-right: 141%;
+    }
+    form{
+        border-left: 1px var(--cor_secundaria) solid;
+    }
+    form h2{
+        width: 143%;
+        padding-block: 7%;
+    }
+    form input, textarea{
+        width: 145%;
+    }
+    textarea{
+        height: 30vh;
+    }
+    body.darkmode form{
+        border-left-color: var(--CS_darkmode);
+    }
+    label{
+        white-space: nowrap;
+    }
+    .enviar{
+        margin-bottom: 10%;
+    }
+    article{
+        border-left: none;
+        width: 100%;
+    }
+    .perfil-profissional{
+        border-top-right-radius: 0;
+    }
+    .sua-mensagem, .mensagem-profissional{
+        width: 70%;
+    }
+    h1{
+        font-size: 160%;
+    }
+    .calendario-div h2{
+        font-size: 120%;
+    }
+    .dia-calendario, .dia-invalido{
+        font-size: 100%;
+        padding-block: 2.5%;
+        padding-inline: 4%;
+    }
+}

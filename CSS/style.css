@@ -400,6 +400,7 @@ Responsividades
 
 @media (max-width: 484px){
     .nav-bar{
+        justify-content: space-between;
         padding: 1.5rem 4rem;
     }
     .nav-item{
@@ -476,12 +477,15 @@ Responsividades
     footer h4{
         font-size: 23px;
     }
-
     footer {
         gap: 20px;
         padding: 10px;
         text-align: center;
         display: block;
+    }
+    .Redes_sociais div{
+        margin: auto;
+        justify-content: center;
     }
 }
 
