@@ -640,7 +640,7 @@ Responsividades
         width: 435%;
     }
     .contato h3{
-        font-size: 150%;
+        font-size: 140%;
     }
     .mensagem-profissional, .sua-mensagem{
         width: 80%;
@@ -653,5 +653,10 @@ Responsividades
     }
     .icones i {
         font-size: 140%;
+    }
+}
+@media(max-width:320px){
+    .dia-calendario, .dia-invalido{
+        font-size: 80%;
     }
 }
