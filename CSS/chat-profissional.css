@@ -629,6 +629,32 @@ Responsividades
         width: 96%;
     }
 }
+@media(max-width:400px){
+    main{
+        height: 155vh;
+    }
+    form{
+        display: none;
+    }
+    .contatos{
+        width: 435%;
+    }
+    .contato h3{
+        font-size: 140%;
+    }
+    .mensagem-profissional, .sua-mensagem{
+        width: 80%;
+    }
+    .dia-calendario, .dia-invalido{
+        font-size: 90%;
+    }
+    .calendario-div{
+        width: 98%;
+    }
+    .icones i {
+        font-size: 140%;
+    }
+}
 @media(max-width:375px){
     main{
         height: 155vh;
