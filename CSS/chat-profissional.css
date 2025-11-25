@@ -635,6 +635,9 @@ Responsividades
         margin-bottom: 2px;
     }
 }
+@media(max-width: 412px){
+    
+}
 @media(max-width:400px){
     main{
         height: 158.6vh;
