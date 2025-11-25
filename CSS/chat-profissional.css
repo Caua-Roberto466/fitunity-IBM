@@ -628,10 +628,16 @@ Responsividades
     .calendario-div{
         width: 96%;
     }
+    .dia-calendario, .dia-invalido{
+        border-radius: 3px;
+    }
+    #ultimo{
+        margin-bottom: 2px;
+    }
 }
 @media(max-width:400px){
     main{
-        height: 155vh;
+        height: 158.6vh;
     }
     form{
         display: none;
@@ -653,6 +659,9 @@ Responsividades
     }
     .icones i {
         font-size: 140%;
+    }
+    #ultimo{
+        margin-left: 3px;
     }
 }
 @media(max-width:375px){
@@ -680,9 +689,17 @@ Responsividades
     .icones i {
         font-size: 140%;
     }
+    #ultimo{
+        margin-bottom: 4px;
+        margin-left: 0;
+    }
 }
 @media(max-width:320px){
     .dia-calendario, .dia-invalido{
         font-size: 80%;
+    }
+    #ultimo{
+        margin-bottom: 8px;
+        margin-left: -2px;
     }
 }
