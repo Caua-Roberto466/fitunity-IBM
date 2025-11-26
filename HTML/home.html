@@ -61,7 +61,87 @@
 
     <section class="seus_treinos">
         <h2>Veja seus treinos</h2>
-        
+        <div class="rotina_treino">
+            <h3>Rotina</h3>
+            <p id="pintro">Aqui você pode ver e modificar sua rotina de treinos, assim, você tem total controle de como vai treinar</p>
+            <!--Domingo-->
+            <div class="dia_semana" data-dia="domingo">
+                <h3>Domingo</h3>
+                <p class="r_indicador">Tipo de treino</p>
+                <p class="r_valor tipo">Ex: Peito ou descanso</p>
+                <p class="r_indicador">Exercícios</p>
+                <p class="r_valor exercicios">Ex: Agachamento livre - 3:15; Legpress - 4:12 ou descanso</p>
+                <div class="butao">
+                    <button class="r_alterar">Editar</button>
+                </div>
+            </div>
+            <!--Segunda-->
+            <div class="dia_semana" data-dia="segunda">
+                <h3>Segunda-feira</h3>
+                <p class="r_indicador">Tipo de treino</p>
+                <p class="r_valor tipo">Ex: Peito</p>
+                <p class="r_indicador">Exercícios</p>
+                <p class="r_valor exercicios">Ex: Agachamento livre - 3:15; Legpress - 4:12</p>
+                <div class="butao">
+                    <button class="r_alterar">Editar</button>
+                </div>
+            </div>
+            <!--Terça-->
+            <div class="dia_semana" data-dia="terca">
+                <h3>Terça-feira</h3>
+                <p class="r_indicador">Tipo de treino</p>
+                <p class="r_valor tipo">Ex: Peito</p>
+                <p class="r_indicador">Exercícios</p>
+                <p class="r_valor exercicios">Ex: Agachamento livre - 3:15; Legpress - 4:12</p>
+                <div class="butao">
+                    <button class="r_alterar">Editar</button>
+                </div>
+            </div>
+            <!--quarta-->
+            <div class="dia_semana" data-dia="quarta">
+                <h3>quarta-feira</h3>
+                <p class="r_indicador">Tipo de treino</p>
+                <p class="r_valor tipo">Ex: Peito</p>
+                <p class="r_indicador">Exercícios</p>
+                <p class="r_valor exercicios">Ex: Agachamento livre - 3:15; Legpress - 4:12</p>
+                <div class="butao">
+                    <button class="r_alterar">Editar</button>
+                </div>
+            </div>
+            <!--quinta-->
+            <div class="dia_semana" data-dia="quinta">
+                <h3>Quinta-feira</h3>
+                <p class="r_indicador">Tipo de treino</p>
+                <p class="r_valor tipo">Ex: Peito</p>
+                <p class="r_indicador">Exercícios</p>
+                <p class="r_valor exercicios">Ex: Agachamento livre - 3:15; Legpress - 4:12</p>
+                <div class="butao">
+                    <button class="r_alterar">Editar</button>
+                </div>
+            </div>
+            <!--Sexta-->
+            <div class="dia_semana" data-dia="sexta">
+                <h3>Sexta-feira</h3>
+                <p class="r_indicador">Tipo de treino</p>
+                <p class="r_valor tipo">Ex: Peito</p>
+                <p class="r_indicador">Exercícios</p>
+                <p class="r_valor exercicios">Ex: Agachamento livre - 3:15; Legpress - 4:12</p>
+                <div class="butao">
+                    <button class="r_alterar">Editar</button>
+                </div>
+            </div>
+            <!--sabado-->
+            <div class="dia_semana" data-dia="sabado">
+                <h3>Sábado</h3>
+                <p class="r_indicador">Tipo de treino</p>
+                <p class="r_valor tipo">Ex: Peito</p>
+                <p class="r_indicador">Exercícios</p>
+                <p class="r_valor exercicios">Ex: Agachamento livre - 3:15; Legpress - 4:12</p>
+                <div class="butao">
+                    <button class="r_alterar">Editar</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -118,5 +198,29 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("click", function(e) {
+        if (e.target.classList.contains("r_alterar")) {
+
+            // pega o bloco do dia
+            const bloco = e.target.closest(".dia_semana");
+        
+            // pega os elementos a serem editados
+            const tipo = bloco.querySelector(".tipo");
+            const exercicios = bloco.querySelector(".exercicios");
+
+            // abre prompts para alterar
+            const novoTipo = prompt("Digite o tipo de treino:", tipo.textContent);
+            const novosExercicios = prompt("Digite os exercícios:", exercicios.textContent);
+
+            // se não cancelar
+            if (novoTipo !== null) tipo.textContent = novoTipo;
+            if (novosExercicios !== null) exercicios.textContent = novosExercicios;
+        }
+        });
+
+    </script>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/menu.js"></script>
 </body>
 </html>
