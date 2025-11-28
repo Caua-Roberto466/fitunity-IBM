@@ -202,6 +202,7 @@ article{
 
 /*Enviar mensagem*/
 .enviar-mensagem{
+    margin-top: 3%;
     display: flex;
     padding-inline: 1%;
     gap: 1%;
