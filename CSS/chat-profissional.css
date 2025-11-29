@@ -607,37 +607,48 @@ Responsividades
     }
 }
 @media(max-width:425px){
-    .cont{
-        width: 100%;
-        margin-right: 118%;
+    main{
+        height: 178vh;
+    }
+    form{
+        display: none;
     }
     .contatos{
-        width: 218%;
+        width: 400%;
     }
-    form input, textarea{
-        width: 142%;
+    .contatos h2{
+        font-size: 130%;
+        text-align: left;
+        padding-left: 27%;
     }
-    main{
-        height: 172vh;
+    .contato h3{
+        font-size: 140%;
+    }
+    .foto-perfil{
+        width: 15%;
+    }
+    .mensagem-profissional, .sua-mensagem{
+        width: 80%;
+    }
+    .dia-calendario, .dia-invalido{
+        font-size: 90%;
+        border-radius: 5px;
+    }
+    .calendario-div{
+        width: 98%;
+    }
+    .icones i {
+        font-size: 140%;
+    }
+    #ultimo{
+        margin-left: 8px;
     }
     .enviar-mg{
-        width: 80%;
+        width: 82%;
     }
     .botao-mg{
         width: 20%;
     }
-    .calendario-div{
-        width: 96%;
-    }
-    .dia-calendario, .dia-invalido{
-        border-radius: 3px;
-    }
-    #ultimo{
-        margin-bottom: 2px;
-    }
-}
-@media(max-width: 412px){
-    
 }
 @media(max-width:400px){
     main{
@@ -666,6 +677,17 @@ Responsividades
     }
     #ultimo{
         margin-left: 3px;
+    }
+}
+@media(max-width:384px){
+    .foto-perfil{
+        width: 13%;
+    }
+    main{
+        height: 174vh;
+    }
+    #ultimo{
+        margin-left: 1px;
     }
 }
 @media(max-width:375px){

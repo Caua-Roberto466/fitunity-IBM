@@ -192,7 +192,7 @@ Responsividades
 @media(max-width:420px){
     form{
         display: block;
-        width: 75%;
+        width: 95%;
         overflow-x: hidden;
     }
     h1{
