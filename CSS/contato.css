@@ -211,6 +211,9 @@ Responsividade
     form{
         width: 85%;
     }
+    .qrcode div{
+        width: 35%;
+    }
 }
 @media(max-width:480px){
     form{
@@ -222,6 +225,23 @@ Responsividade
     #ir-profissional{
         font-size: 110%;
         width: 98%;
+    }
+    .faq{
+        width: 90%;
+    }
+    .qrcode{
+        width: 90%;
+    }
+}
+@media(max-width: 425px){
+    .card-contato h3{
+        font-size: 100%;
+    }
+    textarea{
+        height: 43vh;
+    }
+    .qrcode div{
+        width: 40%;
     }
 }
 @media(max-width:420px){
@@ -263,6 +283,12 @@ Responsividade
     textarea{
         height: 40vh;
     }
+    .faq{
+        width: 95%;
+    }
+    .qrcode{
+        width: 95%;
+    }
 }
 @media(max-width:320px){
     h1{
@@ -278,5 +304,8 @@ Responsividade
     }
     form input{
         width: 170%;
+    }
+    .qrcode div{
+        width: 55%;
     }
 }
